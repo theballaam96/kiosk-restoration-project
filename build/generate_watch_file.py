@@ -65,4 +65,4 @@ def create_wch_file(_data, watch_file_name):
 		for x in lines:
 			fh.write(x + "\n")
 
-create_wch_file(read_h_file(read_symbols()), "rom/dk64-newhack-dev.wch")
+create_wch_file(read_h_file(read_symbols()), "rom/dk64-kioskrestoration-dev.wch")

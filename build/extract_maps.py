@@ -5,7 +5,7 @@ import zlib
 import json
 import hashlib
 
-ROMName = "./rom/dk64.z64"
+ROMName = "./rom/dk64_kiosk.z64"
 
 from map_names import maps
 from recompute_pointer_table import num_tables, pointer_tables, getFileInfo, parsePointerTables, make_safe_filename

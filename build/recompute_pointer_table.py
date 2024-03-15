@@ -5,18 +5,18 @@ from typing import BinaryIO
 import encoders
 
 pointer_tables = [
+	# {
+	# 	"index": 0,
+	# 	"name": "Music MIDI",
+	# },
 	{
 		"index": 0,
-		"name": "Music MIDI",
-	},
-	{
-		"index": 1,
 		"name": "Map Geometry",
 		"encoded_filename": "geometry.bin",
 		"decoded_filename": "geometry.todo",
 	},
 	{
-		"index": 2,
+		"index": 1,
 		"name": "Map Walls",
 		"encoded_filename": "walls.bin",
 		"decoded_filename": "walls.obj",
@@ -24,7 +24,7 @@ pointer_tables = [
 		# "use_external_gzip": True,
 	},
 	{
-		"index": 3,
+		"index": 2,
 		"name": "Map Floors",
 		"encoded_filename": "floors.bin",
 		"decoded_filename": "floors.obj",
@@ -32,31 +32,31 @@ pointer_tables = [
 		# "use_external_gzip": True,
 	},
 	{
-		"index": 4,
+		"index": 3,
 		"name": "Object Model 2 Geometry",
 	},
 	{
-		"index": 5,
+		"index": 4,
 		"name": "Actor Geometry",
 	},
 	{
-		"index": 6,
+		"index": 5,
 		"name": "Unknown 6",
 		"dont_overwrite_uncompressed_sizes": True,
 	},
 	{
-		"index": 7,
+		"index": 6,
 		"name": "Textures (Uncompressed)",
 		"dont_overwrite_uncompressed_sizes": True,
 	},
 	{
-		"index": 8,
+		"index": 7,
 		"name": "Map Cutscenes",
 		"encoded_filename": "cutscenes.bin",
 		"decoded_filename": "cutscenes.todo",
 	},
 	{
-		"index": 9,
+		"index": 8,
 		"name": "Map Object Setups",
 		"encoded_filename": "setup.bin",
 		"decoded_filename": "setup.json",
@@ -64,30 +64,30 @@ pointer_tables = [
 		"decoder": encoders.decodeSetup,
 	},
 	{
-		"index": 10,
+		"index": 9,
 		"name": "Map Object Model 2 Behaviour Scripts",
 		"encoded_filename": "object_behaviour_scripts.bin",
 		"decoded_filename": "object_behaviour_scripts.todo",
 	},
 	{
-		"index": 11,
+		"index": 10,
 		"name": "Animations",
 		"dont_overwrite_uncompressed_sizes": True,
 	},
 	{
-		"index": 12,
+		"index": 11,
 		"name": "Text",
 	},
 	{
-		"index": 13,
+		"index": 12,
 		"name": "Unknown 13",
 	},
 	{
-		"index": 14,
+		"index": 13,
 		"name": "Textures",
 	},
 	{
-		"index": 15,
+		"index": 14,
 		"name": "Map Paths",
 		"encoded_filename": "paths.bin",
 		"decoded_filename": "paths.json",
@@ -97,7 +97,7 @@ pointer_tables = [
 		"dont_overwrite_uncompressed_sizes": True,
 	},
 	{
-		"index": 16,
+		"index": 15,
 		"name": "Map Character Spawners",
 		"encoded_filename": "character_spawners.bin",
 		"decoded_filename": "character_spawners.json",
@@ -105,11 +105,11 @@ pointer_tables = [
 		"decoder": encoders.decodeCharacterSpawners,
 	},
 	{
-		"index": 17,
+		"index": 16,
 		"name": "Unknown 17",
 	},
 	{
-		"index": 18,
+		"index": 17,
 		"name": "Map Loading Zones",
 		"encoded_filename": "loading_zones.bin",
 		"decoded_filename": "loading_zones.json",
@@ -117,16 +117,16 @@ pointer_tables = [
 		"decoder": encoders.decodeLoadingZones,
 	},
 	{
-		"index": 19,
+		"index": 18,
 		"name": "Unknown 19",
 	},
 	{
-		"index": 20,
+		"index": 19,
 		"name": "Unknown 20",
 		"dont_overwrite_uncompressed_sizes": True,
 	},
 	{
-		"index": 21,
+		"index": 20,
 		"name": "Map Autowalk Data",
 		"encoded_filename": "autowalk.bin",
 		"decoded_filename": "autowalk.json",
@@ -136,11 +136,11 @@ pointer_tables = [
 		"dont_overwrite_uncompressed_sizes": True,
 	},
 	{
-		"index": 22,
+		"index": 21,
 		"name": "Unknown 22",
 	},
 	{
-		"index": 23,
+		"index": 22,
 		"name": "Map Exits",
 		"encoded_filename": "exits.bin",
 		"decoded_filename": "exits.json",
@@ -150,7 +150,7 @@ pointer_tables = [
 		"decoder": encoders.decodeExits,
 	},
 	{
-		"index": 24,
+		"index": 23,
 		"name": "Map Race Checkpoints",
 		"encoded_filename": "race_checkpoints.bin",
 		"decoded_filename": "race_checkpoints.json",
@@ -158,38 +158,42 @@ pointer_tables = [
 		"decoder": encoders.decodeCheckpoints,
 	},
 	{
-		"index": 25,
+		"index": 24,
 		"name": "Textures",
 	},
 	{
-		"index": 26,
+		"index": 25,
 		"name": "Uncompressed File Sizes",
 		"dont_overwrite_uncompressed_sizes": True,
 	},
 	{
-		"index": 27,
+		"index": 26,
 		"name": "Unknown 27",
 	},
 	{
-		"index": 28,
+		"index": 27,
 		"name": "Unknown 28",
 	},
 	{
-		"index": 29,
+		"index": 28,
 		"name": "Unknown 29",
 	},
 	{
-		"index": 30,
+		"index": 29,
 		"name": "Unknown 30",
 	},
 	{
-		"index": 31,
+		"index": 30,
 		"name": "Unknown 31",
+	},
+	{
+		"index": 31,
+		"name": "Unknown 32",
 	},
 ]
 
 num_tables = len(pointer_tables)
-main_pointer_table_offset = 0x101C50
+main_pointer_table_offset = 0x1A7C20
 
 # The address of the next available byte of free space in ROM
 # used when appending files to the end of the ROM
@@ -236,7 +240,7 @@ def getOriginalUncompressedSize(fh : BinaryIO, pointer_table_index : int, file_i
 	if "dont_overwrite_uncompressed_sizes" in pointer_tables[pointer_table_index]:
 		return 0
 
-	ROMAddress = pointer_tables[26]["entries"][pointer_table_index]["absolute_address"] + file_index * 4
+	ROMAddress = pointer_tables[25]["entries"][pointer_table_index]["absolute_address"] + file_index * 4
 
 	# print("Reading size for file " + str(pointer_table_index) + "->" + str(file_index) + " from ROM address " + hex(ROMAddress))
 
@@ -248,7 +252,7 @@ def writeUncompressedSize(fh: BinaryIO, pointer_table_index : int, file_index : 
 	if "dont_overwrite_uncompressed_sizes" in pointer_tables[pointer_table_index]:
 		return 0
 
-	ROMAddress = pointer_tables[26]["entries"][pointer_table_index]["absolute_address"] + file_index * 4
+	ROMAddress = pointer_tables[25]["entries"][pointer_table_index]["absolute_address"] + file_index * 4
 
 	# Game seems to align these mod 2
 	if uncompressed_size % 2 == 1:
@@ -306,7 +310,7 @@ def parsePointerTables(fh : BinaryIO):
 
 	# Read data and original uncompressed size
 	# Note: Needs to happen after all entries are read for annoying reasons
-	for x in pointer_tables:
+	for xi, x in enumerate(pointer_tables):
 		if x["num_entries"] > 0:
 			for y in x["entries"]:
 				if not y["bit_set"]:
@@ -397,7 +401,7 @@ def shouldWritePointerTable(index : int):
 	# Table 26 is a special case, it should never be manually overwritten
 	# Instead, it should be recomputed based on the new uncompressed file sizes of the replaced files
 	# This fixes heap corruption caused by a buffer overrun when decompressing a replaced file into a malloc'd buffer
-	if index in [6, 26]:
+	if index in [5, 25]:
 		return False
 
 	# No need to recompute pointer tables with no entries in them
@@ -419,7 +423,7 @@ def shouldRelocatePointerTable(index : int):
 	# TODO: Remove this once deduplication is implemented
 	# Note: Always relocate map walls, floors, geometry, and model 2 behaviour scripts
 	# These tables contain bit_set entries so cannot be rewritten in place until deduplication works properly
-	if index in [1, 2, 3, 10]:
+	if index in [0, 1, 2, 9]:
 		return True
 
 	return getPointerTableCompressedSize(index) > pointer_tables[index]["original_compressed_size"]
@@ -513,7 +517,7 @@ def dumpPointerTableDetails(filename : str, fr : BinaryIO):
 					fh.write(" (" + hex(uncompressed_size) + ")")
 				fh.write(" (" + str(y["bit_set"]) + ")")
 
-				if x["num_entries"] == 221:
+				if x["num_entries"] == 0xC8:
 					fh.write(" (" + maps[y["index"]] + ")")
 
 				fh.write(" (" + str(y["new_sha1"]) + ")")
