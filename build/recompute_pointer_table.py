@@ -372,7 +372,7 @@ def getFileInfo(pointer_table_index : int, file_index : int):
 
 def replaceROMFile(pointer_table_index : int, file_index : int, data: bytes, uncompressed_size : int, filename : str = ""):
 	# TODO: Get this working
-	if pointer_table_index == 8 and file_index == 0:
+	if pointer_table_index == 7 and file_index == 0:
 		print(" - WARNING: Tried to replace Test Map cutscenes. This will replace global cutscenes, so it has been disabled for now to prevent crashes.")
 		return
 

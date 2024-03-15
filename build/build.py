@@ -6,6 +6,7 @@ import subprocess
 import hashlib
 import requests
 import zipfile
+from geometry_mapper import geo_us_to_kiosk
 
 # DONKEY KONG 64 BUILDER
 # AKA "CRANKY'S LAB"
@@ -142,6 +143,60 @@ map_replacement_models = [
 		# "water_planes": []
 	# },
 ]
+print("[1 / 9] - Extracting map files")
+
+us_tables = [1, 2, 3] # [1, 2, 3]
+in_kiosk = [6, 8, 0x28, 0x4C, 0x50, 0x51, 0x53]
+other_exclusions = []
+excluded_maps = in_kiosk + other_exclusions
+with open("./rom/dk64_us.z64", "rb") as fq:
+	us_pointer = 0x101C50
+	limit = 0xC8 # Should be 221, testing early limits for now
+	valid_maps = [x for x in list(range(limit)) if x not in excluded_maps]
+	for table in us_tables:
+		fq.seek(us_pointer + (table << 2))
+		table_start = us_pointer + int.from_bytes(fq.read(4), "big")
+		print(table)
+		for map_id in valid_maps:
+			print("-",map_id)
+			fq.seek(table_start + (map_id << 2))
+			file_start = us_pointer + (int.from_bytes(fq.read(4), "big") & 0x7FFFFFFF)
+			file_end = us_pointer + (int.from_bytes(fq.read(4), "big") & 0x7FFFFFFF)
+			file_compressed_size = file_end - file_start
+			fq.seek(file_start)
+			print(hex(file_start), hex(file_compressed_size))
+			file_data = fq.read(file_compressed_size)
+			fq.seek(file_start)
+			indic = int.from_bytes(fq.read(2), "big")
+			is_gzip = indic == 0x1F8B
+			if file_compressed_size == 8:
+				if not is_gzip:
+					fq.seek(file_start + 4)
+					referenced_file = int.from_bytes(fq.read(4), "big")
+					added_name = f"./bin/t{table}_f{referenced_file}.bin"
+					file_dict.append({
+						"name": f"Table {table - 1} File {referenced_file}",
+						"pointer_table_index": table - 1,
+						"file_index": referenced_file,
+						"source_file": added_name,
+						"do_not_extract": True,
+					})
+					continue
+			if is_gzip:
+				file_data = zlib.decompress(file_data, (15 + 32))
+			file_name = f"./bin/t{table}_f{map_id}.bin"
+			with open(file_name, "wb") as fk:
+				fk.write(file_data)
+			if table == 1:
+				geo_us_to_kiosk(file_name)
+			file_dict.append({
+				"name": f"Table {table - 1} File {map_id}",
+				"pointer_table_index": table - 1,
+				"file_index": map_id,
+				"source_file": file_name,
+				"do_not_extract": True,
+			})
+
 
 print("[2 / 9] - Generating map files")
 index = 6013 #first unused texture index
