@@ -7,6 +7,7 @@ import hashlib
 import requests
 import zipfile
 from geometry_mapper import geo_us_to_kiosk
+from alter_kiosk_code import code_modifications
 
 # DONKEY KONG 64 BUILDER
 # AKA "CRANKY'S LAB"
@@ -18,6 +19,7 @@ import time
 start_time = time.time()
 
 COMPILE_C = False
+CLEANUP = True
 
 if COMPILE_C:
 	print("Cranky's Lab Build System")
@@ -60,6 +62,8 @@ newROMName = "./rom/dk64-kioskrestoration-dev.z64"
 if os.path.exists(newROMName):
 	os.remove(newROMName)
 shutil.copyfile(ROMName, newROMName)
+if not os.path.exists("./bin/"):
+	os.mkdir("./bin/")
 
 file_dict = [
 	# {
@@ -72,77 +76,6 @@ file_dict = [
 	# }
 ]
 
-map_replacements = [
-	# {
-	# 	"name": "Fairy Island Exit Test",
-	# 	"map_index": 189,
-	# 	"map_folder": "maps/exit_test/"
-	# },
-	# {
-	# 	"name": "Japes Exit Test",
-	# 	"map_index": 7,
-	# 	"map_folder": "maps/exit_test/"
-	# },
-]
-
-# Test all map replacements at once
-# from map_names import maps
-# for mapIndex, mapName in enumerate(maps):
-# 	mapPath = "maps/" + str(mapIndex) + " - " + make_safe_filename(mapName) + "/"
-# 	map_replacements.append({
-# 		"name": mapName,
-# 		"map_index": mapIndex,
-# 		"map_folder": mapPath,
-# 	})
-
-##############################################################################
-#Generate map files created using Fast64 - https://github.com/Fast-64/fast64 #
-##############################################################################
-from map_generator import generateMap
-generate_maps = False #Set to True to generate map files (advanced)
-
-map_replacement_models = [
-	# {
-		# "map_name": "spiral mountain",
-		# "map_index": 175,
-		# "path_to_model": "blender/spiral mountain/",
-		# "output_path": "maps/spiral_mountain",
-		# "mesh_name": "spiral_mountain",
-		# "water_exists": "true",
-		# "water_planes": [
-			# {
-				# "x1": 994,
-				# "z1": 823,
-				# "x2": 1615,
-				# "z2": 1503,
-				# "water_height": 60,
-				# "red": 255,
-				# "green": 255,
-				# "blue": 250,
-				# "alpha": 230,
-				# "material_type": "water",
-			# },
-		# ]
-	# },
-	# {
-		# "map_name": "banjo's house",
-		# "map_index": 169,
-		# "path_to_model": "blender/banjos_house/",
-		# "output_path": "maps/banjos_house",
-		# "mesh_name": "banjos_house",
-		# "water_exists": "false",
-		# "water_planes": []
-	# },
-	# {
-		# "map_name": "lair entrance",
-		# "map_index": 173,
-		# "path_to_model": "blender/lair entrance/",
-		# "output_path": "maps/lair_entrance",
-		# "mesh_name": "lair_entrance",
-		# "water_exists": "false",
-		# "water_planes": []
-	# },
-]
 print("[1 / 9] - Extracting map files")
 
 us_tables = [1, 2, 3] # [1, 2, 3]
@@ -156,28 +89,23 @@ with open("./rom/dk64_us.z64", "rb") as fq:
 	for table in us_tables:
 		fq.seek(us_pointer + (table << 2))
 		table_start = us_pointer + int.from_bytes(fq.read(4), "big")
-		print(table)
 		for map_id in valid_maps:
-			print("-",map_id)
 			fq.seek(table_start + (map_id << 2))
 			file_start = us_pointer + (int.from_bytes(fq.read(4), "big") & 0x7FFFFFFF)
 			file_end = us_pointer + (int.from_bytes(fq.read(4), "big") & 0x7FFFFFFF)
 			file_compressed_size = file_end - file_start
 			fq.seek(file_start)
-			print(hex(file_start), hex(file_compressed_size))
 			file_data = fq.read(file_compressed_size)
 			fq.seek(file_start)
 			indic = int.from_bytes(fq.read(2), "big")
 			is_gzip = indic == 0x1F8B
 			if file_compressed_size == 8:
 				if not is_gzip:
-					fq.seek(file_start + 4)
-					referenced_file = int.from_bytes(fq.read(4), "big")
-					added_name = f"./bin/t{table}_f{referenced_file}.bin"
+					added_name = f"./bin/t{table}_f{indic}.bin"
 					file_dict.append({
-						"name": f"Table {table - 1} File {referenced_file}",
+						"name": f"Table {table - 1} File {indic}",
 						"pointer_table_index": table - 1,
-						"file_index": referenced_file,
+						"file_index": indic,
 						"source_file": added_name,
 						"do_not_extract": True,
 					})
@@ -198,109 +126,10 @@ with open("./rom/dk64_us.z64", "rb") as fq:
 			})
 
 
-print("[2 / 9] - Generating map files")
-index = 6013 #first unused texture index
-if generate_maps:
-	for map in map_replacement_models:
-		print(" - Generating map file for " + map["map_name"] + ".")
-		if(os.path.exists(map["path_to_model"])):
-			if(os.path.isfile(map["path_to_model"] + "/model.c")):
-				index = generateMap(os.path.abspath(map["path_to_model"]),os.path.abspath(map["output_path"]),map["mesh_name"],map["water_exists"],map["water_planes"],index)
-			else:
-				print(" - Could not find model.c in specified path: "+map["path_to_model"])
-		else:
-			print(" - Could not access specified path: " + map["path_to_model"])
-	
-		#process model and add entry to map_replacements dict
-		replacement = [
-			{
-				"name": map["map_name"],
-				"map_index": map["map_index"],
-				"map_folder": map["output_path"]
-			}
-		]
-		map_replacements += replacement
-	
-	#process all main pointer table asset replacements and put them in file_dict
-	for root, dirs, files in os.walk(r'bin/build_imports'):
-		for file in files:
-			if file.endswith('.txt'):
-				imports = open("bin/build_imports/"+file,"r").read()
-				import_list = eval(imports)
-				file_dict += import_list #merge import txt with file_dict
-else:
-	print(" - Map generation disabled. Set generate_maps to True in build.py to generate map files.")
-
 with open(ROMName, "rb") as fh:
 	print("[3 / 9] - Parsing pointer tables")
 	parsePointerTables(fh)
 	readOverlayOriginalData(fh)
-
-	for x in map_replacements:
-		print(" - Processing map replacement " + x["name"])
-		if os.path.exists(x["map_folder"]):
-			found_geometry = False
-			found_floors = False
-			found_walls = False
-			should_compress_walls = True
-			should_compress_floors = True
-			for y in pointer_tables:
-				if not "encoded_filename" in y:
-					continue
-
-				# Convert decoded_filename to encoded_filename using the encoder function
-				# Eg. exits.json to exits.bin
-				if "encoder" in y and callable(y["encoder"]):
-					if "decoded_filename" in y and os.path.exists(x["map_folder"] + y["decoded_filename"]):
-						y["encoder"](x["map_folder"] + y["decoded_filename"], x["map_folder"] + y["encoded_filename"])
-				
-				if os.path.exists(x["map_folder"] + y["encoded_filename"]):
-					if y["index"] == 1:
-						with open(x["map_folder"] + y["encoded_filename"], "rb") as fg:
-							byte_read = fg.read(10)
-							should_compress_walls = (byte_read[9] & 0x1) != 0
-							should_compress_floors = (byte_read[9] & 0x2) != 0
-						found_geometry = True
-					elif y["index"] == 2:
-						found_walls = True
-					elif y["index"] == 3:
-						found_floors = True
-
-			# Check that all walls|floors|geometry files exist on disk, or that none of them do
-			walls_floors_geometry_valid = (found_geometry == found_walls) and (found_geometry == found_floors)
-
-			if not walls_floors_geometry_valid:
-				print("  - WARNING: In map replacement: " + x["name"])
-				print("    - Need all 3 files present to replace walls, floors, and geometry.")
-				print("    - Only found 1 or 2 of them out of 3. Make sure all 3 exist on disk.")
-				print("    - Will skip replacing walls, floors, and geometry to prevent crashes.")
-
-			for y in pointer_tables:
-				if not "encoded_filename" in y:
-					continue
-
-				if os.path.exists(x["map_folder"] + y["encoded_filename"]):
-					# Special case to prevent crashes with custom level geometry, walls, and floors
-					# Some of the files are compressed in ROM, some are not
-					if y["index"] in [1, 2, 3] and not walls_floors_geometry_valid:
-						continue
-
-					do_not_compress = "do_not_compress" in y and y["do_not_compress"]
-					if y["index"] == 2:
-						do_not_compress = not should_compress_walls
-					elif y["index"] == 3:
-						do_not_compress = not should_compress_floors
-
-					print("  - Found " + x["map_folder"] + y["encoded_filename"])
-					file_dict.append({
-						"name": x["name"] + y["name"],
-						"pointer_table_index": y["index"],
-						"file_index": x["map_index"],
-						"source_file": x["map_folder"] + y["encoded_filename"],
-						"do_not_extract": True,
-						"do_not_compress": do_not_compress,
-						"use_external_gzip": "use_external_gzip" in y and y["use_external_gzip"],
-					})
 
 	print("[4 / 9] - Extracting files from ROM")
 	for x in file_dict:
@@ -428,6 +257,7 @@ with open(newROMName, "r+b") as fh:
 	print("[8 / 9] - Dumping details of all pointer tables to rom/pointer_tables_modified.log")
 	dumpPointerTableDetails("rom/pointer_tables_modified.log", fh)
 
+code_modifications() # Modify the code in ways we deem necessary
 # For compatibility with real hardware, the ROM size needs to be aligned to 0x10 bytes
 with open(newROMName, "r+b") as fh:
     to_add = len(fh.read()) % 0x10
@@ -449,6 +279,9 @@ fixCRC(newROMName)
 
 # Remove temporary .o files
 # shutil.rmtree('obj')
+
+if CLEANUP:
+	shutil.rmtree("./bin")
 
 end_time = time.time()
 with open(newROMName, "rb") as fh:
