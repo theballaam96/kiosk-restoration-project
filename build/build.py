@@ -85,6 +85,8 @@ excluded_maps = in_kiosk + other_exclusions
 with open("./rom/dk64_us.z64", "rb") as fq:
 	us_pointer = 0x101C50
 	limit = 0xC8 # Should be 221, testing early limits for now
+	floors_compressed = [False] * limit
+	walls_compressed = [False] * limit
 	valid_maps = [x for x in list(range(limit)) if x not in excluded_maps]
 	for table in us_tables:
 		fq.seek(us_pointer + (table << 2))
@@ -102,13 +104,18 @@ with open("./rom/dk64_us.z64", "rb") as fq:
 			if file_compressed_size == 8:
 				if not is_gzip:
 					added_name = f"./bin/t{table}_f{indic}.bin"
-					file_dict.append({
+					append_data = {
 						"name": f"Table {table - 1} File {indic}",
 						"pointer_table_index": table - 1,
 						"file_index": indic,
 						"source_file": added_name,
 						"do_not_extract": True,
-					})
+					}
+					if table == 2 and not walls_compressed[indic]:
+						append_data["do_not_compress"] = True
+					if table == 3 and not floors_compressed[indic]:
+						append_data["do_not_compress"] = True
+					file_dict.append(append_data)
 					continue
 			if is_gzip:
 				file_data = zlib.decompress(file_data, (15 + 32))
@@ -116,14 +123,26 @@ with open("./rom/dk64_us.z64", "rb") as fq:
 			with open(file_name, "wb") as fk:
 				fk.write(file_data)
 			if table == 1:
+				with open(file_name, "rb") as fk:
+					fk.seek(9)
+					compression_byte = int.from_bytes(fk.read(1), "big")
+					if (compression_byte & 1) != 0:
+						walls_compressed[map_id] = True
+					if (compression_byte & 2) != 0:
+						floors_compressed[map_id] = True
 				geo_us_to_kiosk(file_name)
-			file_dict.append({
+			append_data = {
 				"name": f"Table {table - 1} File {map_id}",
 				"pointer_table_index": table - 1,
 				"file_index": map_id,
 				"source_file": file_name,
 				"do_not_extract": True,
-			})
+			}
+			if table == 2 and not walls_compressed[map_id]:
+				append_data["do_not_compress"] = True
+			if table == 3 and not floors_compressed[map_id]:
+				append_data["do_not_compress"] = True
+			file_dict.append(append_data)
 
 
 with open(ROMName, "rb") as fh:
