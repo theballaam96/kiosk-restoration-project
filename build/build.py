@@ -8,6 +8,7 @@ import requests
 import zipfile
 from geometry_mapper import geo_us_to_kiosk
 from alter_kiosk_code import code_modifications
+from restore_music import pullSongsFromROM
 
 # DONKEY KONG 64 BUILDER
 # AKA "CRANKY'S LAB"
@@ -277,6 +278,7 @@ with open(newROMName, "r+b") as fh:
 	dumpPointerTableDetails("rom/pointer_tables_modified.log", fh)
 
 code_modifications() # Modify the code in ways we deem necessary
+print(hex(pullSongsFromROM()))
 # For compatibility with real hardware, the ROM size needs to be aligned to 0x10 bytes
 with open(newROMName, "r+b") as fh:
     to_add = len(fh.read()) % 0x10
