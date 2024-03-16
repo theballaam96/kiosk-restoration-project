@@ -17,11 +17,24 @@ def getHi(val: int) -> int:
 def pullSongsFromROM() -> int:
     song_cap = 0x7A
     us_offset = 0x101C50
-    midi_data = []
+    midi_data = [None] * song_cap
+    # First pull data from Kiosk to not overwrite songs which do have data in kiosk
+    with open(newROMName, "r+b") as fh:
+        data_start = 0x15ACB00
+        for x in range(song_cap):
+            fh.seek(data_start + 4 + (8 * x))
+            start = int.from_bytes(fh.read(4), "big")
+            size = int.from_bytes(fh.read(4), "big")
+            if size != 0x1BF: # Song that's used to overwrite a lot of music
+                fh.seek(data_start + start)
+                midi_data[x] = fh.read(size)
+    # Then pull stuff from US that doesn't exist in kiosk
     with open(USROM, "rb") as fh:
         fh.seek(us_offset)
         midi_table = us_offset + int.from_bytes(fh.read(4), "big")
         for x in range(song_cap):
+            if midi_data[x] is not None: # Has no data in Kiosk
+                continue
             fh.seek(midi_table + (x << 2))
             file_start = us_offset + (int.from_bytes(fh.read(4), "big") & 0x7FFFFFFF)
             file_end = us_offset + (int.from_bytes(fh.read(4), "big") & 0x7FFFFFFF)
@@ -31,7 +44,8 @@ def pullSongsFromROM() -> int:
                 continue
             fh.seek(file_start)
             file_data = zlib.decompress(fh.read(file_size), (15 + 32))
-            midi_data.append(file_data)
+            midi_data[x] = file_data
+    # Recalculate the pointer table and re-insert back into kiosk
     total_size = 4 + (song_cap << 3)
     write_start = 0x2000000
     with open(newROMName, "r+b") as fh:
