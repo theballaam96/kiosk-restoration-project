@@ -1,0 +1,6347 @@
+[
+    {
+        "us_texture": 10,
+        "kiosk_closest": 2101,
+        "confidence": 0.562255859375
+    },
+    {
+        "us_texture": 17,
+        "kiosk_closest": 937,
+        "confidence": 0.078125
+    },
+    {
+        "us_texture": 21,
+        "kiosk_closest": 4777,
+        "confidence": 0.2548828125
+    },
+    {
+        "us_texture": 22,
+        "kiosk_closest": 138,
+        "confidence": 0.21875
+    },
+    {
+        "us_texture": 23,
+        "kiosk_closest": 2902,
+        "confidence": 0.0615234375
+    },
+    {
+        "us_texture": 24,
+        "kiosk_closest": 1979,
+        "confidence": 0.125
+    },
+    {
+        "us_texture": 64,
+        "kiosk_closest": 146,
+        "confidence": 0.6161764705882353
+    },
+    {
+        "us_texture": 132,
+        "kiosk_closest": 240,
+        "confidence": 0.53759765625
+    },
+    {
+        "us_texture": 156,
+        "kiosk_closest": 4932,
+        "confidence": 0.276611328125
+    },
+    {
+        "us_texture": 281,
+        "kiosk_closest": 3565,
+        "confidence": 0.188720703125
+    },
+    {
+        "us_texture": 283,
+        "kiosk_closest": 783,
+        "confidence": 0.04736328125
+    },
+    {
+        "us_texture": 284,
+        "kiosk_closest": 4248,
+        "confidence": 0.068359375
+    },
+    {
+        "us_texture": 285,
+        "kiosk_closest": 992,
+        "confidence": 0.0283203125
+    },
+    {
+        "us_texture": 286,
+        "kiosk_closest": 105,
+        "confidence": 0.032958984375
+    },
+    {
+        "us_texture": 289,
+        "kiosk_closest": 4248,
+        "confidence": 0.069580078125
+    },
+    {
+        "us_texture": 290,
+        "kiosk_closest": 105,
+        "confidence": 0.037353515625
+    },
+    {
+        "us_texture": 291,
+        "kiosk_closest": 992,
+        "confidence": 0.031005859375
+    },
+    {
+        "us_texture": 292,
+        "kiosk_closest": 4247,
+        "confidence": 0.06201171875
+    },
+    {
+        "us_texture": 293,
+        "kiosk_closest": 4112,
+        "confidence": 0.03955078125
+    },
+    {
+        "us_texture": 299,
+        "kiosk_closest": 2421,
+        "confidence": 0.14013671875
+    },
+    {
+        "us_texture": 300,
+        "kiosk_closest": 349,
+        "confidence": 0.5102941176470588
+    },
+    {
+        "us_texture": 305,
+        "kiosk_closest": 1147,
+        "confidence": 0.22900390625
+    },
+    {
+        "us_texture": 306,
+        "kiosk_closest": 2404,
+        "confidence": 0.22607421875
+    },
+    {
+        "us_texture": 310,
+        "kiosk_closest": 3191,
+        "confidence": 0.04191176470588235
+    },
+    {
+        "us_texture": 317,
+        "kiosk_closest": 423,
+        "confidence": 0.663330078125
+    },
+    {
+        "us_texture": 323,
+        "kiosk_closest": 1296,
+        "confidence": 0.6224264705882353
+    },
+    {
+        "us_texture": 361,
+        "kiosk_closest": 2300,
+        "confidence": 0.048828125
+    },
+    {
+        "us_texture": 362,
+        "kiosk_closest": 566,
+        "confidence": 0.6875
+    },
+    {
+        "us_texture": 394,
+        "kiosk_closest": 613,
+        "confidence": 0.88134765625
+    },
+    {
+        "us_texture": 395,
+        "kiosk_closest": 614,
+        "confidence": 0.5
+    },
+    {
+        "us_texture": 398,
+        "kiosk_closest": 615,
+        "confidence": 0.4609375
+    },
+    {
+        "us_texture": 399,
+        "kiosk_closest": 616,
+        "confidence": 0.6875
+    },
+    {
+        "us_texture": 401,
+        "kiosk_closest": 618,
+        "confidence": 0.65625
+    },
+    {
+        "us_texture": 416,
+        "kiosk_closest": 1819,
+        "confidence": 0.040808823529411765
+    },
+    {
+        "us_texture": 489,
+        "kiosk_closest": 3024,
+        "confidence": 0.059326171875
+    },
+    {
+        "us_texture": 490,
+        "kiosk_closest": 3018,
+        "confidence": 0.056884765625
+    },
+    {
+        "us_texture": 562,
+        "kiosk_closest": 840,
+        "confidence": 0.12771739130434784
+    },
+    {
+        "us_texture": 626,
+        "kiosk_closest": 2372,
+        "confidence": 0.33984375
+    },
+    {
+        "us_texture": 661,
+        "kiosk_closest": 1081,
+        "confidence": 0.363525390625
+    },
+    {
+        "us_texture": 680,
+        "kiosk_closest": 1221,
+        "confidence": 0.14244186046511628
+    },
+    {
+        "us_texture": 681,
+        "kiosk_closest": 178,
+        "confidence": 0.15625
+    },
+    {
+        "us_texture": 683,
+        "kiosk_closest": 2820,
+        "confidence": 0.09375
+    },
+    {
+        "us_texture": 730,
+        "kiosk_closest": 846,
+        "confidence": 0.13926630434782608
+    },
+    {
+        "us_texture": 731,
+        "kiosk_closest": 622,
+        "confidence": 0.125
+    },
+    {
+        "us_texture": 732,
+        "kiosk_closest": 834,
+        "confidence": 0.11073369565217392
+    },
+    {
+        "us_texture": 733,
+        "kiosk_closest": 1862,
+        "confidence": 0.15625
+    },
+    {
+        "us_texture": 734,
+        "kiosk_closest": 359,
+        "confidence": 0.046691176470588236
+    },
+    {
+        "us_texture": 737,
+        "kiosk_closest": 1861,
+        "confidence": 0.1324728260869565
+    },
+    {
+        "us_texture": 738,
+        "kiosk_closest": 575,
+        "confidence": 0.15625
+    },
+    {
+        "us_texture": 739,
+        "kiosk_closest": 2583,
+        "confidence": 0.068359375
+    },
+    {
+        "us_texture": 740,
+        "kiosk_closest": 2583,
+        "confidence": 0.053955078125
+    },
+    {
+        "us_texture": 741,
+        "kiosk_closest": 1311,
+        "confidence": 0.056884765625
+    },
+    {
+        "us_texture": 742,
+        "kiosk_closest": 1311,
+        "confidence": 0.071533203125
+    },
+    {
+        "us_texture": 743,
+        "kiosk_closest": 834,
+        "confidence": 0.10529891304347826
+    },
+    {
+        "us_texture": 744,
+        "kiosk_closest": 770,
+        "confidence": 0.78125
+    },
+    {
+        "us_texture": 752,
+        "kiosk_closest": 834,
+        "confidence": 0.125
+    },
+    {
+        "us_texture": 753,
+        "kiosk_closest": 780,
+        "confidence": 0.4375
+    },
+    {
+        "us_texture": 819,
+        "kiosk_closest": 3072,
+        "confidence": 0.03786764705882353
+    },
+    {
+        "us_texture": 898,
+        "kiosk_closest": 942,
+        "confidence": 0.21029411764705883
+    },
+    {
+        "us_texture": 899,
+        "kiosk_closest": 3478,
+        "confidence": 0.515625
+    },
+    {
+        "us_texture": 900,
+        "kiosk_closest": 3479,
+        "confidence": 0.2529296875
+    },
+    {
+        "us_texture": 913,
+        "kiosk_closest": 207,
+        "confidence": 0.84619140625
+    },
+    {
+        "us_texture": 944,
+        "kiosk_closest": 4922,
+        "confidence": 0.337646484375
+    },
+    {
+        "us_texture": 945,
+        "kiosk_closest": 2644,
+        "confidence": 0.135009765625
+    },
+    {
+        "us_texture": 946,
+        "kiosk_closest": 1146,
+        "confidence": 0.05908203125
+    },
+    {
+        "us_texture": 990,
+        "kiosk_closest": 4248,
+        "confidence": 0.187255859375
+    },
+    {
+        "us_texture": 991,
+        "kiosk_closest": 3627,
+        "confidence": 0.10791015625
+    },
+    {
+        "us_texture": 992,
+        "kiosk_closest": 5896,
+        "confidence": 0.4052734375
+    },
+    {
+        "us_texture": 993,
+        "kiosk_closest": 710,
+        "confidence": 0.15625
+    },
+    {
+        "us_texture": 994,
+        "kiosk_closest": 4932,
+        "confidence": 0.138427734375
+    },
+    {
+        "us_texture": 995,
+        "kiosk_closest": 4746,
+        "confidence": 0.08984375
+    },
+    {
+        "us_texture": 996,
+        "kiosk_closest": 2433,
+        "confidence": 0.074462890625
+    },
+    {
+        "us_texture": 997,
+        "kiosk_closest": 2487,
+        "confidence": 0.060302734375
+    },
+    {
+        "us_texture": 998,
+        "kiosk_closest": 4746,
+        "confidence": 0.066162109375
+    },
+    {
+        "us_texture": 999,
+        "kiosk_closest": 2396,
+        "confidence": 0.117919921875
+    },
+    {
+        "us_texture": 1000,
+        "kiosk_closest": 4746,
+        "confidence": 0.057861328125
+    },
+    {
+        "us_texture": 1001,
+        "kiosk_closest": 4932,
+        "confidence": 0.1572265625
+    },
+    {
+        "us_texture": 1002,
+        "kiosk_closest": 4746,
+        "confidence": 0.12353515625
+    },
+    {
+        "us_texture": 1003,
+        "kiosk_closest": 2405,
+        "confidence": 0.087890625
+    },
+    {
+        "us_texture": 1005,
+        "kiosk_closest": 3632,
+        "confidence": 0.17296511627906977
+    },
+    {
+        "us_texture": 1006,
+        "kiosk_closest": 772,
+        "confidence": 0.125
+    },
+    {
+        "us_texture": 1007,
+        "kiosk_closest": 3632,
+        "confidence": 0.17659883720930233
+    },
+    {
+        "us_texture": 1008,
+        "kiosk_closest": 378,
+        "confidence": 0.125
+    },
+    {
+        "us_texture": 1009,
+        "kiosk_closest": 144,
+        "confidence": 0.030029296875
+    },
+    {
+        "us_texture": 1010,
+        "kiosk_closest": 2633,
+        "confidence": 0.059814453125
+    },
+    {
+        "us_texture": 1021,
+        "kiosk_closest": 1173,
+        "confidence": 0.08984375
+    },
+    {
+        "us_texture": 1033,
+        "kiosk_closest": 1187,
+        "confidence": 0.063232421875
+    },
+    {
+        "us_texture": 1060,
+        "kiosk_closest": 4476,
+        "confidence": 0.598388671875
+    },
+    {
+        "us_texture": 1073,
+        "kiosk_closest": 1215,
+        "confidence": 0.10247093023255814
+    },
+    {
+        "us_texture": 1074,
+        "kiosk_closest": 2769,
+        "confidence": 0.125
+    },
+    {
+        "us_texture": 1086,
+        "kiosk_closest": 3076,
+        "confidence": 0.015441176470588236
+    },
+    {
+        "us_texture": 1097,
+        "kiosk_closest": 1278,
+        "confidence": 0.37941176470588234
+    },
+    {
+        "us_texture": 1099,
+        "kiosk_closest": 1110,
+        "confidence": 0.03271484375
+    },
+    {
+        "us_texture": 1101,
+        "kiosk_closest": 4112,
+        "confidence": 0.054931640625
+    },
+    {
+        "us_texture": 1102,
+        "kiosk_closest": 4796,
+        "confidence": 0.337890625
+    },
+    {
+        "us_texture": 1103,
+        "kiosk_closest": 3565,
+        "confidence": 0.044677734375
+    },
+    {
+        "us_texture": 1104,
+        "kiosk_closest": 729,
+        "confidence": 0.047119140625
+    },
+    {
+        "us_texture": 1105,
+        "kiosk_closest": 3632,
+        "confidence": 0.1504360465116279
+    },
+    {
+        "us_texture": 1106,
+        "kiosk_closest": 855,
+        "confidence": 0.1875
+    },
+    {
+        "us_texture": 1107,
+        "kiosk_closest": 2852,
+        "confidence": 0.2275735294117647
+    },
+    {
+        "us_texture": 1108,
+        "kiosk_closest": 3067,
+        "confidence": 0.061767578125
+    },
+    {
+        "us_texture": 1109,
+        "kiosk_closest": 4922,
+        "confidence": 0.748291015625
+    },
+    {
+        "us_texture": 1121,
+        "kiosk_closest": 1296,
+        "confidence": 0.11948529411764706
+    },
+    {
+        "us_texture": 1122,
+        "kiosk_closest": 2738,
+        "confidence": 0.10625
+    },
+    {
+        "us_texture": 1123,
+        "kiosk_closest": 1296,
+        "confidence": 0.21176470588235294
+    },
+    {
+        "us_texture": 1124,
+        "kiosk_closest": 1296,
+        "confidence": 0.1386029411764706
+    },
+    {
+        "us_texture": 1125,
+        "kiosk_closest": 2736,
+        "confidence": 0.13970588235294118
+    },
+    {
+        "us_texture": 1126,
+        "kiosk_closest": 2736,
+        "confidence": 0.1900735294117647
+    },
+    {
+        "us_texture": 1127,
+        "kiosk_closest": 1296,
+        "confidence": 0.10073529411764706
+    },
+    {
+        "us_texture": 1128,
+        "kiosk_closest": 1296,
+        "confidence": 0.1
+    },
+    {
+        "us_texture": 1129,
+        "kiosk_closest": 2738,
+        "confidence": 0.1448529411764706
+    },
+    {
+        "us_texture": 1130,
+        "kiosk_closest": 2736,
+        "confidence": 0.12022058823529412
+    },
+    {
+        "us_texture": 1131,
+        "kiosk_closest": 2736,
+        "confidence": 0.16029411764705884
+    },
+    {
+        "us_texture": 1132,
+        "kiosk_closest": 1804,
+        "confidence": 0.13455882352941176
+    },
+    {
+        "us_texture": 1133,
+        "kiosk_closest": 1296,
+        "confidence": 0.0838235294117647
+    },
+    {
+        "us_texture": 1134,
+        "kiosk_closest": 1339,
+        "confidence": 0.06911764705882353
+    },
+    {
+        "us_texture": 1135,
+        "kiosk_closest": 1296,
+        "confidence": 0.10441176470588236
+    },
+    {
+        "us_texture": 1136,
+        "kiosk_closest": 2740,
+        "confidence": 0.08419117647058824
+    },
+    {
+        "us_texture": 1137,
+        "kiosk_closest": 1346,
+        "confidence": 0.119140625
+    },
+    {
+        "us_texture": 1138,
+        "kiosk_closest": 1354,
+        "confidence": 0.0634765625
+    },
+    {
+        "us_texture": 1139,
+        "kiosk_closest": 1326,
+        "confidence": 0.082275390625
+    },
+    {
+        "us_texture": 1140,
+        "kiosk_closest": 1354,
+        "confidence": 0.098388671875
+    },
+    {
+        "us_texture": 1215,
+        "kiosk_closest": 2853,
+        "confidence": 0.07666015625
+    },
+    {
+        "us_texture": 1216,
+        "kiosk_closest": 2853,
+        "confidence": 0.086181640625
+    },
+    {
+        "us_texture": 1217,
+        "kiosk_closest": 1562,
+        "confidence": 0.099365234375
+    },
+    {
+        "us_texture": 1218,
+        "kiosk_closest": 2746,
+        "confidence": 0.07763671875
+    },
+    {
+        "us_texture": 1219,
+        "kiosk_closest": 2853,
+        "confidence": 0.088134765625
+    },
+    {
+        "us_texture": 1220,
+        "kiosk_closest": 3576,
+        "confidence": 0.151611328125
+    },
+    {
+        "us_texture": 1221,
+        "kiosk_closest": 3565,
+        "confidence": 0.111328125
+    },
+    {
+        "us_texture": 1222,
+        "kiosk_closest": 3576,
+        "confidence": 0.11328125
+    },
+    {
+        "us_texture": 1246,
+        "kiosk_closest": 4922,
+        "confidence": 0.650390625
+    },
+    {
+        "us_texture": 1247,
+        "kiosk_closest": 189,
+        "confidence": 0.33125
+    },
+    {
+        "us_texture": 1249,
+        "kiosk_closest": 2857,
+        "confidence": 0.05698529411764706
+    },
+    {
+        "us_texture": 1250,
+        "kiosk_closest": 3132,
+        "confidence": 0.03823529411764706
+    },
+    {
+        "us_texture": 1251,
+        "kiosk_closest": 3132,
+        "confidence": 0.03823529411764706
+    },
+    {
+        "us_texture": 1253,
+        "kiosk_closest": 2736,
+        "confidence": 0.21875
+    },
+    {
+        "us_texture": 1254,
+        "kiosk_closest": 2736,
+        "confidence": 0.20698529411764705
+    },
+    {
+        "us_texture": 1255,
+        "kiosk_closest": 908,
+        "confidence": 0.03260869565217391
+    },
+    {
+        "us_texture": 1256,
+        "kiosk_closest": 2693,
+        "confidence": 0.5625
+    },
+    {
+        "us_texture": 1257,
+        "kiosk_closest": 3191,
+        "confidence": 0.03897058823529412
+    },
+    {
+        "us_texture": 1265,
+        "kiosk_closest": 636,
+        "confidence": 0.03455882352941177
+    },
+    {
+        "us_texture": 1266,
+        "kiosk_closest": 3132,
+        "confidence": 0.03676470588235294
+    },
+    {
+        "us_texture": 1269,
+        "kiosk_closest": 3154,
+        "confidence": 0.03455882352941177
+    },
+    {
+        "us_texture": 1274,
+        "kiosk_closest": 3155,
+        "confidence": 0.047058823529411764
+    },
+    {
+        "us_texture": 1275,
+        "kiosk_closest": 2666,
+        "confidence": 0.05919117647058823
+    },
+    {
+        "us_texture": 1277,
+        "kiosk_closest": 1900,
+        "confidence": 0.12451171875
+    },
+    {
+        "us_texture": 1278,
+        "kiosk_closest": 1901,
+        "confidence": 0.25
+    },
+    {
+        "us_texture": 1279,
+        "kiosk_closest": 8,
+        "confidence": 0.028676470588235293
+    },
+    {
+        "us_texture": 1280,
+        "kiosk_closest": 8,
+        "confidence": 0.026470588235294117
+    },
+    {
+        "us_texture": 1281,
+        "kiosk_closest": 8,
+        "confidence": 0.03051470588235294
+    },
+    {
+        "us_texture": 1283,
+        "kiosk_closest": 636,
+        "confidence": 0.034926470588235295
+    },
+    {
+        "us_texture": 1284,
+        "kiosk_closest": 77,
+        "confidence": 0.036397058823529414
+    },
+    {
+        "us_texture": 1285,
+        "kiosk_closest": 2736,
+        "confidence": 0.21507352941176472
+    },
+    {
+        "us_texture": 1290,
+        "kiosk_closest": 1205,
+        "confidence": 0.04338235294117647
+    },
+    {
+        "us_texture": 1291,
+        "kiosk_closest": 1391,
+        "confidence": 0.333740234375
+    },
+    {
+        "us_texture": 1293,
+        "kiosk_closest": 4796,
+        "confidence": 0.70703125
+    },
+    {
+        "us_texture": 1294,
+        "kiosk_closest": 3155,
+        "confidence": 0.3301470588235294
+    },
+    {
+        "us_texture": 1298,
+        "kiosk_closest": 77,
+        "confidence": 0.03125
+    },
+    {
+        "us_texture": 1304,
+        "kiosk_closest": 733,
+        "confidence": 0.03051470588235294
+    },
+    {
+        "us_texture": 1305,
+        "kiosk_closest": 1819,
+        "confidence": 0.047058823529411764
+    },
+    {
+        "us_texture": 1306,
+        "kiosk_closest": 1148,
+        "confidence": 0.04154411764705882
+    },
+    {
+        "us_texture": 1307,
+        "kiosk_closest": 3303,
+        "confidence": 0.04191176470588235
+    },
+    {
+        "us_texture": 1308,
+        "kiosk_closest": 1296,
+        "confidence": 0.04852941176470588
+    },
+    {
+        "us_texture": 1313,
+        "kiosk_closest": 665,
+        "confidence": 0.0751953125
+    },
+    {
+        "us_texture": 1314,
+        "kiosk_closest": 2765,
+        "confidence": 0.09375
+    },
+    {
+        "us_texture": 1315,
+        "kiosk_closest": 617,
+        "confidence": 0.189453125
+    },
+    {
+        "us_texture": 1316,
+        "kiosk_closest": 138,
+        "confidence": 0.125
+    },
+    {
+        "us_texture": 1317,
+        "kiosk_closest": 6039,
+        "confidence": 0.25390625
+    },
+    {
+        "us_texture": 1318,
+        "kiosk_closest": 268,
+        "confidence": 0.09375
+    },
+    {
+        "us_texture": 1319,
+        "kiosk_closest": 6045,
+        "confidence": 0.11328125
+    },
+    {
+        "us_texture": 1320,
+        "kiosk_closest": 302,
+        "confidence": 0.15625
+    },
+    {
+        "us_texture": 1321,
+        "kiosk_closest": 6045,
+        "confidence": 0.09814453125
+    },
+    {
+        "us_texture": 1322,
+        "kiosk_closest": 2077,
+        "confidence": 0.15625
+    },
+    {
+        "us_texture": 1377,
+        "kiosk_closest": 4684,
+        "confidence": 0.032470703125
+    },
+    {
+        "us_texture": 1378,
+        "kiosk_closest": 4666,
+        "confidence": 0.040771484375
+    },
+    {
+        "us_texture": 1379,
+        "kiosk_closest": 4657,
+        "confidence": 0.0322265625
+    },
+    {
+        "us_texture": 1380,
+        "kiosk_closest": 3110,
+        "confidence": 0.0419921875
+    },
+    {
+        "us_texture": 1394,
+        "kiosk_closest": 1689,
+        "confidence": 0.05661764705882353
+    },
+    {
+        "us_texture": 1398,
+        "kiosk_closest": 1455,
+        "confidence": 0.510009765625
+    },
+    {
+        "us_texture": 1400,
+        "kiosk_closest": 1456,
+        "confidence": 0.471923828125
+    },
+    {
+        "us_texture": 1404,
+        "kiosk_closest": 356,
+        "confidence": 0.6227941176470588
+    },
+    {
+        "us_texture": 1407,
+        "kiosk_closest": 525,
+        "confidence": 0.740234375
+    },
+    {
+        "us_texture": 1408,
+        "kiosk_closest": 1330,
+        "confidence": 0.06787109375
+    },
+    {
+        "us_texture": 1409,
+        "kiosk_closest": 2746,
+        "confidence": 0.066162109375
+    },
+    {
+        "us_texture": 1410,
+        "kiosk_closest": 2390,
+        "confidence": 0.10205078125
+    },
+    {
+        "us_texture": 1411,
+        "kiosk_closest": 1321,
+        "confidence": 0.05712890625
+    },
+    {
+        "us_texture": 1412,
+        "kiosk_closest": 2833,
+        "confidence": 0.3134765625
+    },
+    {
+        "us_texture": 1413,
+        "kiosk_closest": 2918,
+        "confidence": 0.243408203125
+    },
+    {
+        "us_texture": 1414,
+        "kiosk_closest": 6098,
+        "confidence": 0.041259765625
+    },
+    {
+        "us_texture": 1423,
+        "kiosk_closest": 842,
+        "confidence": 0.11548913043478261
+    },
+    {
+        "us_texture": 1424,
+        "kiosk_closest": 1408,
+        "confidence": 0.125
+    },
+    {
+        "us_texture": 1434,
+        "kiosk_closest": 2742,
+        "confidence": 0.10955882352941176
+    },
+    {
+        "us_texture": 1436,
+        "kiosk_closest": 828,
+        "confidence": 0.10597826086956522
+    },
+    {
+        "us_texture": 1437,
+        "kiosk_closest": 2113,
+        "confidence": 0.1875
+    },
+    {
+        "us_texture": 1438,
+        "kiosk_closest": 1171,
+        "confidence": 0.11616847826086957
+    },
+    {
+        "us_texture": 1439,
+        "kiosk_closest": 3308,
+        "confidence": 0.15625
+    },
+    {
+        "us_texture": 1441,
+        "kiosk_closest": 3305,
+        "confidence": 0.091796875
+    },
+    {
+        "us_texture": 1442,
+        "kiosk_closest": 346,
+        "confidence": 0.125
+    },
+    {
+        "us_texture": 1443,
+        "kiosk_closest": 0,
+        "confidence": 0
+    },
+    {
+        "us_texture": 1444,
+        "kiosk_closest": 3632,
+        "confidence": 0.4309593023255814
+    },
+    {
+        "us_texture": 1445,
+        "kiosk_closest": 1946,
+        "confidence": 0.25
+    },
+    {
+        "us_texture": 1458,
+        "kiosk_closest": 824,
+        "confidence": 0.13451086956521738
+    },
+    {
+        "us_texture": 1459,
+        "kiosk_closest": 3274,
+        "confidence": 0.15625
+    },
+    {
+        "us_texture": 1460,
+        "kiosk_closest": 828,
+        "confidence": 0.25747282608695654
+    },
+    {
+        "us_texture": 1461,
+        "kiosk_closest": 3328,
+        "confidence": 0.15625
+    },
+    {
+        "us_texture": 1468,
+        "kiosk_closest": 1521,
+        "confidence": 0.6875
+    },
+    {
+        "us_texture": 1469,
+        "kiosk_closest": 1522,
+        "confidence": 0.6875
+    },
+    {
+        "us_texture": 1470,
+        "kiosk_closest": 1517,
+        "confidence": 0.8203125
+    },
+    {
+        "us_texture": 1471,
+        "kiosk_closest": 1518,
+        "confidence": 0.59375
+    },
+    {
+        "us_texture": 1475,
+        "kiosk_closest": 2000,
+        "confidence": 0.44580078125
+    },
+    {
+        "us_texture": 1476,
+        "kiosk_closest": 2000,
+        "confidence": 0.3037109375
+    },
+    {
+        "us_texture": 1478,
+        "kiosk_closest": 1524,
+        "confidence": 0.3498641304347826
+    },
+    {
+        "us_texture": 1479,
+        "kiosk_closest": 178,
+        "confidence": 0.125
+    },
+    {
+        "us_texture": 1480,
+        "kiosk_closest": 2006,
+        "confidence": 0.659912109375
+    },
+    {
+        "us_texture": 1521,
+        "kiosk_closest": 1562,
+        "confidence": 0.787353515625
+    },
+    {
+        "us_texture": 1533,
+        "kiosk_closest": 1580,
+        "confidence": 0.25048828125
+    },
+    {
+        "us_texture": 1534,
+        "kiosk_closest": 515,
+        "confidence": 0.15625
+    },
+    {
+        "us_texture": 1537,
+        "kiosk_closest": 1588,
+        "confidence": 0.533203125
+    },
+    {
+        "us_texture": 1538,
+        "kiosk_closest": 3274,
+        "confidence": 0.15625
+    },
+    {
+        "us_texture": 1539,
+        "kiosk_closest": 1272,
+        "confidence": 0.08823529411764706
+    },
+    {
+        "us_texture": 1544,
+        "kiosk_closest": 3140,
+        "confidence": 0.1240234375
+    },
+    {
+        "us_texture": 1545,
+        "kiosk_closest": 1614,
+        "confidence": 0.13179347826086957
+    },
+    {
+        "us_texture": 1546,
+        "kiosk_closest": 2065,
+        "confidence": 0.15625
+    },
+    {
+        "us_texture": 1560,
+        "kiosk_closest": 1663,
+        "confidence": 0.10869565217391304
+    },
+    {
+        "us_texture": 1561,
+        "kiosk_closest": 2065,
+        "confidence": 0.21875
+    },
+    {
+        "us_texture": 1577,
+        "kiosk_closest": 3432,
+        "confidence": 0.13134765625
+    },
+    {
+        "us_texture": 1578,
+        "kiosk_closest": 1496,
+        "confidence": 0.15625
+    },
+    {
+        "us_texture": 1579,
+        "kiosk_closest": 3140,
+        "confidence": 0.17138671875
+    },
+    {
+        "us_texture": 1580,
+        "kiosk_closest": 607,
+        "confidence": 0.15625
+    },
+    {
+        "us_texture": 1581,
+        "kiosk_closest": 1557,
+        "confidence": 0.12060546875
+    },
+    {
+        "us_texture": 1582,
+        "kiosk_closest": 371,
+        "confidence": 0.125
+    },
+    {
+        "us_texture": 1583,
+        "kiosk_closest": 2465,
+        "confidence": 0.07080078125
+    },
+    {
+        "us_texture": 1584,
+        "kiosk_closest": 19,
+        "confidence": 0.125
+    },
+    {
+        "us_texture": 1589,
+        "kiosk_closest": 2394,
+        "confidence": 0.890380859375
+    },
+    {
+        "us_texture": 1591,
+        "kiosk_closest": 2736,
+        "confidence": 0.5235294117647059
+    },
+    {
+        "us_texture": 1593,
+        "kiosk_closest": 189,
+        "confidence": 0.3547794117647059
+    },
+    {
+        "us_texture": 1594,
+        "kiosk_closest": 189,
+        "confidence": 0.3694852941176471
+    },
+    {
+        "us_texture": 1595,
+        "kiosk_closest": 189,
+        "confidence": 0.44926470588235295
+    },
+    {
+        "us_texture": 1596,
+        "kiosk_closest": 189,
+        "confidence": 0.4786764705882353
+    },
+    {
+        "us_texture": 1597,
+        "kiosk_closest": 189,
+        "confidence": 0.5231617647058824
+    },
+    {
+        "us_texture": 1598,
+        "kiosk_closest": 189,
+        "confidence": 0.5488970588235295
+    },
+    {
+        "us_texture": 1599,
+        "kiosk_closest": 189,
+        "confidence": 0.4
+    },
+    {
+        "us_texture": 1600,
+        "kiosk_closest": 189,
+        "confidence": 0.3735294117647059
+    },
+    {
+        "us_texture": 1601,
+        "kiosk_closest": 1685,
+        "confidence": 0.154296875
+    },
+    {
+        "us_texture": 1602,
+        "kiosk_closest": 4248,
+        "confidence": 0.36572265625
+    },
+    {
+        "us_texture": 1603,
+        "kiosk_closest": 4112,
+        "confidence": 0.1728515625
+    },
+    {
+        "us_texture": 1604,
+        "kiosk_closest": 2832,
+        "confidence": 0.0712890625
+    },
+    {
+        "us_texture": 1605,
+        "kiosk_closest": 4932,
+        "confidence": 0.078125
+    },
+    {
+        "us_texture": 1606,
+        "kiosk_closest": 3576,
+        "confidence": 0.224853515625
+    },
+    {
+        "us_texture": 1607,
+        "kiosk_closest": 3565,
+        "confidence": 0.134765625
+    },
+    {
+        "us_texture": 1608,
+        "kiosk_closest": 1230,
+        "confidence": 0.1181640625
+    },
+    {
+        "us_texture": 1609,
+        "kiosk_closest": 3576,
+        "confidence": 0.46435546875
+    },
+    {
+        "us_texture": 1631,
+        "kiosk_closest": 1580,
+        "confidence": 0.26904296875
+    },
+    {
+        "us_texture": 1632,
+        "kiosk_closest": 1581,
+        "confidence": 0.21875
+    },
+    {
+        "us_texture": 1633,
+        "kiosk_closest": 1580,
+        "confidence": 0.36474609375
+    },
+    {
+        "us_texture": 1634,
+        "kiosk_closest": 1581,
+        "confidence": 0.53125
+    },
+    {
+        "us_texture": 1635,
+        "kiosk_closest": 1580,
+        "confidence": 0.41943359375
+    },
+    {
+        "us_texture": 1636,
+        "kiosk_closest": 1581,
+        "confidence": 0.5625
+    },
+    {
+        "us_texture": 1637,
+        "kiosk_closest": 1148,
+        "confidence": 0.05588235294117647
+    },
+    {
+        "us_texture": 1638,
+        "kiosk_closest": 1296,
+        "confidence": 0.6158088235294118
+    },
+    {
+        "us_texture": 1639,
+        "kiosk_closest": 1297,
+        "confidence": 0.42463235294117646
+    },
+    {
+        "us_texture": 1640,
+        "kiosk_closest": 465,
+        "confidence": 0.17333984375
+    },
+    {
+        "us_texture": 1641,
+        "kiosk_closest": 466,
+        "confidence": 0.40625
+    },
+    {
+        "us_texture": 1642,
+        "kiosk_closest": 452,
+        "confidence": 0.1220703125
+    },
+    {
+        "us_texture": 1643,
+        "kiosk_closest": 453,
+        "confidence": 0.28125
+    },
+    {
+        "us_texture": 1644,
+        "kiosk_closest": 6047,
+        "confidence": 0.0771484375
+    },
+    {
+        "us_texture": 1645,
+        "kiosk_closest": 464,
+        "confidence": 0.15625
+    },
+    {
+        "us_texture": 1646,
+        "kiosk_closest": 1706,
+        "confidence": 0.14338235294117646
+    },
+    {
+        "us_texture": 1647,
+        "kiosk_closest": 1706,
+        "confidence": 0.1264705882352941
+    },
+    {
+        "us_texture": 1654,
+        "kiosk_closest": 3110,
+        "confidence": 0.05615234375
+    },
+    {
+        "us_texture": 1656,
+        "kiosk_closest": 218,
+        "confidence": 0.053955078125
+    },
+    {
+        "us_texture": 1682,
+        "kiosk_closest": 210,
+        "confidence": 0.008088235294117648
+    },
+    {
+        "us_texture": 1683,
+        "kiosk_closest": 47,
+        "confidence": 0.05588235294117647
+    },
+    {
+        "us_texture": 1684,
+        "kiosk_closest": 1483,
+        "confidence": 0.0125
+    },
+    {
+        "us_texture": 1685,
+        "kiosk_closest": 4657,
+        "confidence": 0.141357421875
+    },
+    {
+        "us_texture": 1686,
+        "kiosk_closest": 1298,
+        "confidence": 0.13525390625
+    },
+    {
+        "us_texture": 1687,
+        "kiosk_closest": 421,
+        "confidence": 0.8422794117647059
+    },
+    {
+        "us_texture": 1698,
+        "kiosk_closest": 4869,
+        "confidence": 0.489013671875
+    },
+    {
+        "us_texture": 1699,
+        "kiosk_closest": 4867,
+        "confidence": 0.545166015625
+    },
+    {
+        "us_texture": 1700,
+        "kiosk_closest": 4884,
+        "confidence": 0.316162109375
+    },
+    {
+        "us_texture": 1701,
+        "kiosk_closest": 4878,
+        "confidence": 0.412353515625
+    },
+    {
+        "us_texture": 1702,
+        "kiosk_closest": 2936,
+        "confidence": 0.068359375
+    },
+    {
+        "us_texture": 1703,
+        "kiosk_closest": 783,
+        "confidence": 0.134521484375
+    },
+    {
+        "us_texture": 1704,
+        "kiosk_closest": 2833,
+        "confidence": 0.100830078125
+    },
+    {
+        "us_texture": 1705,
+        "kiosk_closest": 2916,
+        "confidence": 0.08642578125
+    },
+    {
+        "us_texture": 1706,
+        "kiosk_closest": 2744,
+        "confidence": 0.09521484375
+    },
+    {
+        "us_texture": 1707,
+        "kiosk_closest": 2917,
+        "confidence": 0.077880859375
+    },
+    {
+        "us_texture": 1708,
+        "kiosk_closest": 2918,
+        "confidence": 0.04833984375
+    },
+    {
+        "us_texture": 1709,
+        "kiosk_closest": 2916,
+        "confidence": 0.093505859375
+    },
+    {
+        "us_texture": 1710,
+        "kiosk_closest": 3576,
+        "confidence": 0.115478515625
+    },
+    {
+        "us_texture": 1711,
+        "kiosk_closest": 1321,
+        "confidence": 0.052490234375
+    },
+    {
+        "us_texture": 1712,
+        "kiosk_closest": 3565,
+        "confidence": 0.068359375
+    },
+    {
+        "us_texture": 1717,
+        "kiosk_closest": 2403,
+        "confidence": 0.18896484375
+    },
+    {
+        "us_texture": 1718,
+        "kiosk_closest": 2537,
+        "confidence": 0.039794921875
+    },
+    {
+        "us_texture": 1719,
+        "kiosk_closest": 2403,
+        "confidence": 0.17236328125
+    },
+    {
+        "us_texture": 1720,
+        "kiosk_closest": 3576,
+        "confidence": 0.09375
+    },
+    {
+        "us_texture": 1721,
+        "kiosk_closest": 3576,
+        "confidence": 0.072021484375
+    },
+    {
+        "us_texture": 1722,
+        "kiosk_closest": 2403,
+        "confidence": 0.13330078125
+    },
+    {
+        "us_texture": 1723,
+        "kiosk_closest": 2400,
+        "confidence": 0.060302734375
+    },
+    {
+        "us_texture": 1724,
+        "kiosk_closest": 2833,
+        "confidence": 0.067138671875
+    },
+    {
+        "us_texture": 1725,
+        "kiosk_closest": 1007,
+        "confidence": 0.04736328125
+    },
+    {
+        "us_texture": 1726,
+        "kiosk_closest": 2497,
+        "confidence": 0.057373046875
+    },
+    {
+        "us_texture": 1727,
+        "kiosk_closest": 1147,
+        "confidence": 0.06298828125
+    },
+    {
+        "us_texture": 1728,
+        "kiosk_closest": 3565,
+        "confidence": 0.093505859375
+    },
+    {
+        "us_texture": 1729,
+        "kiosk_closest": 2848,
+        "confidence": 0.05810546875
+    },
+    {
+        "us_texture": 1732,
+        "kiosk_closest": 2403,
+        "confidence": 0.210693359375
+    },
+    {
+        "us_texture": 1733,
+        "kiosk_closest": 2497,
+        "confidence": 0.10791015625
+    },
+    {
+        "us_texture": 1734,
+        "kiosk_closest": 3110,
+        "confidence": 0.056884765625
+    },
+    {
+        "us_texture": 1735,
+        "kiosk_closest": 4247,
+        "confidence": 0.08447265625
+    },
+    {
+        "us_texture": 1742,
+        "kiosk_closest": 1804,
+        "confidence": 0.5297794117647059
+    },
+    {
+        "us_texture": 1744,
+        "kiosk_closest": 1803,
+        "confidence": 0.5102941176470588
+    },
+    {
+        "us_texture": 1762,
+        "kiosk_closest": 3293,
+        "confidence": 0.19921875
+    },
+    {
+        "us_texture": 1763,
+        "kiosk_closest": 247,
+        "confidence": 0.15625
+    },
+    {
+        "us_texture": 1764,
+        "kiosk_closest": 3295,
+        "confidence": 0.20654296875
+    },
+    {
+        "us_texture": 1765,
+        "kiosk_closest": 2098,
+        "confidence": 0.1875
+    },
+    {
+        "us_texture": 1766,
+        "kiosk_closest": 1004,
+        "confidence": 0.1962890625
+    },
+    {
+        "us_texture": 1767,
+        "kiosk_closest": 1979,
+        "confidence": 0.1875
+    },
+    {
+        "us_texture": 1768,
+        "kiosk_closest": 1531,
+        "confidence": 0.2001953125
+    },
+    {
+        "us_texture": 1769,
+        "kiosk_closest": 27,
+        "confidence": 0.1875
+    },
+    {
+        "us_texture": 1772,
+        "kiosk_closest": 1825,
+        "confidence": 0.13916015625
+    },
+    {
+        "us_texture": 1773,
+        "kiosk_closest": 1826,
+        "confidence": 0.15625
+    },
+    {
+        "us_texture": 1824,
+        "kiosk_closest": 4922,
+        "confidence": 0.449951171875
+    },
+    {
+        "us_texture": 1825,
+        "kiosk_closest": 4867,
+        "confidence": 0.387451171875
+    },
+    {
+        "us_texture": 1826,
+        "kiosk_closest": 4849,
+        "confidence": 0.464599609375
+    },
+    {
+        "us_texture": 1827,
+        "kiosk_closest": 4922,
+        "confidence": 0.42529296875
+    },
+    {
+        "us_texture": 1829,
+        "kiosk_closest": 2385,
+        "confidence": 0.063232421875
+    },
+    {
+        "us_texture": 1830,
+        "kiosk_closest": 1336,
+        "confidence": 0.06201171875
+    },
+    {
+        "us_texture": 1831,
+        "kiosk_closest": 1562,
+        "confidence": 0.057861328125
+    },
+    {
+        "us_texture": 1857,
+        "kiosk_closest": 1957,
+        "confidence": 0.03759765625
+    },
+    {
+        "us_texture": 1863,
+        "kiosk_closest": 1963,
+        "confidence": 0.86328125
+    },
+    {
+        "us_texture": 1867,
+        "kiosk_closest": 1967,
+        "confidence": 0.6171875
+    },
+    {
+        "us_texture": 1870,
+        "kiosk_closest": 1970,
+        "confidence": 0.736572265625
+    },
+    {
+        "us_texture": 1871,
+        "kiosk_closest": 1971,
+        "confidence": 0.802001953125
+    },
+    {
+        "us_texture": 1874,
+        "kiosk_closest": 1974,
+        "confidence": 0.80615234375
+    },
+    {
+        "us_texture": 1902,
+        "kiosk_closest": 3024,
+        "confidence": 0.045654296875
+    },
+    {
+        "us_texture": 1928,
+        "kiosk_closest": 2027,
+        "confidence": 0.8264705882352941
+    },
+    {
+        "us_texture": 1975,
+        "kiosk_closest": 2079,
+        "confidence": 0.04215116279069767
+    },
+    {
+        "us_texture": 1976,
+        "kiosk_closest": 871,
+        "confidence": 0.15625
+    },
+    {
+        "us_texture": 1992,
+        "kiosk_closest": 3266,
+        "confidence": 0.38818359375
+    },
+    {
+        "us_texture": 1993,
+        "kiosk_closest": 1789,
+        "confidence": 0.15625
+    },
+    {
+        "us_texture": 1995,
+        "kiosk_closest": 2942,
+        "confidence": 0.359375
+    },
+    {
+        "us_texture": 2006,
+        "kiosk_closest": 826,
+        "confidence": 0.14605978260869565
+    },
+    {
+        "us_texture": 2007,
+        "kiosk_closest": 3417,
+        "confidence": 0.15625
+    },
+    {
+        "us_texture": 2008,
+        "kiosk_closest": 665,
+        "confidence": 0.06005859375
+    },
+    {
+        "us_texture": 2009,
+        "kiosk_closest": 1765,
+        "confidence": 0.09375
+    },
+    {
+        "us_texture": 2010,
+        "kiosk_closest": 617,
+        "confidence": 0.130859375
+    },
+    {
+        "us_texture": 2011,
+        "kiosk_closest": 1518,
+        "confidence": 0.09375
+    },
+    {
+        "us_texture": 2012,
+        "kiosk_closest": 1933,
+        "confidence": 0.193359375
+    },
+    {
+        "us_texture": 2013,
+        "kiosk_closest": 1412,
+        "confidence": 0.125
+    },
+    {
+        "us_texture": 2014,
+        "kiosk_closest": 3299,
+        "confidence": 0.16162109375
+    },
+    {
+        "us_texture": 2015,
+        "kiosk_closest": 2105,
+        "confidence": 0.1875
+    },
+    {
+        "us_texture": 2016,
+        "kiosk_closest": 1706,
+        "confidence": 0.1400735294117647
+    },
+    {
+        "us_texture": 2017,
+        "kiosk_closest": 6043,
+        "confidence": 0.12841796875
+    },
+    {
+        "us_texture": 2018,
+        "kiosk_closest": 1418,
+        "confidence": 0.125
+    },
+    {
+        "us_texture": 2023,
+        "kiosk_closest": 368,
+        "confidence": 0.03197674418604651
+    },
+    {
+        "us_texture": 2024,
+        "kiosk_closest": 168,
+        "confidence": 0.125
+    },
+    {
+        "us_texture": 2099,
+        "kiosk_closest": 2207,
+        "confidence": 0.40185546875
+    },
+    {
+        "us_texture": 2100,
+        "kiosk_closest": 2208,
+        "confidence": 0.1875
+    },
+    {
+        "us_texture": 2101,
+        "kiosk_closest": 2210,
+        "confidence": 0.281982421875
+    },
+    {
+        "us_texture": 2102,
+        "kiosk_closest": 2209,
+        "confidence": 0.10498046875
+    },
+    {
+        "us_texture": 2107,
+        "kiosk_closest": 3576,
+        "confidence": 0.491455078125
+    },
+    {
+        "us_texture": 2150,
+        "kiosk_closest": 5896,
+        "confidence": 0.1142578125
+    },
+    {
+        "us_texture": 2151,
+        "kiosk_closest": 168,
+        "confidence": 0.125
+    },
+    {
+        "us_texture": 2152,
+        "kiosk_closest": 6073,
+        "confidence": 0.109375
+    },
+    {
+        "us_texture": 2153,
+        "kiosk_closest": 1897,
+        "confidence": 0.09375
+    },
+    {
+        "us_texture": 2154,
+        "kiosk_closest": 4777,
+        "confidence": 0.5
+    },
+    {
+        "us_texture": 2155,
+        "kiosk_closest": 6007,
+        "confidence": 0.1875
+    },
+    {
+        "us_texture": 2156,
+        "kiosk_closest": 207,
+        "confidence": 0.328125
+    },
+    {
+        "us_texture": 2157,
+        "kiosk_closest": 136,
+        "confidence": 0.125
+    },
+    {
+        "us_texture": 2158,
+        "kiosk_closest": 4857,
+        "confidence": 0.32861328125
+    },
+    {
+        "us_texture": 2159,
+        "kiosk_closest": 4865,
+        "confidence": 0.236328125
+    },
+    {
+        "us_texture": 2160,
+        "kiosk_closest": 4869,
+        "confidence": 0.265869140625
+    },
+    {
+        "us_texture": 2161,
+        "kiosk_closest": 4869,
+        "confidence": 0.18115234375
+    },
+    {
+        "us_texture": 2162,
+        "kiosk_closest": 4922,
+        "confidence": 0.51025390625
+    },
+    {
+        "us_texture": 2163,
+        "kiosk_closest": 4922,
+        "confidence": 0.486328125
+    },
+    {
+        "us_texture": 2164,
+        "kiosk_closest": 842,
+        "confidence": 0.38247282608695654
+    },
+    {
+        "us_texture": 2165,
+        "kiosk_closest": 2361,
+        "confidence": 0.1875
+    },
+    {
+        "us_texture": 2166,
+        "kiosk_closest": 207,
+        "confidence": 0.1884765625
+    },
+    {
+        "us_texture": 2167,
+        "kiosk_closest": 3066,
+        "confidence": 0.15625
+    },
+    {
+        "us_texture": 2168,
+        "kiosk_closest": 1943,
+        "confidence": 0.40966796875
+    },
+    {
+        "us_texture": 2169,
+        "kiosk_closest": 458,
+        "confidence": 0.15625
+    },
+    {
+        "us_texture": 2170,
+        "kiosk_closest": 1943,
+        "confidence": 0.4091796875
+    },
+    {
+        "us_texture": 2171,
+        "kiosk_closest": 2365,
+        "confidence": 0.125
+    },
+    {
+        "us_texture": 2218,
+        "kiosk_closest": 979,
+        "confidence": 0.044189453125
+    },
+    {
+        "us_texture": 2219,
+        "kiosk_closest": 5511,
+        "confidence": 0.1484375
+    },
+    {
+        "us_texture": 2220,
+        "kiosk_closest": 2135,
+        "confidence": 0.15625
+    },
+    {
+        "us_texture": 2221,
+        "kiosk_closest": 2999,
+        "confidence": 0.02734375
+    },
+    {
+        "us_texture": 2222,
+        "kiosk_closest": 3334,
+        "confidence": 0.125
+    },
+    {
+        "us_texture": 2223,
+        "kiosk_closest": 979,
+        "confidence": 0.041748046875
+    },
+    {
+        "us_texture": 2224,
+        "kiosk_closest": 2335,
+        "confidence": 0.08251953125
+    },
+    {
+        "us_texture": 2225,
+        "kiosk_closest": 764,
+        "confidence": 0.038818359375
+    },
+    {
+        "us_texture": 2233,
+        "kiosk_closest": 2332,
+        "confidence": 0.287109375
+    },
+    {
+        "us_texture": 2241,
+        "kiosk_closest": 2302,
+        "confidence": 0.0400390625
+    },
+    {
+        "us_texture": 2242,
+        "kiosk_closest": 129,
+        "confidence": 0.15625
+    },
+    {
+        "us_texture": 2253,
+        "kiosk_closest": 1557,
+        "confidence": 0.14501953125
+    },
+    {
+        "us_texture": 2254,
+        "kiosk_closest": 5511,
+        "confidence": 0.142578125
+    },
+    {
+        "us_texture": 2255,
+        "kiosk_closest": 3386,
+        "confidence": 0.3125
+    },
+    {
+        "us_texture": 2256,
+        "kiosk_closest": 1985,
+        "confidence": 0.053466796875
+    },
+    {
+        "us_texture": 2257,
+        "kiosk_closest": 1987,
+        "confidence": 0.054931640625
+    },
+    {
+        "us_texture": 2258,
+        "kiosk_closest": 2345,
+        "confidence": 0.12353515625
+    },
+    {
+        "us_texture": 2259,
+        "kiosk_closest": 2334,
+        "confidence": 0.21875
+    },
+    {
+        "us_texture": 2266,
+        "kiosk_closest": 1354,
+        "confidence": 0.076171875
+    },
+    {
+        "us_texture": 2267,
+        "kiosk_closest": 1354,
+        "confidence": 0.074462890625
+    },
+    {
+        "us_texture": 2268,
+        "kiosk_closest": 2372,
+        "confidence": 0.09375
+    },
+    {
+        "us_texture": 2269,
+        "kiosk_closest": 3411,
+        "confidence": 0.88427734375
+    },
+    {
+        "us_texture": 2270,
+        "kiosk_closest": 1354,
+        "confidence": 0.0771484375
+    },
+    {
+        "us_texture": 2271,
+        "kiosk_closest": 1256,
+        "confidence": 0.05477941176470588
+    },
+    {
+        "us_texture": 2272,
+        "kiosk_closest": 4635,
+        "confidence": 0.0830078125
+    },
+    {
+        "us_texture": 2273,
+        "kiosk_closest": 296,
+        "confidence": 0.023982558139534885
+    },
+    {
+        "us_texture": 2275,
+        "kiosk_closest": 3305,
+        "confidence": 0.04736328125
+    },
+    {
+        "us_texture": 2276,
+        "kiosk_closest": 1168,
+        "confidence": 0.21875
+    },
+    {
+        "us_texture": 2277,
+        "kiosk_closest": 2426,
+        "confidence": 0.07080078125
+    },
+    {
+        "us_texture": 2278,
+        "kiosk_closest": 2405,
+        "confidence": 0.16943359375
+    },
+    {
+        "us_texture": 2279,
+        "kiosk_closest": 2406,
+        "confidence": 0.150146484375
+    },
+    {
+        "us_texture": 2280,
+        "kiosk_closest": 2405,
+        "confidence": 0.08447265625
+    },
+    {
+        "us_texture": 2281,
+        "kiosk_closest": 207,
+        "confidence": 0.39501953125
+    },
+    {
+        "us_texture": 2282,
+        "kiosk_closest": 815,
+        "confidence": 0.25
+    },
+    {
+        "us_texture": 2283,
+        "kiosk_closest": 3075,
+        "confidence": 0.04154411764705882
+    },
+    {
+        "us_texture": 2284,
+        "kiosk_closest": 2373,
+        "confidence": 0.08642578125
+    },
+    {
+        "us_texture": 2285,
+        "kiosk_closest": 2374,
+        "confidence": 0.25
+    },
+    {
+        "us_texture": 2294,
+        "kiosk_closest": 1007,
+        "confidence": 0.15185546875
+    },
+    {
+        "us_texture": 2295,
+        "kiosk_closest": 1685,
+        "confidence": 0.050048828125
+    },
+    {
+        "us_texture": 2296,
+        "kiosk_closest": 2407,
+        "confidence": 0.200439453125
+    },
+    {
+        "us_texture": 2297,
+        "kiosk_closest": 1007,
+        "confidence": 0.19873046875
+    },
+    {
+        "us_texture": 2298,
+        "kiosk_closest": 2845,
+        "confidence": 0.103759765625
+    },
+    {
+        "us_texture": 2299,
+        "kiosk_closest": 78,
+        "confidence": 0.064697265625
+    },
+    {
+        "us_texture": 2300,
+        "kiosk_closest": 1082,
+        "confidence": 0.016845703125
+    },
+    {
+        "us_texture": 2301,
+        "kiosk_closest": 582,
+        "confidence": 0.158203125
+    },
+    {
+        "us_texture": 2302,
+        "kiosk_closest": 378,
+        "confidence": 0.125
+    },
+    {
+        "us_texture": 2303,
+        "kiosk_closest": 1754,
+        "confidence": 0.050872093023255814
+    },
+    {
+        "us_texture": 2304,
+        "kiosk_closest": 2478,
+        "confidence": 0.125
+    },
+    {
+        "us_texture": 2316,
+        "kiosk_closest": 2703,
+        "confidence": 0.5927734375
+    },
+    {
+        "us_texture": 2317,
+        "kiosk_closest": 2704,
+        "confidence": 0.625
+    },
+    {
+        "us_texture": 2342,
+        "kiosk_closest": 3627,
+        "confidence": 0.053955078125
+    },
+    {
+        "us_texture": 2343,
+        "kiosk_closest": 3576,
+        "confidence": 0.081787109375
+    },
+    {
+        "us_texture": 2344,
+        "kiosk_closest": 3565,
+        "confidence": 0.15771484375
+    },
+    {
+        "us_texture": 2346,
+        "kiosk_closest": 2404,
+        "confidence": 0.137939453125
+    },
+    {
+        "us_texture": 2347,
+        "kiosk_closest": 2404,
+        "confidence": 0.110595703125
+    },
+    {
+        "us_texture": 2348,
+        "kiosk_closest": 3576,
+        "confidence": 0.15869140625
+    },
+    {
+        "us_texture": 2349,
+        "kiosk_closest": 4247,
+        "confidence": 0.113037109375
+    },
+    {
+        "us_texture": 2350,
+        "kiosk_closest": 2404,
+        "confidence": 0.12939453125
+    },
+    {
+        "us_texture": 2351,
+        "kiosk_closest": 4247,
+        "confidence": 0.12939453125
+    },
+    {
+        "us_texture": 2352,
+        "kiosk_closest": 4247,
+        "confidence": 0.119873046875
+    },
+    {
+        "us_texture": 2353,
+        "kiosk_closest": 2404,
+        "confidence": 0.0732421875
+    },
+    {
+        "us_texture": 2354,
+        "kiosk_closest": 2832,
+        "confidence": 0.073486328125
+    },
+    {
+        "us_texture": 2355,
+        "kiosk_closest": 3947,
+        "confidence": 0.07373046875
+    },
+    {
+        "us_texture": 2356,
+        "kiosk_closest": 2501,
+        "confidence": 0.08740234375
+    },
+    {
+        "us_texture": 2357,
+        "kiosk_closest": 2403,
+        "confidence": 0.09521484375
+    },
+    {
+        "us_texture": 2358,
+        "kiosk_closest": 2404,
+        "confidence": 0.111328125
+    },
+    {
+        "us_texture": 2365,
+        "kiosk_closest": 5511,
+        "confidence": 0.07666015625
+    },
+    {
+        "us_texture": 2366,
+        "kiosk_closest": 2077,
+        "confidence": 0.15625
+    },
+    {
+        "us_texture": 2376,
+        "kiosk_closest": 4932,
+        "confidence": 0.132568359375
+    },
+    {
+        "us_texture": 2377,
+        "kiosk_closest": 4932,
+        "confidence": 0.13134765625
+    },
+    {
+        "us_texture": 2378,
+        "kiosk_closest": 2396,
+        "confidence": 0.121337890625
+    },
+    {
+        "us_texture": 2379,
+        "kiosk_closest": 2406,
+        "confidence": 0.092041015625
+    },
+    {
+        "us_texture": 2380,
+        "kiosk_closest": 1147,
+        "confidence": 0.11865234375
+    },
+    {
+        "us_texture": 2381,
+        "kiosk_closest": 4930,
+        "confidence": 0.098876953125
+    },
+    {
+        "us_texture": 2382,
+        "kiosk_closest": 4932,
+        "confidence": 0.208984375
+    },
+    {
+        "us_texture": 2383,
+        "kiosk_closest": 4932,
+        "confidence": 0.208740234375
+    },
+    {
+        "us_texture": 2384,
+        "kiosk_closest": 1147,
+        "confidence": 0.0966796875
+    },
+    {
+        "us_texture": 2385,
+        "kiosk_closest": 2420,
+        "confidence": 0.13037109375
+    },
+    {
+        "us_texture": 2386,
+        "kiosk_closest": 2492,
+        "confidence": 0.108642578125
+    },
+    {
+        "us_texture": 2387,
+        "kiosk_closest": 1147,
+        "confidence": 0.162841796875
+    },
+    {
+        "us_texture": 2388,
+        "kiosk_closest": 1147,
+        "confidence": 0.14453125
+    },
+    {
+        "us_texture": 2389,
+        "kiosk_closest": 1147,
+        "confidence": 0.099853515625
+    },
+    {
+        "us_texture": 2390,
+        "kiosk_closest": 2377,
+        "confidence": 0.0859375
+    },
+    {
+        "us_texture": 2391,
+        "kiosk_closest": 2532,
+        "confidence": 0.06005859375
+    },
+    {
+        "us_texture": 2392,
+        "kiosk_closest": 1734,
+        "confidence": 0.03561046511627907
+    },
+    {
+        "us_texture": 2393,
+        "kiosk_closest": 561,
+        "confidence": 0.125
+    },
+    {
+        "us_texture": 2411,
+        "kiosk_closest": 496,
+        "confidence": 0.11888586956521739
+    },
+    {
+        "us_texture": 2412,
+        "kiosk_closest": 491,
+        "confidence": 0.3125
+    },
+    {
+        "us_texture": 2421,
+        "kiosk_closest": 2400,
+        "confidence": 0.06640625
+    },
+    {
+        "us_texture": 2422,
+        "kiosk_closest": 1305,
+        "confidence": 0.08642578125
+    },
+    {
+        "us_texture": 2423,
+        "kiosk_closest": 78,
+        "confidence": 0.077880859375
+    },
+    {
+        "us_texture": 2424,
+        "kiosk_closest": 1347,
+        "confidence": 0.0791015625
+    },
+    {
+        "us_texture": 2425,
+        "kiosk_closest": 2619,
+        "confidence": 0.12255859375
+    },
+    {
+        "us_texture": 2426,
+        "kiosk_closest": 3565,
+        "confidence": 0.127685546875
+    },
+    {
+        "us_texture": 2427,
+        "kiosk_closest": 2749,
+        "confidence": 0.072509765625
+    },
+    {
+        "us_texture": 2428,
+        "kiosk_closest": 2749,
+        "confidence": 0.077880859375
+    },
+    {
+        "us_texture": 2429,
+        "kiosk_closest": 1347,
+        "confidence": 0.07666015625
+    },
+    {
+        "us_texture": 2430,
+        "kiosk_closest": 2400,
+        "confidence": 0.060546875
+    },
+    {
+        "us_texture": 2431,
+        "kiosk_closest": 2397,
+        "confidence": 0.077392578125
+    },
+    {
+        "us_texture": 2432,
+        "kiosk_closest": 2397,
+        "confidence": 0.094482421875
+    },
+    {
+        "us_texture": 2433,
+        "kiosk_closest": 763,
+        "confidence": 0.053955078125
+    },
+    {
+        "us_texture": 2434,
+        "kiosk_closest": 2403,
+        "confidence": 0.089111328125
+    },
+    {
+        "us_texture": 2435,
+        "kiosk_closest": 2403,
+        "confidence": 0.13232421875
+    },
+    {
+        "us_texture": 2436,
+        "kiosk_closest": 1302,
+        "confidence": 0.12939453125
+    },
+    {
+        "us_texture": 2437,
+        "kiosk_closest": 1302,
+        "confidence": 0.143798828125
+    },
+    {
+        "us_texture": 2438,
+        "kiosk_closest": 2401,
+        "confidence": 0.082763671875
+    },
+    {
+        "us_texture": 2439,
+        "kiosk_closest": 1302,
+        "confidence": 0.077880859375
+    },
+    {
+        "us_texture": 2440,
+        "kiosk_closest": 2402,
+        "confidence": 0.107666015625
+    },
+    {
+        "us_texture": 2441,
+        "kiosk_closest": 2402,
+        "confidence": 0.08984375
+    },
+    {
+        "us_texture": 2442,
+        "kiosk_closest": 1302,
+        "confidence": 0.0791015625
+    },
+    {
+        "us_texture": 2443,
+        "kiosk_closest": 2619,
+        "confidence": 0.111328125
+    },
+    {
+        "us_texture": 2444,
+        "kiosk_closest": 2403,
+        "confidence": 0.11767578125
+    },
+    {
+        "us_texture": 2445,
+        "kiosk_closest": 1345,
+        "confidence": 0.118408203125
+    },
+    {
+        "us_texture": 2446,
+        "kiosk_closest": 2619,
+        "confidence": 0.11572265625
+    },
+    {
+        "us_texture": 2447,
+        "kiosk_closest": 2403,
+        "confidence": 0.098876953125
+    },
+    {
+        "us_texture": 2448,
+        "kiosk_closest": 1760,
+        "confidence": 0.22311046511627908
+    },
+    {
+        "us_texture": 2449,
+        "kiosk_closest": 877,
+        "confidence": 0.21875
+    },
+    {
+        "us_texture": 2455,
+        "kiosk_closest": 1531,
+        "confidence": 0.09619140625
+    },
+    {
+        "us_texture": 2456,
+        "kiosk_closest": 2384,
+        "confidence": 0.21875
+    },
+    {
+        "us_texture": 2457,
+        "kiosk_closest": 1305,
+        "confidence": 0.091796875
+    },
+    {
+        "us_texture": 2458,
+        "kiosk_closest": 1302,
+        "confidence": 0.072509765625
+    },
+    {
+        "us_texture": 2466,
+        "kiosk_closest": 2736,
+        "confidence": 0.19926470588235295
+    },
+    {
+        "us_texture": 2485,
+        "kiosk_closest": 444,
+        "confidence": 0.1948529411764706
+    },
+    {
+        "us_texture": 2486,
+        "kiosk_closest": 35,
+        "confidence": 0.02610294117647059
+    },
+    {
+        "us_texture": 2487,
+        "kiosk_closest": 2909,
+        "confidence": 0.08235294117647059
+    },
+    {
+        "us_texture": 2488,
+        "kiosk_closest": 189,
+        "confidence": 0.21654411764705883
+    },
+    {
+        "us_texture": 2532,
+        "kiosk_closest": 4247,
+        "confidence": 0.14697265625
+    },
+    {
+        "us_texture": 2533,
+        "kiosk_closest": 3576,
+        "confidence": 0.130859375
+    },
+    {
+        "us_texture": 2534,
+        "kiosk_closest": 4248,
+        "confidence": 0.21044921875
+    },
+    {
+        "us_texture": 2535,
+        "kiosk_closest": 2628,
+        "confidence": 0.091552734375
+    },
+    {
+        "us_texture": 2536,
+        "kiosk_closest": 3565,
+        "confidence": 0.11474609375
+    },
+    {
+        "us_texture": 2537,
+        "kiosk_closest": 2633,
+        "confidence": 0.103759765625
+    },
+    {
+        "us_texture": 2538,
+        "kiosk_closest": 4113,
+        "confidence": 0.099853515625
+    },
+    {
+        "us_texture": 2539,
+        "kiosk_closest": 4661,
+        "confidence": 0.059326171875
+    },
+    {
+        "us_texture": 2540,
+        "kiosk_closest": 2637,
+        "confidence": 0.27783203125
+    },
+    {
+        "us_texture": 2541,
+        "kiosk_closest": 2121,
+        "confidence": 0.125
+    },
+    {
+        "us_texture": 2543,
+        "kiosk_closest": 617,
+        "confidence": 0.16845703125
+    },
+    {
+        "us_texture": 2544,
+        "kiosk_closest": 6036,
+        "confidence": 0.15625
+    },
+    {
+        "us_texture": 2545,
+        "kiosk_closest": 5511,
+        "confidence": 0.068359375
+    },
+    {
+        "us_texture": 2546,
+        "kiosk_closest": 410,
+        "confidence": 0.09375
+    },
+    {
+        "us_texture": 2549,
+        "kiosk_closest": 3632,
+        "confidence": 0.3684593023255814
+    },
+    {
+        "us_texture": 2550,
+        "kiosk_closest": 1760,
+        "confidence": 0.16642441860465115
+    },
+    {
+        "us_texture": 2551,
+        "kiosk_closest": 780,
+        "confidence": 0.125
+    },
+    {
+        "us_texture": 2552,
+        "kiosk_closest": 1762,
+        "confidence": 0.22020348837209303
+    },
+    {
+        "us_texture": 2553,
+        "kiosk_closest": 809,
+        "confidence": 0.28125
+    },
+    {
+        "us_texture": 2554,
+        "kiosk_closest": 3632,
+        "confidence": 0.14462209302325582
+    },
+    {
+        "us_texture": 2555,
+        "kiosk_closest": 2316,
+        "confidence": 0.15625
+    },
+    {
+        "us_texture": 2602,
+        "kiosk_closest": 2775,
+        "confidence": 0.08566176470588235
+    },
+    {
+        "us_texture": 2603,
+        "kiosk_closest": 372,
+        "confidence": 0.10147058823529412
+    },
+    {
+        "us_texture": 2604,
+        "kiosk_closest": 1983,
+        "confidence": 0.05772058823529412
+    },
+    {
+        "us_texture": 2605,
+        "kiosk_closest": 2775,
+        "confidence": 0.07720588235294118
+    },
+    {
+        "us_texture": 2620,
+        "kiosk_closest": 1296,
+        "confidence": 0.31029411764705883
+    },
+    {
+        "us_texture": 2621,
+        "kiosk_closest": 3776,
+        "confidence": 0.1103515625
+    },
+    {
+        "us_texture": 2622,
+        "kiosk_closest": 902,
+        "confidence": 0.02180232558139535
+    },
+    {
+        "us_texture": 2623,
+        "kiosk_closest": 749,
+        "confidence": 0.130859375
+    },
+    {
+        "us_texture": 2627,
+        "kiosk_closest": 1147,
+        "confidence": 0.091552734375
+    },
+    {
+        "us_texture": 2628,
+        "kiosk_closest": 3155,
+        "confidence": 0.35404411764705884
+    },
+    {
+        "us_texture": 2631,
+        "kiosk_closest": 130,
+        "confidence": 0.162109375
+    },
+    {
+        "us_texture": 2632,
+        "kiosk_closest": 1017,
+        "confidence": 0.09375
+    },
+    {
+        "us_texture": 2633,
+        "kiosk_closest": 48,
+        "confidence": 0.20703125
+    },
+    {
+        "us_texture": 2634,
+        "kiosk_closest": 2954,
+        "confidence": 0.25
+    },
+    {
+        "us_texture": 2635,
+        "kiosk_closest": 3507,
+        "confidence": 0.0234375
+    },
+    {
+        "us_texture": 2636,
+        "kiosk_closest": 2251,
+        "confidence": 0.09375
+    },
+    {
+        "us_texture": 2640,
+        "kiosk_closest": 4673,
+        "confidence": 0.0751953125
+    },
+    {
+        "us_texture": 2643,
+        "kiosk_closest": 1397,
+        "confidence": 0.016845703125
+    },
+    {
+        "us_texture": 2644,
+        "kiosk_closest": 4247,
+        "confidence": 0.77294921875
+    },
+    {
+        "us_texture": 2645,
+        "kiosk_closest": 4248,
+        "confidence": 0.7744140625
+    },
+    {
+        "us_texture": 2646,
+        "kiosk_closest": 3180,
+        "confidence": 0.56494140625
+    },
+    {
+        "us_texture": 2647,
+        "kiosk_closest": 4679,
+        "confidence": 0.1064453125
+    },
+    {
+        "us_texture": 2648,
+        "kiosk_closest": 884,
+        "confidence": 0.0966796875
+    },
+    {
+        "us_texture": 2649,
+        "kiosk_closest": 308,
+        "confidence": 0.05859375
+    },
+    {
+        "us_texture": 2651,
+        "kiosk_closest": 4922,
+        "confidence": 0.5302734375
+    },
+    {
+        "us_texture": 2652,
+        "kiosk_closest": 1356,
+        "confidence": 0.4853515625
+    },
+    {
+        "us_texture": 2653,
+        "kiosk_closest": 1357,
+        "confidence": 0.46875
+    },
+    {
+        "us_texture": 2657,
+        "kiosk_closest": 665,
+        "confidence": 0.08447265625
+    },
+    {
+        "us_texture": 2658,
+        "kiosk_closest": 426,
+        "confidence": 0.15625
+    },
+    {
+        "us_texture": 2659,
+        "kiosk_closest": 3142,
+        "confidence": 0.0361328125
+    },
+    {
+        "us_texture": 2660,
+        "kiosk_closest": 640,
+        "confidence": 0.125
+    },
+    {
+        "us_texture": 2663,
+        "kiosk_closest": 356,
+        "confidence": 0.6882352941176471
+    },
+    {
+        "us_texture": 2664,
+        "kiosk_closest": 570,
+        "confidence": 0.52490234375
+    },
+    {
+        "us_texture": 2665,
+        "kiosk_closest": 571,
+        "confidence": 0.625
+    },
+    {
+        "us_texture": 2667,
+        "kiosk_closest": 1898,
+        "confidence": 0.08544921875
+    },
+    {
+        "us_texture": 2668,
+        "kiosk_closest": 564,
+        "confidence": 0.15625
+    },
+    {
+        "us_texture": 2672,
+        "kiosk_closest": 2970,
+        "confidence": 0.710205078125
+    },
+    {
+        "us_texture": 2674,
+        "kiosk_closest": 2970,
+        "confidence": 0.616943359375
+    },
+    {
+        "us_texture": 2675,
+        "kiosk_closest": 2970,
+        "confidence": 0.708740234375
+    },
+    {
+        "us_texture": 2676,
+        "kiosk_closest": 2970,
+        "confidence": 0.090576171875
+    },
+    {
+        "us_texture": 2677,
+        "kiosk_closest": 3640,
+        "confidence": 0.048828125
+    },
+    {
+        "us_texture": 2678,
+        "kiosk_closest": 1531,
+        "confidence": 0.19287109375
+    },
+    {
+        "us_texture": 2679,
+        "kiosk_closest": 136,
+        "confidence": 0.09375
+    },
+    {
+        "us_texture": 2680,
+        "kiosk_closest": 1941,
+        "confidence": 0.25439453125
+    },
+    {
+        "us_texture": 2681,
+        "kiosk_closest": 136,
+        "confidence": 0.09375
+    },
+    {
+        "us_texture": 2682,
+        "kiosk_closest": 6102,
+        "confidence": 0.3176470588235294
+    },
+    {
+        "us_texture": 2683,
+        "kiosk_closest": 651,
+        "confidence": 0.0634765625
+    },
+    {
+        "us_texture": 2684,
+        "kiosk_closest": 2088,
+        "confidence": 0.21875
+    },
+    {
+        "us_texture": 2685,
+        "kiosk_closest": 613,
+        "confidence": 0.07421875
+    },
+    {
+        "us_texture": 2686,
+        "kiosk_closest": 1915,
+        "confidence": 0.15625
+    },
+    {
+        "us_texture": 2687,
+        "kiosk_closest": 6043,
+        "confidence": 0.05615234375
+    },
+    {
+        "us_texture": 2688,
+        "kiosk_closest": 1915,
+        "confidence": 0.125
+    },
+    {
+        "us_texture": 2689,
+        "kiosk_closest": 6047,
+        "confidence": 0.0693359375
+    },
+    {
+        "us_texture": 2690,
+        "kiosk_closest": 1410,
+        "confidence": 0.125
+    },
+    {
+        "us_texture": 2691,
+        "kiosk_closest": 2023,
+        "confidence": 0.64697265625
+    },
+    {
+        "us_texture": 2692,
+        "kiosk_closest": 147,
+        "confidence": 0.033455882352941176
+    },
+    {
+        "us_texture": 2694,
+        "kiosk_closest": 2970,
+        "confidence": 0.652099609375
+    },
+    {
+        "us_texture": 2695,
+        "kiosk_closest": 4922,
+        "confidence": 0.687744140625
+    },
+    {
+        "us_texture": 2696,
+        "kiosk_closest": 2386,
+        "confidence": 0.0673828125
+    },
+    {
+        "us_texture": 2697,
+        "kiosk_closest": 2022,
+        "confidence": 0.606689453125
+    },
+    {
+        "us_texture": 2698,
+        "kiosk_closest": 2022,
+        "confidence": 0.552001953125
+    },
+    {
+        "us_texture": 2699,
+        "kiosk_closest": 189,
+        "confidence": 0.2452205882352941
+    },
+    {
+        "us_texture": 2700,
+        "kiosk_closest": 3140,
+        "confidence": 0.0654296875
+    },
+    {
+        "us_texture": 2701,
+        "kiosk_closest": 861,
+        "confidence": 0.15625
+    },
+    {
+        "us_texture": 2703,
+        "kiosk_closest": 783,
+        "confidence": 0.068115234375
+    },
+    {
+        "us_texture": 2704,
+        "kiosk_closest": 783,
+        "confidence": 0.108154296875
+    },
+    {
+        "us_texture": 2705,
+        "kiosk_closest": 3289,
+        "confidence": 0.1396484375
+    },
+    {
+        "us_texture": 2707,
+        "kiosk_closest": 783,
+        "confidence": 0.13037109375
+    },
+    {
+        "us_texture": 2708,
+        "kiosk_closest": 3565,
+        "confidence": 0.249755859375
+    },
+    {
+        "us_texture": 2709,
+        "kiosk_closest": 3632,
+        "confidence": 0.16569767441860464
+    },
+    {
+        "us_texture": 2710,
+        "kiosk_closest": 3286,
+        "confidence": 0.28125
+    },
+    {
+        "us_texture": 2711,
+        "kiosk_closest": 3565,
+        "confidence": 0.341552734375
+    },
+    {
+        "us_texture": 2712,
+        "kiosk_closest": 3565,
+        "confidence": 0.423828125
+    },
+    {
+        "us_texture": 2713,
+        "kiosk_closest": 3576,
+        "confidence": 0.462158203125
+    },
+    {
+        "us_texture": 2714,
+        "kiosk_closest": 3576,
+        "confidence": 0.367919921875
+    },
+    {
+        "us_texture": 2715,
+        "kiosk_closest": 189,
+        "confidence": 0.17941176470588235
+    },
+    {
+        "us_texture": 2716,
+        "kiosk_closest": 3576,
+        "confidence": 0.307861328125
+    },
+    {
+        "us_texture": 2717,
+        "kiosk_closest": 4113,
+        "confidence": 0.2421875
+    },
+    {
+        "us_texture": 2718,
+        "kiosk_closest": 3576,
+        "confidence": 0.277587890625
+    },
+    {
+        "us_texture": 2719,
+        "kiosk_closest": 3190,
+        "confidence": 0.04522058823529412
+    },
+    {
+        "us_texture": 2720,
+        "kiosk_closest": 3576,
+        "confidence": 0.2421875
+    },
+    {
+        "us_texture": 2721,
+        "kiosk_closest": 1987,
+        "confidence": 0.057861328125
+    },
+    {
+        "us_texture": 2722,
+        "kiosk_closest": 3155,
+        "confidence": 0.1636029411764706
+    },
+    {
+        "us_texture": 2723,
+        "kiosk_closest": 2837,
+        "confidence": 0.305419921875
+    },
+    {
+        "us_texture": 2724,
+        "kiosk_closest": 2299,
+        "confidence": 0.11572265625
+    },
+    {
+        "us_texture": 2725,
+        "kiosk_closest": 3303,
+        "confidence": 0.07389705882352941
+    },
+    {
+        "us_texture": 2726,
+        "kiosk_closest": 1557,
+        "confidence": 0.083984375
+    },
+    {
+        "us_texture": 2727,
+        "kiosk_closest": 2121,
+        "confidence": 0.125
+    },
+    {
+        "us_texture": 2728,
+        "kiosk_closest": 4922,
+        "confidence": 0.59130859375
+    },
+    {
+        "us_texture": 2729,
+        "kiosk_closest": 4857,
+        "confidence": 0.22412109375
+    },
+    {
+        "us_texture": 2730,
+        "kiosk_closest": 4922,
+        "confidence": 0.3505859375
+    },
+    {
+        "us_texture": 2731,
+        "kiosk_closest": 4922,
+        "confidence": 0.502197265625
+    },
+    {
+        "us_texture": 2732,
+        "kiosk_closest": 4922,
+        "confidence": 0.308349609375
+    },
+    {
+        "us_texture": 2733,
+        "kiosk_closest": 4922,
+        "confidence": 0.600341796875
+    },
+    {
+        "us_texture": 2734,
+        "kiosk_closest": 4922,
+        "confidence": 0.56689453125
+    },
+    {
+        "us_texture": 2735,
+        "kiosk_closest": 2837,
+        "confidence": 0.230712890625
+    },
+    {
+        "us_texture": 2736,
+        "kiosk_closest": 2592,
+        "confidence": 0.0146484375
+    },
+    {
+        "us_texture": 2738,
+        "kiosk_closest": 3214,
+        "confidence": 0.52734375
+    },
+    {
+        "us_texture": 2739,
+        "kiosk_closest": 3215,
+        "confidence": 0.53125
+    },
+    {
+        "us_texture": 2740,
+        "kiosk_closest": 3216,
+        "confidence": 0.41259765625
+    },
+    {
+        "us_texture": 2741,
+        "kiosk_closest": 3217,
+        "confidence": 0.46875
+    },
+    {
+        "us_texture": 2742,
+        "kiosk_closest": 3222,
+        "confidence": 0.64794921875
+    },
+    {
+        "us_texture": 2743,
+        "kiosk_closest": 3223,
+        "confidence": 0.4375
+    },
+    {
+        "us_texture": 2744,
+        "kiosk_closest": 3218,
+        "confidence": 0.548828125
+    },
+    {
+        "us_texture": 2745,
+        "kiosk_closest": 3219,
+        "confidence": 0.40625
+    },
+    {
+        "us_texture": 2747,
+        "kiosk_closest": 2967,
+        "confidence": 0.71923828125
+    },
+    {
+        "us_texture": 2748,
+        "kiosk_closest": 2845,
+        "confidence": 0.1796875
+    },
+    {
+        "us_texture": 2749,
+        "kiosk_closest": 2736,
+        "confidence": 0.26433823529411765
+    },
+    {
+        "us_texture": 2750,
+        "kiosk_closest": 3154,
+        "confidence": 0.09632352941176471
+    },
+    {
+        "us_texture": 2751,
+        "kiosk_closest": 1706,
+        "confidence": 0.07867647058823529
+    },
+    {
+        "us_texture": 2752,
+        "kiosk_closest": 2300,
+        "confidence": 0.0390625
+    },
+    {
+        "us_texture": 2753,
+        "kiosk_closest": 3229,
+        "confidence": 0.15625
+    },
+    {
+        "us_texture": 2754,
+        "kiosk_closest": 3568,
+        "confidence": 0.0234375
+    },
+    {
+        "us_texture": 2755,
+        "kiosk_closest": 2759,
+        "confidence": 0.125
+    },
+    {
+        "us_texture": 2756,
+        "kiosk_closest": 2066,
+        "confidence": 0.35888671875
+    },
+    {
+        "us_texture": 2757,
+        "kiosk_closest": 2067,
+        "confidence": 0.25
+    },
+    {
+        "us_texture": 2758,
+        "kiosk_closest": 4684,
+        "confidence": 0.196044921875
+    },
+    {
+        "us_texture": 2759,
+        "kiosk_closest": 1337,
+        "confidence": 0.11838235294117647
+    },
+    {
+        "us_texture": 2760,
+        "kiosk_closest": 4682,
+        "confidence": 0.21337890625
+    },
+    {
+        "us_texture": 2761,
+        "kiosk_closest": 4682,
+        "confidence": 0.246337890625
+    },
+    {
+        "us_texture": 2762,
+        "kiosk_closest": 4760,
+        "confidence": 0.3271484375
+    },
+    {
+        "us_texture": 2763,
+        "kiosk_closest": 4029,
+        "confidence": 0.28515625
+    },
+    {
+        "us_texture": 2764,
+        "kiosk_closest": 883,
+        "confidence": 0.0546875
+    },
+    {
+        "us_texture": 2765,
+        "kiosk_closest": 491,
+        "confidence": 0.125
+    },
+    {
+        "us_texture": 2766,
+        "kiosk_closest": 2300,
+        "confidence": 0.052734375
+    },
+    {
+        "us_texture": 2767,
+        "kiosk_closest": 125,
+        "confidence": 0.125
+    },
+    {
+        "us_texture": 2768,
+        "kiosk_closest": 593,
+        "confidence": 0.025390625
+    },
+    {
+        "us_texture": 2769,
+        "kiosk_closest": 1047,
+        "confidence": 0.09375
+    },
+    {
+        "us_texture": 2770,
+        "kiosk_closest": 948,
+        "confidence": 0.189453125
+    },
+    {
+        "us_texture": 2771,
+        "kiosk_closest": 751,
+        "confidence": 0.15625
+    },
+    {
+        "us_texture": 2772,
+        "kiosk_closest": 0,
+        "confidence": 0
+    },
+    {
+        "us_texture": 2773,
+        "kiosk_closest": 0,
+        "confidence": 0
+    },
+    {
+        "us_texture": 2774,
+        "kiosk_closest": 623,
+        "confidence": 0.43994140625
+    },
+    {
+        "us_texture": 2775,
+        "kiosk_closest": 616,
+        "confidence": 0.125
+    },
+    {
+        "us_texture": 2776,
+        "kiosk_closest": 3432,
+        "confidence": 0.12353515625
+    },
+    {
+        "us_texture": 2777,
+        "kiosk_closest": 1042,
+        "confidence": 0.125
+    },
+    {
+        "us_texture": 2778,
+        "kiosk_closest": 623,
+        "confidence": 0.40966796875
+    },
+    {
+        "us_texture": 2779,
+        "kiosk_closest": 650,
+        "confidence": 0.125
+    },
+    {
+        "us_texture": 2780,
+        "kiosk_closest": 3142,
+        "confidence": 0.1181640625
+    },
+    {
+        "us_texture": 2781,
+        "kiosk_closest": 622,
+        "confidence": 0.125
+    },
+    {
+        "us_texture": 2784,
+        "kiosk_closest": 2465,
+        "confidence": 0.19482421875
+    },
+    {
+        "us_texture": 2785,
+        "kiosk_closest": 941,
+        "confidence": 0.125
+    },
+    {
+        "us_texture": 2786,
+        "kiosk_closest": 6069,
+        "confidence": 0.16845703125
+    },
+    {
+        "us_texture": 2787,
+        "kiosk_closest": 1672,
+        "confidence": 0.125
+    },
+    {
+        "us_texture": 2788,
+        "kiosk_closest": 3414,
+        "confidence": 0.072265625
+    },
+    {
+        "us_texture": 2789,
+        "kiosk_closest": 1430,
+        "confidence": 0.15625
+    },
+    {
+        "us_texture": 2790,
+        "kiosk_closest": 3142,
+        "confidence": 0.224609375
+    },
+    {
+        "us_texture": 2791,
+        "kiosk_closest": 3209,
+        "confidence": 0.125
+    },
+    {
+        "us_texture": 2792,
+        "kiosk_closest": 1610,
+        "confidence": 0.421875
+    },
+    {
+        "us_texture": 2793,
+        "kiosk_closest": 6054,
+        "confidence": 0.15625
+    },
+    {
+        "us_texture": 2794,
+        "kiosk_closest": 207,
+        "confidence": 0.1611328125
+    },
+    {
+        "us_texture": 2795,
+        "kiosk_closest": 487,
+        "confidence": 0.09375
+    },
+    {
+        "us_texture": 2796,
+        "kiosk_closest": 1330,
+        "confidence": 0.1494140625
+    },
+    {
+        "us_texture": 2797,
+        "kiosk_closest": 1305,
+        "confidence": 0.173095703125
+    },
+    {
+        "us_texture": 2798,
+        "kiosk_closest": 1314,
+        "confidence": 0.099853515625
+    },
+    {
+        "us_texture": 2799,
+        "kiosk_closest": 1345,
+        "confidence": 0.103271484375
+    },
+    {
+        "us_texture": 2800,
+        "kiosk_closest": 4635,
+        "confidence": 0.04638671875
+    },
+    {
+        "us_texture": 2804,
+        "kiosk_closest": 1153,
+        "confidence": 0.03455882352941177
+    },
+    {
+        "us_texture": 2805,
+        "kiosk_closest": 883,
+        "confidence": 0.197265625
+    },
+    {
+        "us_texture": 2806,
+        "kiosk_closest": 1098,
+        "confidence": 0.05615234375
+    },
+    {
+        "us_texture": 2807,
+        "kiosk_closest": 1098,
+        "confidence": 0.05615234375
+    },
+    {
+        "us_texture": 2808,
+        "kiosk_closest": 1098,
+        "confidence": 0.0576171875
+    },
+    {
+        "us_texture": 2809,
+        "kiosk_closest": 3360,
+        "confidence": 0.05859375
+    },
+    {
+        "us_texture": 2810,
+        "kiosk_closest": 928,
+        "confidence": 0.05859375
+    },
+    {
+        "us_texture": 2811,
+        "kiosk_closest": 1098,
+        "confidence": 0.055419921875
+    },
+    {
+        "us_texture": 2812,
+        "kiosk_closest": 3767,
+        "confidence": 0.16552734375
+    },
+    {
+        "us_texture": 2813,
+        "kiosk_closest": 3767,
+        "confidence": 0.083984375
+    },
+    {
+        "us_texture": 2814,
+        "kiosk_closest": 3767,
+        "confidence": 0.05419921875
+    },
+    {
+        "us_texture": 2815,
+        "kiosk_closest": 928,
+        "confidence": 0.06494140625
+    },
+    {
+        "us_texture": 2816,
+        "kiosk_closest": 3041,
+        "confidence": 0.04345703125
+    },
+    {
+        "us_texture": 2817,
+        "kiosk_closest": 928,
+        "confidence": 0.05078125
+    },
+    {
+        "us_texture": 2818,
+        "kiosk_closest": 928,
+        "confidence": 0.06884765625
+    },
+    {
+        "us_texture": 2820,
+        "kiosk_closest": 3487,
+        "confidence": 0.08154296875
+    },
+    {
+        "us_texture": 2821,
+        "kiosk_closest": 2936,
+        "confidence": 0.045166015625
+    },
+    {
+        "us_texture": 2822,
+        "kiosk_closest": 3496,
+        "confidence": 0.03369140625
+    },
+    {
+        "us_texture": 2823,
+        "kiosk_closest": 784,
+        "confidence": 0.054443359375
+    },
+    {
+        "us_texture": 2833,
+        "kiosk_closest": 1256,
+        "confidence": 0.03529411764705882
+    },
+    {
+        "us_texture": 2847,
+        "kiosk_closest": 219,
+        "confidence": 0.05419921875
+    },
+    {
+        "us_texture": 2848,
+        "kiosk_closest": 218,
+        "confidence": 0.0576171875
+    },
+    {
+        "us_texture": 2882,
+        "kiosk_closest": 5896,
+        "confidence": 0.50732421875
+    },
+    {
+        "us_texture": 2883,
+        "kiosk_closest": 207,
+        "confidence": 0.4853515625
+    },
+    {
+        "us_texture": 2893,
+        "kiosk_closest": 4791,
+        "confidence": 0.08740234375
+    },
+    {
+        "us_texture": 2894,
+        "kiosk_closest": 3464,
+        "confidence": 0.044921875
+    },
+    {
+        "us_texture": 2896,
+        "kiosk_closest": 4683,
+        "confidence": 0.128173828125
+    },
+    {
+        "us_texture": 2897,
+        "kiosk_closest": 4777,
+        "confidence": 0.236328125
+    },
+    {
+        "us_texture": 2898,
+        "kiosk_closest": 702,
+        "confidence": 0.125
+    },
+    {
+        "us_texture": 2899,
+        "kiosk_closest": 1941,
+        "confidence": 0.197265625
+    },
+    {
+        "us_texture": 2900,
+        "kiosk_closest": 3300,
+        "confidence": 0.125
+    },
+    {
+        "us_texture": 2901,
+        "kiosk_closest": 4922,
+        "confidence": 0.40380859375
+    },
+    {
+        "us_texture": 2913,
+        "kiosk_closest": 2934,
+        "confidence": 0.7308823529411764
+    },
+    {
+        "us_texture": 2924,
+        "kiosk_closest": 207,
+        "confidence": 0.48779296875
+    },
+    {
+        "us_texture": 2925,
+        "kiosk_closest": 207,
+        "confidence": 0.42626953125
+    },
+    {
+        "us_texture": 2926,
+        "kiosk_closest": 207,
+        "confidence": 0.42529296875
+    },
+    {
+        "us_texture": 2927,
+        "kiosk_closest": 207,
+        "confidence": 0.47705078125
+    },
+    {
+        "us_texture": 2929,
+        "kiosk_closest": 1358,
+        "confidence": 0.064697265625
+    },
+    {
+        "us_texture": 2930,
+        "kiosk_closest": 37,
+        "confidence": 0.021323529411764706
+    },
+    {
+        "us_texture": 2931,
+        "kiosk_closest": 2741,
+        "confidence": 0.03860294117647059
+    },
+    {
+        "us_texture": 2932,
+        "kiosk_closest": 3155,
+        "confidence": 0.027941176470588237
+    },
+    {
+        "us_texture": 2933,
+        "kiosk_closest": 3155,
+        "confidence": 0.06911764705882353
+    },
+    {
+        "us_texture": 2934,
+        "kiosk_closest": 2009,
+        "confidence": 0.03455882352941177
+    },
+    {
+        "us_texture": 2935,
+        "kiosk_closest": 78,
+        "confidence": 0.057373046875
+    },
+    {
+        "us_texture": 2936,
+        "kiosk_closest": 234,
+        "confidence": 0.04736328125
+    },
+    {
+        "us_texture": 2937,
+        "kiosk_closest": 1361,
+        "confidence": 0.030517578125
+    },
+    {
+        "us_texture": 2938,
+        "kiosk_closest": 2857,
+        "confidence": 0.10882352941176471
+    },
+    {
+        "us_texture": 2941,
+        "kiosk_closest": 189,
+        "confidence": 0.2452205882352941
+    },
+    {
+        "us_texture": 2950,
+        "kiosk_closest": 2736,
+        "confidence": 0.09558823529411764
+    },
+    {
+        "us_texture": 2951,
+        "kiosk_closest": 2736,
+        "confidence": 0.6213235294117647
+    },
+    {
+        "us_texture": 2957,
+        "kiosk_closest": 43,
+        "confidence": 0.1025390625
+    },
+    {
+        "us_texture": 2958,
+        "kiosk_closest": 219,
+        "confidence": 0.053466796875
+    },
+    {
+        "us_texture": 2960,
+        "kiosk_closest": 3155,
+        "confidence": 0.06948529411764706
+    },
+    {
+        "us_texture": 2987,
+        "kiosk_closest": 3436,
+        "confidence": 0.29150390625
+    },
+    {
+        "us_texture": 2999,
+        "kiosk_closest": 3303,
+        "confidence": 0.04264705882352941
+    },
+    {
+        "us_texture": 3012,
+        "kiosk_closest": 3051,
+        "confidence": 0.8701171875
+    },
+    {
+        "us_texture": 3013,
+        "kiosk_closest": 3052,
+        "confidence": 0.8818359375
+    },
+    {
+        "us_texture": 3014,
+        "kiosk_closest": 3053,
+        "confidence": 0.875
+    },
+    {
+        "us_texture": 3015,
+        "kiosk_closest": 3054,
+        "confidence": 0.875
+    },
+    {
+        "us_texture": 3075,
+        "kiosk_closest": 5225,
+        "confidence": 0.75146484375
+    },
+    {
+        "us_texture": 3078,
+        "kiosk_closest": 2901,
+        "confidence": 0.060546875
+    },
+    {
+        "us_texture": 3091,
+        "kiosk_closest": 2101,
+        "confidence": 0.47705078125
+    },
+    {
+        "us_texture": 3092,
+        "kiosk_closest": 2101,
+        "confidence": 0.56005859375
+    },
+    {
+        "us_texture": 3093,
+        "kiosk_closest": 1147,
+        "confidence": 0.097900390625
+    },
+    {
+        "us_texture": 3094,
+        "kiosk_closest": 1111,
+        "confidence": 0.061767578125
+    },
+    {
+        "us_texture": 3104,
+        "kiosk_closest": 3260,
+        "confidence": 0.755859375
+    },
+    {
+        "us_texture": 3113,
+        "kiosk_closest": 1987,
+        "confidence": 0.0400390625
+    },
+    {
+        "us_texture": 3114,
+        "kiosk_closest": 1987,
+        "confidence": 0.07177734375
+    },
+    {
+        "us_texture": 3115,
+        "kiosk_closest": 95,
+        "confidence": 0.058823529411764705
+    },
+    {
+        "us_texture": 3116,
+        "kiosk_closest": 2738,
+        "confidence": 0.13897058823529412
+    },
+    {
+        "us_texture": 3131,
+        "kiosk_closest": 5869,
+        "confidence": 0.15699404761904762
+    },
+    {
+        "us_texture": 3134,
+        "kiosk_closest": 3178,
+        "confidence": 0.5612599206349206
+    },
+    {
+        "us_texture": 3144,
+        "kiosk_closest": 3236,
+        "confidence": 0.2880859375
+    },
+    {
+        "us_texture": 3145,
+        "kiosk_closest": 3310,
+        "confidence": 0.3125
+    },
+    {
+        "us_texture": 3146,
+        "kiosk_closest": 3228,
+        "confidence": 0.18408203125
+    },
+    {
+        "us_texture": 3147,
+        "kiosk_closest": 3241,
+        "confidence": 0.1875
+    },
+    {
+        "us_texture": 3148,
+        "kiosk_closest": 3230,
+        "confidence": 0.42041015625
+    },
+    {
+        "us_texture": 3149,
+        "kiosk_closest": 3231,
+        "confidence": 0.40625
+    },
+    {
+        "us_texture": 3150,
+        "kiosk_closest": 3232,
+        "confidence": 0.31494140625
+    },
+    {
+        "us_texture": 3151,
+        "kiosk_closest": 3233,
+        "confidence": 0.3125
+    },
+    {
+        "us_texture": 3152,
+        "kiosk_closest": 3234,
+        "confidence": 0.31982421875
+    },
+    {
+        "us_texture": 3153,
+        "kiosk_closest": 3338,
+        "confidence": 0.21875
+    },
+    {
+        "us_texture": 3154,
+        "kiosk_closest": 3226,
+        "confidence": 0.306640625
+    },
+    {
+        "us_texture": 3155,
+        "kiosk_closest": 3227,
+        "confidence": 0.375
+    },
+    {
+        "us_texture": 3156,
+        "kiosk_closest": 3232,
+        "confidence": 0.4599609375
+    },
+    {
+        "us_texture": 3157,
+        "kiosk_closest": 3233,
+        "confidence": 0.21875
+    },
+    {
+        "us_texture": 3158,
+        "kiosk_closest": 3335,
+        "confidence": 0.23486328125
+    },
+    {
+        "us_texture": 3159,
+        "kiosk_closest": 3241,
+        "confidence": 0.21875
+    },
+    {
+        "us_texture": 3168,
+        "kiosk_closest": 3236,
+        "confidence": 0.21142578125
+    },
+    {
+        "us_texture": 3169,
+        "kiosk_closest": 3231,
+        "confidence": 0.25
+    },
+    {
+        "us_texture": 3170,
+        "kiosk_closest": 3234,
+        "confidence": 0.5205078125
+    },
+    {
+        "us_texture": 3171,
+        "kiosk_closest": 3235,
+        "confidence": 0.375
+    },
+    {
+        "us_texture": 3178,
+        "kiosk_closest": 207,
+        "confidence": 0.23583984375
+    },
+    {
+        "us_texture": 3189,
+        "kiosk_closest": 3680,
+        "confidence": 0.08203125
+    },
+    {
+        "us_texture": 3192,
+        "kiosk_closest": 572,
+        "confidence": 0.003125
+    },
+    {
+        "us_texture": 3193,
+        "kiosk_closest": 4040,
+        "confidence": 0.052083333333333336
+    },
+    {
+        "us_texture": 3194,
+        "kiosk_closest": 1670,
+        "confidence": 0.04779411764705882
+    },
+    {
+        "us_texture": 3195,
+        "kiosk_closest": 1274,
+        "confidence": 0.046691176470588236
+    },
+    {
+        "us_texture": 3196,
+        "kiosk_closest": 0,
+        "confidence": 0
+    },
+    {
+        "us_texture": 3197,
+        "kiosk_closest": 0,
+        "confidence": 0
+    },
+    {
+        "us_texture": 3198,
+        "kiosk_closest": 5859,
+        "confidence": 0.6272321428571429
+    },
+    {
+        "us_texture": 3199,
+        "kiosk_closest": 198,
+        "confidence": 0.01308139534883721
+    },
+    {
+        "us_texture": 3206,
+        "kiosk_closest": 5419,
+        "confidence": 0.5418388429752066
+    },
+    {
+        "us_texture": 3211,
+        "kiosk_closest": 2845,
+        "confidence": 0.43701171875
+    },
+    {
+        "us_texture": 3212,
+        "kiosk_closest": 2845,
+        "confidence": 0.469970703125
+    },
+    {
+        "us_texture": 3229,
+        "kiosk_closest": 5725,
+        "confidence": 0.01984126984126984
+    },
+    {
+        "us_texture": 3296,
+        "kiosk_closest": 3625,
+        "confidence": 0.03298611111111111
+    },
+    {
+        "us_texture": 3297,
+        "kiosk_closest": 5486,
+        "confidence": 0.024305555555555556
+    },
+    {
+        "us_texture": 3298,
+        "kiosk_closest": 4577,
+        "confidence": 0.02132936507936508
+    },
+    {
+        "us_texture": 3299,
+        "kiosk_closest": 5483,
+        "confidence": 0.02976190476190476
+    },
+    {
+        "us_texture": 3300,
+        "kiosk_closest": 3625,
+        "confidence": 0.03373015873015873
+    },
+    {
+        "us_texture": 3301,
+        "kiosk_closest": 5486,
+        "confidence": 0.026537698412698412
+    },
+    {
+        "us_texture": 3302,
+        "kiosk_closest": 4577,
+        "confidence": 0.02132936507936508
+    },
+    {
+        "us_texture": 3303,
+        "kiosk_closest": 5483,
+        "confidence": 0.030257936507936508
+    },
+    {
+        "us_texture": 3304,
+        "kiosk_closest": 3625,
+        "confidence": 0.03422619047619048
+    },
+    {
+        "us_texture": 3305,
+        "kiosk_closest": 5486,
+        "confidence": 0.0248015873015873
+    },
+    {
+        "us_texture": 3306,
+        "kiosk_closest": 4577,
+        "confidence": 0.02132936507936508
+    },
+    {
+        "us_texture": 3307,
+        "kiosk_closest": 5483,
+        "confidence": 0.030009920634920636
+    },
+    {
+        "us_texture": 3320,
+        "kiosk_closest": 28,
+        "confidence": 0.17041015625
+    },
+    {
+        "us_texture": 3321,
+        "kiosk_closest": 341,
+        "confidence": 0.09375
+    },
+    {
+        "us_texture": 3325,
+        "kiosk_closest": 3155,
+        "confidence": 0.46838235294117647
+    },
+    {
+        "us_texture": 3332,
+        "kiosk_closest": 4668,
+        "confidence": 0.0869140625
+    },
+    {
+        "us_texture": 3352,
+        "kiosk_closest": 2300,
+        "confidence": 0.119140625
+    },
+    {
+        "us_texture": 3494,
+        "kiosk_closest": 2740,
+        "confidence": 0.11102941176470588
+    },
+    {
+        "us_texture": 3495,
+        "kiosk_closest": 5863,
+        "confidence": 0.6056547619047619
+    },
+    {
+        "us_texture": 3499,
+        "kiosk_closest": 193,
+        "confidence": 0.0188953488372093
+    },
+    {
+        "us_texture": 3500,
+        "kiosk_closest": 0,
+        "confidence": 0
+    },
+    {
+        "us_texture": 3502,
+        "kiosk_closest": 356,
+        "confidence": 0.041176470588235294
+    },
+    {
+        "us_texture": 3506,
+        "kiosk_closest": 1081,
+        "confidence": 0.251220703125
+    },
+    {
+        "us_texture": 3513,
+        "kiosk_closest": 4922,
+        "confidence": 0.50732421875
+    },
+    {
+        "us_texture": 3514,
+        "kiosk_closest": 4922,
+        "confidence": 0.5390625
+    },
+    {
+        "us_texture": 3515,
+        "kiosk_closest": 3517,
+        "confidence": 0.1220703125
+    },
+    {
+        "us_texture": 3516,
+        "kiosk_closest": 4922,
+        "confidence": 0.2919921875
+    },
+    {
+        "us_texture": 3517,
+        "kiosk_closest": 4922,
+        "confidence": 0.3681640625
+    },
+    {
+        "us_texture": 3518,
+        "kiosk_closest": 4922,
+        "confidence": 0.39990234375
+    },
+    {
+        "us_texture": 3519,
+        "kiosk_closest": 4922,
+        "confidence": 0.4326171875
+    },
+    {
+        "us_texture": 3520,
+        "kiosk_closest": 5859,
+        "confidence": 0.636656746031746
+    },
+    {
+        "us_texture": 3521,
+        "kiosk_closest": 5859,
+        "confidence": 0.279265873015873
+    },
+    {
+        "us_texture": 3522,
+        "kiosk_closest": 4922,
+        "confidence": 0.651123046875
+    },
+    {
+        "us_texture": 3523,
+        "kiosk_closest": 4922,
+        "confidence": 0.5810546875
+    },
+    {
+        "us_texture": 3524,
+        "kiosk_closest": 5859,
+        "confidence": 0.5553075396825397
+    },
+    {
+        "us_texture": 3525,
+        "kiosk_closest": 4922,
+        "confidence": 0.6025390625
+    },
+    {
+        "us_texture": 3526,
+        "kiosk_closest": 4922,
+        "confidence": 0.461181640625
+    },
+    {
+        "us_texture": 3527,
+        "kiosk_closest": 4922,
+        "confidence": 0.373291015625
+    },
+    {
+        "us_texture": 3528,
+        "kiosk_closest": 5896,
+        "confidence": 0.5849609375
+    },
+    {
+        "us_texture": 3529,
+        "kiosk_closest": 4922,
+        "confidence": 0.735595703125
+    },
+    {
+        "us_texture": 3530,
+        "kiosk_closest": 4922,
+        "confidence": 0.32373046875
+    },
+    {
+        "us_texture": 3531,
+        "kiosk_closest": 4922,
+        "confidence": 0.31396484375
+    },
+    {
+        "us_texture": 3532,
+        "kiosk_closest": 5896,
+        "confidence": 0.5869140625
+    },
+    {
+        "us_texture": 3533,
+        "kiosk_closest": 5896,
+        "confidence": 0.68505859375
+    },
+    {
+        "us_texture": 3534,
+        "kiosk_closest": 5896,
+        "confidence": 0.6396484375
+    },
+    {
+        "us_texture": 3535,
+        "kiosk_closest": 4922,
+        "confidence": 0.33154296875
+    },
+    {
+        "us_texture": 3536,
+        "kiosk_closest": 995,
+        "confidence": 0.05615234375
+    },
+    {
+        "us_texture": 3537,
+        "kiosk_closest": 2339,
+        "confidence": 0.029411764705882353
+    },
+    {
+        "us_texture": 3540,
+        "kiosk_closest": 2980,
+        "confidence": 0.71728515625
+    },
+    {
+        "us_texture": 3553,
+        "kiosk_closest": 2496,
+        "confidence": 0.056884765625
+    },
+    {
+        "us_texture": 3554,
+        "kiosk_closest": 2335,
+        "confidence": 0.043212890625
+    },
+    {
+        "us_texture": 3557,
+        "kiosk_closest": 617,
+        "confidence": 0.07470703125
+    },
+    {
+        "us_texture": 3558,
+        "kiosk_closest": 2185,
+        "confidence": 0.125
+    },
+    {
+        "us_texture": 3580,
+        "kiosk_closest": 229,
+        "confidence": 0.0625
+    },
+    {
+        "us_texture": 3581,
+        "kiosk_closest": 1152,
+        "confidence": 0.125
+    },
+    {
+        "us_texture": 3582,
+        "kiosk_closest": 2709,
+        "confidence": 0.103515625
+    },
+    {
+        "us_texture": 3583,
+        "kiosk_closest": 1390,
+        "confidence": 0.55078125
+    },
+    {
+        "us_texture": 3584,
+        "kiosk_closest": 2081,
+        "confidence": 0.11181640625
+    },
+    {
+        "us_texture": 3608,
+        "kiosk_closest": 1492,
+        "confidence": 0.8691176470588236
+    },
+    {
+        "us_texture": 3609,
+        "kiosk_closest": 3272,
+        "confidence": 0.0724264705882353
+    },
+    {
+        "us_texture": 3610,
+        "kiosk_closest": 2735,
+        "confidence": 0.07426470588235294
+    },
+    {
+        "us_texture": 3611,
+        "kiosk_closest": 2740,
+        "confidence": 0.07647058823529412
+    },
+    {
+        "us_texture": 3612,
+        "kiosk_closest": 17,
+        "confidence": 0.2543604651162791
+    },
+    {
+        "us_texture": 3613,
+        "kiosk_closest": 17,
+        "confidence": 0.01308139534883721
+    },
+    {
+        "us_texture": 3614,
+        "kiosk_closest": 1308,
+        "confidence": 0.127197265625
+    },
+    {
+        "us_texture": 3615,
+        "kiosk_closest": 1307,
+        "confidence": 0.09716796875
+    },
+    {
+        "us_texture": 3617,
+        "kiosk_closest": 2836,
+        "confidence": 0.535888671875
+    },
+    {
+        "us_texture": 3618,
+        "kiosk_closest": 2835,
+        "confidence": 0.63916015625
+    },
+    {
+        "us_texture": 3619,
+        "kiosk_closest": 13,
+        "confidence": 0.08203125
+    },
+    {
+        "us_texture": 3620,
+        "kiosk_closest": 710,
+        "confidence": 0.125
+    },
+    {
+        "us_texture": 3621,
+        "kiosk_closest": 3030,
+        "confidence": 0.32470703125
+    },
+    {
+        "us_texture": 3622,
+        "kiosk_closest": 2523,
+        "confidence": 0.11669921875
+    },
+    {
+        "us_texture": 3623,
+        "kiosk_closest": 1027,
+        "confidence": 0.125
+    },
+    {
+        "us_texture": 3624,
+        "kiosk_closest": 2525,
+        "confidence": 0.2255859375
+    },
+    {
+        "us_texture": 3625,
+        "kiosk_closest": 2526,
+        "confidence": 0.3125
+    },
+    {
+        "us_texture": 3628,
+        "kiosk_closest": 4979,
+        "confidence": 0.52294921875
+    },
+    {
+        "us_texture": 3629,
+        "kiosk_closest": 3151,
+        "confidence": 0.04779411764705882
+    },
+    {
+        "us_texture": 3631,
+        "kiosk_closest": 2299,
+        "confidence": 0.142822265625
+    },
+    {
+        "us_texture": 3632,
+        "kiosk_closest": 3466,
+        "confidence": 0.259765625
+    },
+    {
+        "us_texture": 3633,
+        "kiosk_closest": 3465,
+        "confidence": 0.256591796875
+    },
+    {
+        "us_texture": 3634,
+        "kiosk_closest": 5616,
+        "confidence": 0.25537109375
+    },
+    {
+        "us_texture": 3635,
+        "kiosk_closest": 5612,
+        "confidence": 0.16552734375
+    },
+    {
+        "us_texture": 3636,
+        "kiosk_closest": 1015,
+        "confidence": 0.02978515625
+    },
+    {
+        "us_texture": 3637,
+        "kiosk_closest": 20,
+        "confidence": 0.031005859375
+    },
+    {
+        "us_texture": 3638,
+        "kiosk_closest": 2556,
+        "confidence": 0.7900390625
+    },
+    {
+        "us_texture": 3639,
+        "kiosk_closest": 3075,
+        "confidence": 0.03897058823529412
+    },
+    {
+        "us_texture": 3640,
+        "kiosk_closest": 3132,
+        "confidence": 0.03566176470588235
+    },
+    {
+        "us_texture": 3642,
+        "kiosk_closest": 1093,
+        "confidence": 0.084716796875
+    },
+    {
+        "us_texture": 3643,
+        "kiosk_closest": 456,
+        "confidence": 0.090576171875
+    },
+    {
+        "us_texture": 3644,
+        "kiosk_closest": 3687,
+        "confidence": 0.109375
+    },
+    {
+        "us_texture": 3645,
+        "kiosk_closest": 4746,
+        "confidence": 0.04931640625
+    },
+    {
+        "us_texture": 3646,
+        "kiosk_closest": 3670,
+        "confidence": 0.04150390625
+    },
+    {
+        "us_texture": 3647,
+        "kiosk_closest": 1623,
+        "confidence": 0.049560546875
+    },
+    {
+        "us_texture": 3648,
+        "kiosk_closest": 1594,
+        "confidence": 0.09130859375
+    },
+    {
+        "us_texture": 3649,
+        "kiosk_closest": 4760,
+        "confidence": 0.09423828125
+    },
+    {
+        "us_texture": 3650,
+        "kiosk_closest": 220,
+        "confidence": 0.048583984375
+    },
+    {
+        "us_texture": 3653,
+        "kiosk_closest": 148,
+        "confidence": 0.03125
+    },
+    {
+        "us_texture": 3654,
+        "kiosk_closest": 149,
+        "confidence": 0.046875
+    },
+    {
+        "us_texture": 3655,
+        "kiosk_closest": 2830,
+        "confidence": 0.09375
+    },
+    {
+        "us_texture": 3656,
+        "kiosk_closest": 3834,
+        "confidence": 0.041015625
+    },
+    {
+        "us_texture": 3657,
+        "kiosk_closest": 3565,
+        "confidence": 0.369873046875
+    },
+    {
+        "us_texture": 3658,
+        "kiosk_closest": 909,
+        "confidence": 0.275390625
+    },
+    {
+        "us_texture": 3659,
+        "kiosk_closest": 1926,
+        "confidence": 0.1875
+    },
+    {
+        "us_texture": 3660,
+        "kiosk_closest": 3766,
+        "confidence": 0.3037109375
+    },
+    {
+        "us_texture": 3661,
+        "kiosk_closest": 1309,
+        "confidence": 0.1171875
+    },
+    {
+        "us_texture": 3662,
+        "kiosk_closest": 1332,
+        "confidence": 0.11962890625
+    },
+    {
+        "us_texture": 3663,
+        "kiosk_closest": 3191,
+        "confidence": 0.03823529411764706
+    },
+    {
+        "us_texture": 3664,
+        "kiosk_closest": 2918,
+        "confidence": 0.164306640625
+    },
+    {
+        "us_texture": 3666,
+        "kiosk_closest": 4248,
+        "confidence": 0.18017578125
+    },
+    {
+        "us_texture": 3667,
+        "kiosk_closest": 3576,
+        "confidence": 0.483642578125
+    },
+    {
+        "us_texture": 3668,
+        "kiosk_closest": 783,
+        "confidence": 0.3701171875
+    },
+    {
+        "us_texture": 3669,
+        "kiosk_closest": 3110,
+        "confidence": 0.0361328125
+    },
+    {
+        "us_texture": 3670,
+        "kiosk_closest": 4007,
+        "confidence": 0.0458984375
+    },
+    {
+        "us_texture": 3671,
+        "kiosk_closest": 4661,
+        "confidence": 0.052978515625
+    },
+    {
+        "us_texture": 3672,
+        "kiosk_closest": 4660,
+        "confidence": 0.037109375
+    },
+    {
+        "us_texture": 3673,
+        "kiosk_closest": 4761,
+        "confidence": 0.50390625
+    },
+    {
+        "us_texture": 3674,
+        "kiosk_closest": 1296,
+        "confidence": 0.13088235294117648
+    },
+    {
+        "us_texture": 3675,
+        "kiosk_closest": 4753,
+        "confidence": 0.2578125
+    },
+    {
+        "us_texture": 3676,
+        "kiosk_closest": 4754,
+        "confidence": 0.197021484375
+    },
+    {
+        "us_texture": 3677,
+        "kiosk_closest": 2888,
+        "confidence": 0.012044270833333334
+    },
+    {
+        "us_texture": 3678,
+        "kiosk_closest": 2888,
+        "confidence": 0.016927083333333332
+    },
+    {
+        "us_texture": 3679,
+        "kiosk_closest": 547,
+        "confidence": 0.09044117647058823
+    },
+    {
+        "us_texture": 3680,
+        "kiosk_closest": 3154,
+        "confidence": 0.10073529411764706
+    },
+    {
+        "us_texture": 3681,
+        "kiosk_closest": 2918,
+        "confidence": 0.052001953125
+    },
+    {
+        "us_texture": 3682,
+        "kiosk_closest": 2736,
+        "confidence": 0.07647058823529412
+    },
+    {
+        "us_texture": 3683,
+        "kiosk_closest": 636,
+        "confidence": 0.03272058823529412
+    },
+    {
+        "us_texture": 3722,
+        "kiosk_closest": 3682,
+        "confidence": 0.3671875
+    },
+    {
+        "us_texture": 3723,
+        "kiosk_closest": 3833,
+        "confidence": 0.1533203125
+    },
+    {
+        "us_texture": 3729,
+        "kiosk_closest": 3878,
+        "confidence": 0.7740524781341108
+    },
+    {
+        "us_texture": 3731,
+        "kiosk_closest": 3718,
+        "confidence": 0.12158203125
+    },
+    {
+        "us_texture": 3736,
+        "kiosk_closest": 3544,
+        "confidence": 0.03759765625
+    },
+    {
+        "us_texture": 3737,
+        "kiosk_closest": 3693,
+        "confidence": 0.482421875
+    },
+    {
+        "us_texture": 3759,
+        "kiosk_closest": 3875,
+        "confidence": 0.09037900874635568
+    },
+    {
+        "us_texture": 3760,
+        "kiosk_closest": 1390,
+        "confidence": 0.60888671875
+    },
+    {
+        "us_texture": 3761,
+        "kiosk_closest": 1390,
+        "confidence": 0.53173828125
+    },
+    {
+        "us_texture": 3762,
+        "kiosk_closest": 1390,
+        "confidence": 0.56005859375
+    },
+    {
+        "us_texture": 3763,
+        "kiosk_closest": 1390,
+        "confidence": 0.53173828125
+    },
+    {
+        "us_texture": 3770,
+        "kiosk_closest": 3777,
+        "confidence": 0.37244897959183676
+    },
+    {
+        "us_texture": 3771,
+        "kiosk_closest": 4200,
+        "confidence": 0.22193877551020408
+    },
+    {
+        "us_texture": 3772,
+        "kiosk_closest": 4200,
+        "confidence": 0.22740524781341107
+    },
+    {
+        "us_texture": 3775,
+        "kiosk_closest": 3716,
+        "confidence": 0.595703125
+    },
+    {
+        "us_texture": 3834,
+        "kiosk_closest": 3922,
+        "confidence": 0.4176384839650146
+    },
+    {
+        "us_texture": 3835,
+        "kiosk_closest": 3792,
+        "confidence": 0.336734693877551
+    },
+    {
+        "us_texture": 3836,
+        "kiosk_closest": 3922,
+        "confidence": 0.42565597667638483
+    },
+    {
+        "us_texture": 3837,
+        "kiosk_closest": 3792,
+        "confidence": 0.3965014577259475
+    },
+    {
+        "us_texture": 3838,
+        "kiosk_closest": 3680,
+        "confidence": 0.234375
+    },
+    {
+        "us_texture": 3856,
+        "kiosk_closest": 3818,
+        "confidence": 0.15214285714285714
+    },
+    {
+        "us_texture": 3953,
+        "kiosk_closest": 3706,
+        "confidence": 0.23
+    },
+    {
+        "us_texture": 4056,
+        "kiosk_closest": 4042,
+        "confidence": 0.790283203125
+    },
+    {
+        "us_texture": 4105,
+        "kiosk_closest": 4094,
+        "confidence": 0.60205078125
+    },
+    {
+        "us_texture": 4120,
+        "kiosk_closest": 3864,
+        "confidence": 0.5298833819241983
+    },
+    {
+        "us_texture": 4121,
+        "kiosk_closest": 3710,
+        "confidence": 0.24416909620991253
+    },
+    {
+        "us_texture": 4122,
+        "kiosk_closest": 3644,
+        "confidence": 0.2055393586005831
+    },
+    {
+        "us_texture": 4123,
+        "kiosk_closest": 4200,
+        "confidence": 0.19606413994169097
+    },
+    {
+        "us_texture": 4124,
+        "kiosk_closest": 3713,
+        "confidence": 0.5553935860058309
+    },
+    {
+        "us_texture": 4125,
+        "kiosk_closest": 3762,
+        "confidence": 0.0706997084548105
+    },
+    {
+        "us_texture": 4226,
+        "kiosk_closest": 4223,
+        "confidence": 0.16472303206997085
+    },
+    {
+        "us_texture": 4227,
+        "kiosk_closest": 4223,
+        "confidence": 0.24854227405247814
+    },
+    {
+        "us_texture": 4229,
+        "kiosk_closest": 4223,
+        "confidence": 0.18950437317784258
+    },
+    {
+        "us_texture": 4230,
+        "kiosk_closest": 4224,
+        "confidence": 0.16435860058309038
+    },
+    {
+        "us_texture": 4231,
+        "kiosk_closest": 3778,
+        "confidence": 0.16581632653061223
+    },
+    {
+        "us_texture": 4232,
+        "kiosk_closest": 4200,
+        "confidence": 0.32252186588921283
+    },
+    {
+        "us_texture": 4234,
+        "kiosk_closest": 4376,
+        "confidence": 0.07994186046511628
+    },
+    {
+        "us_texture": 4235,
+        "kiosk_closest": 4230,
+        "confidence": 0.222667638483965
+    },
+    {
+        "us_texture": 4236,
+        "kiosk_closest": 3760,
+        "confidence": 0.44825072886297374
+    },
+    {
+        "us_texture": 4237,
+        "kiosk_closest": 4219,
+        "confidence": 0.7122093023255814
+    },
+    {
+        "us_texture": 4240,
+        "kiosk_closest": 4234,
+        "confidence": 0.13228862973760933
+    },
+    {
+        "us_texture": 4241,
+        "kiosk_closest": 4223,
+        "confidence": 0.14978134110787172
+    },
+    {
+        "us_texture": 4242,
+        "kiosk_closest": 4214,
+        "confidence": 0.4420553935860058
+    },
+    {
+        "us_texture": 4247,
+        "kiosk_closest": 4217,
+        "confidence": 0.4336734693877551
+    },
+    {
+        "us_texture": 4248,
+        "kiosk_closest": 4214,
+        "confidence": 0.17966472303206998
+    },
+    {
+        "us_texture": 4251,
+        "kiosk_closest": 4237,
+        "confidence": 0.18549562682215742
+    },
+    {
+        "us_texture": 4253,
+        "kiosk_closest": 4235,
+        "confidence": 0.82
+    },
+    {
+        "us_texture": 4254,
+        "kiosk_closest": 4236,
+        "confidence": 0.6729651162790697
+    },
+    {
+        "us_texture": 4255,
+        "kiosk_closest": 3898,
+        "confidence": 0.08571428571428572
+    },
+    {
+        "us_texture": 4378,
+        "kiosk_closest": 3720,
+        "confidence": 0.2787900874635568
+    },
+    {
+        "us_texture": 4379,
+        "kiosk_closest": 4365,
+        "confidence": 0.25801749271137026
+    },
+    {
+        "us_texture": 4380,
+        "kiosk_closest": 4366,
+        "confidence": 0.21785714285714286
+    },
+    {
+        "us_texture": 4382,
+        "kiosk_closest": 3920,
+        "confidence": 0.08381924198250729
+    },
+    {
+        "us_texture": 4383,
+        "kiosk_closest": 4369,
+        "confidence": 0.2893586005830904
+    },
+    {
+        "us_texture": 4384,
+        "kiosk_closest": 4200,
+        "confidence": 0.23068513119533526
+    },
+    {
+        "us_texture": 4385,
+        "kiosk_closest": 4371,
+        "confidence": 0.28703703703703703
+    },
+    {
+        "us_texture": 4386,
+        "kiosk_closest": 3740,
+        "confidence": 0.1867816091954023
+    },
+    {
+        "us_texture": 4387,
+        "kiosk_closest": 2299,
+        "confidence": 0.295166015625
+    },
+    {
+        "us_texture": 4388,
+        "kiosk_closest": 4376,
+        "confidence": 0.29651162790697677
+    },
+    {
+        "us_texture": 4389,
+        "kiosk_closest": 4377,
+        "confidence": 0.343505859375
+    },
+    {
+        "us_texture": 4390,
+        "kiosk_closest": 4015,
+        "confidence": 0.059027777777777776
+    },
+    {
+        "us_texture": 4391,
+        "kiosk_closest": 4124,
+        "confidence": 0.009548611111111112
+    },
+    {
+        "us_texture": 4392,
+        "kiosk_closest": 4124,
+        "confidence": 0.008680555555555556
+    },
+    {
+        "us_texture": 4649,
+        "kiosk_closest": 3791,
+        "confidence": 0.2642128279883382
+    },
+    {
+        "us_texture": 4650,
+        "kiosk_closest": 4087,
+        "confidence": 0.2944606413994169
+    },
+    {
+        "us_texture": 4651,
+        "kiosk_closest": 4087,
+        "confidence": 0.3104956268221574
+    },
+    {
+        "us_texture": 4652,
+        "kiosk_closest": 4568,
+        "confidence": 0.4267241379310345
+    },
+    {
+        "us_texture": 4653,
+        "kiosk_closest": 6024,
+        "confidence": 0.09840425531914894
+    },
+    {
+        "us_texture": 4654,
+        "kiosk_closest": 4424,
+        "confidence": 0.14395043731778426
+    },
+    {
+        "us_texture": 4655,
+        "kiosk_closest": 3902,
+        "confidence": 0.1392128279883382
+    },
+    {
+        "us_texture": 4656,
+        "kiosk_closest": 3735,
+        "confidence": 0.35344827586206895
+    },
+    {
+        "us_texture": 4658,
+        "kiosk_closest": 4408,
+        "confidence": 0.10488505747126436
+    },
+    {
+        "us_texture": 4659,
+        "kiosk_closest": 4378,
+        "confidence": 0.1925287356321839
+    },
+    {
+        "us_texture": 4660,
+        "kiosk_closest": 4378,
+        "confidence": 0.2629310344827586
+    },
+    {
+        "us_texture": 4661,
+        "kiosk_closest": 4372,
+        "confidence": 0.04597701149425287
+    },
+    {
+        "us_texture": 4662,
+        "kiosk_closest": 3731,
+        "confidence": 0.19606413994169097
+    },
+    {
+        "us_texture": 4663,
+        "kiosk_closest": 4487,
+        "confidence": 0.11928571428571429
+    },
+    {
+        "us_texture": 4664,
+        "kiosk_closest": 4371,
+        "confidence": 0.073005698005698
+    },
+    {
+        "us_texture": 4665,
+        "kiosk_closest": 3851,
+        "confidence": 0.26895043731778423
+    },
+    {
+        "us_texture": 4666,
+        "kiosk_closest": 4702,
+        "confidence": 0.10349854227405247
+    },
+    {
+        "us_texture": 4667,
+        "kiosk_closest": 4490,
+        "confidence": 0.09176300578034682
+    },
+    {
+        "us_texture": 4668,
+        "kiosk_closest": 4702,
+        "confidence": 0.11661807580174927
+    },
+    {
+        "us_texture": 4669,
+        "kiosk_closest": 3851,
+        "confidence": 0.12572886297376093
+    },
+    {
+        "us_texture": 4670,
+        "kiosk_closest": 3738,
+        "confidence": 0.11260932944606414
+    },
+    {
+        "us_texture": 4671,
+        "kiosk_closest": 3849,
+        "confidence": 0.04446064139941691
+    },
+    {
+        "us_texture": 4672,
+        "kiosk_closest": 4200,
+        "confidence": 0.08709912536443148
+    },
+    {
+        "us_texture": 4673,
+        "kiosk_closest": 4371,
+        "confidence": 0.04131054131054131
+    },
+    {
+        "us_texture": 4674,
+        "kiosk_closest": 3848,
+        "confidence": 0.25801749271137026
+    },
+    {
+        "us_texture": 4675,
+        "kiosk_closest": 3848,
+        "confidence": 0.1858600583090379
+    },
+    {
+        "us_texture": 4676,
+        "kiosk_closest": 3809,
+        "confidence": 0.03662109375
+    },
+    {
+        "us_texture": 4677,
+        "kiosk_closest": 6113,
+        "confidence": 0.1363960113960114
+    },
+    {
+        "us_texture": 4678,
+        "kiosk_closest": 3987,
+        "confidence": 0.05
+    },
+    {
+        "us_texture": 4679,
+        "kiosk_closest": 4066,
+        "confidence": 0.09365889212827988
+    },
+    {
+        "us_texture": 4680,
+        "kiosk_closest": 4326,
+        "confidence": 0.04296875
+    },
+    {
+        "us_texture": 4681,
+        "kiosk_closest": 4623,
+        "confidence": 0.045572916666666664
+    },
+    {
+        "us_texture": 4682,
+        "kiosk_closest": 3741,
+        "confidence": 0.5704022988505747
+    },
+    {
+        "us_texture": 4685,
+        "kiosk_closest": 3621,
+        "confidence": 0.76611328125
+    },
+    {
+        "us_texture": 4686,
+        "kiosk_closest": 3615,
+        "confidence": 0.69873046875
+    },
+    {
+        "us_texture": 4687,
+        "kiosk_closest": 3618,
+        "confidence": 0.806640625
+    },
+    {
+        "us_texture": 4688,
+        "kiosk_closest": 3612,
+        "confidence": 0.77197265625
+    },
+    {
+        "us_texture": 4690,
+        "kiosk_closest": 3624,
+        "confidence": 0.66357421875
+    },
+    {
+        "us_texture": 4691,
+        "kiosk_closest": 4772,
+        "confidence": 0.6865234375
+    },
+    {
+        "us_texture": 4692,
+        "kiosk_closest": 4745,
+        "confidence": 0.64453125
+    },
+    {
+        "us_texture": 4693,
+        "kiosk_closest": 5428,
+        "confidence": 0.581353305785124
+    },
+    {
+        "us_texture": 4694,
+        "kiosk_closest": 5418,
+        "confidence": 0.7536157024793388
+    },
+    {
+        "us_texture": 4695,
+        "kiosk_closest": 3795,
+        "confidence": 0.1220703125
+    },
+    {
+        "us_texture": 4696,
+        "kiosk_closest": 6154,
+        "confidence": 0.05721574344023324
+    },
+    {
+        "us_texture": 4697,
+        "kiosk_closest": 4087,
+        "confidence": 0.10932944606413994
+    },
+    {
+        "us_texture": 4698,
+        "kiosk_closest": 6020,
+        "confidence": 0.10537790697674419
+    },
+    {
+        "us_texture": 4699,
+        "kiosk_closest": 3916,
+        "confidence": 0.13226744186046513
+    },
+    {
+        "us_texture": 4700,
+        "kiosk_closest": 3795,
+        "confidence": 0.103759765625
+    },
+    {
+        "us_texture": 4701,
+        "kiosk_closest": 3848,
+        "confidence": 0.21683673469387754
+    },
+    {
+        "us_texture": 4702,
+        "kiosk_closest": 6113,
+        "confidence": 0.09650997150997151
+    },
+    {
+        "us_texture": 4703,
+        "kiosk_closest": 4246,
+        "confidence": 0.6015625
+    },
+    {
+        "us_texture": 4704,
+        "kiosk_closest": 4410,
+        "confidence": 0.25732421875
+    },
+    {
+        "us_texture": 4705,
+        "kiosk_closest": 3692,
+        "confidence": 0.3681640625
+    },
+    {
+        "us_texture": 4707,
+        "kiosk_closest": 4199,
+        "confidence": 0.3717296511627907
+    },
+    {
+        "us_texture": 4708,
+        "kiosk_closest": 3848,
+        "confidence": 0.3239795918367347
+    },
+    {
+        "us_texture": 4709,
+        "kiosk_closest": 4796,
+        "confidence": 0.10302734375
+    },
+    {
+        "us_texture": 4710,
+        "kiosk_closest": 4700,
+        "confidence": 0.26348396501457727
+    },
+    {
+        "us_texture": 4718,
+        "kiosk_closest": 3920,
+        "confidence": 0.1446793002915452
+    },
+    {
+        "us_texture": 4719,
+        "kiosk_closest": 3920,
+        "confidence": 0.13666180758017493
+    },
+    {
+        "us_texture": 4720,
+        "kiosk_closest": 3720,
+        "confidence": 0.23068513119533526
+    },
+    {
+        "us_texture": 4722,
+        "kiosk_closest": 3799,
+        "confidence": 0.38671875
+    },
+    {
+        "us_texture": 4723,
+        "kiosk_closest": 3799,
+        "confidence": 0.296875
+    },
+    {
+        "us_texture": 4724,
+        "kiosk_closest": 3799,
+        "confidence": 0.296875
+    },
+    {
+        "us_texture": 4725,
+        "kiosk_closest": 3799,
+        "confidence": 0.296875
+    },
+    {
+        "us_texture": 4726,
+        "kiosk_closest": 3799,
+        "confidence": 0.296875
+    },
+    {
+        "us_texture": 4727,
+        "kiosk_closest": 3920,
+        "confidence": 0.23177842565597667
+    },
+    {
+        "us_texture": 4728,
+        "kiosk_closest": 4757,
+        "confidence": 0.28515625
+    },
+    {
+        "us_texture": 4729,
+        "kiosk_closest": 4757,
+        "confidence": 0.28515625
+    },
+    {
+        "us_texture": 4730,
+        "kiosk_closest": 3160,
+        "confidence": 0.267578125
+    },
+    {
+        "us_texture": 4731,
+        "kiosk_closest": 3712,
+        "confidence": 0.65380859375
+    },
+    {
+        "us_texture": 4732,
+        "kiosk_closest": 4678,
+        "confidence": 0.05712890625
+    },
+    {
+        "us_texture": 4733,
+        "kiosk_closest": 0,
+        "confidence": 0
+    },
+    {
+        "us_texture": 4739,
+        "kiosk_closest": 4576,
+        "confidence": 0.37003968253968256
+    },
+    {
+        "us_texture": 4740,
+        "kiosk_closest": 4577,
+        "confidence": 0.38467261904761907
+    },
+    {
+        "us_texture": 4741,
+        "kiosk_closest": 4578,
+        "confidence": 0.3630952380952381
+    },
+    {
+        "us_texture": 4785,
+        "kiosk_closest": 4619,
+        "confidence": 0.875
+    },
+    {
+        "us_texture": 4786,
+        "kiosk_closest": 4620,
+        "confidence": 0.84130859375
+    },
+    {
+        "us_texture": 4805,
+        "kiosk_closest": 3823,
+        "confidence": 0.07871720116618076
+    },
+    {
+        "us_texture": 4806,
+        "kiosk_closest": 3730,
+        "confidence": 0.1260932944606414
+    },
+    {
+        "us_texture": 4807,
+        "kiosk_closest": 5998,
+        "confidence": 0.5645043731778425
+    },
+    {
+        "us_texture": 4845,
+        "kiosk_closest": 3848,
+        "confidence": 0.1424927113702624
+    },
+    {
+        "us_texture": 4846,
+        "kiosk_closest": 4230,
+        "confidence": 0.20153061224489796
+    },
+    {
+        "us_texture": 4863,
+        "kiosk_closest": 3848,
+        "confidence": 0.18658892128279883
+    },
+    {
+        "us_texture": 4864,
+        "kiosk_closest": 3822,
+        "confidence": 0.09329446064139942
+    },
+    {
+        "us_texture": 4865,
+        "kiosk_closest": 4123,
+        "confidence": 0.13884839650145772
+    },
+    {
+        "us_texture": 4866,
+        "kiosk_closest": 4123,
+        "confidence": 0.17565597667638483
+    },
+    {
+        "us_texture": 4867,
+        "kiosk_closest": 4123,
+        "confidence": 0.13374635568513119
+    },
+    {
+        "us_texture": 4868,
+        "kiosk_closest": 4123,
+        "confidence": 0.16654518950437316
+    },
+    {
+        "us_texture": 4869,
+        "kiosk_closest": 3792,
+        "confidence": 0.09912536443148688
+    },
+    {
+        "us_texture": 4870,
+        "kiosk_closest": 3922,
+        "confidence": 0.1151603498542274
+    },
+    {
+        "us_texture": 4871,
+        "kiosk_closest": 4123,
+        "confidence": 0.1749271137026239
+    },
+    {
+        "us_texture": 4872,
+        "kiosk_closest": 4137,
+        "confidence": 0.040229885057471264
+    },
+    {
+        "us_texture": 4884,
+        "kiosk_closest": 5854,
+        "confidence": 0.2919921875
+    },
+    {
+        "us_texture": 4895,
+        "kiosk_closest": 184,
+        "confidence": 0.152099609375
+    },
+    {
+        "us_texture": 4896,
+        "kiosk_closest": 0,
+        "confidence": 0
+    },
+    {
+        "us_texture": 4940,
+        "kiosk_closest": 4085,
+        "confidence": 0.75
+    },
+    {
+        "us_texture": 4966,
+        "kiosk_closest": 4030,
+        "confidence": 0.3330078125
+    },
+    {
+        "us_texture": 4967,
+        "kiosk_closest": 3850,
+        "confidence": 0.5029154518950437
+    },
+    {
+        "us_texture": 4968,
+        "kiosk_closest": 3732,
+        "confidence": 0.0761661807580175
+    },
+    {
+        "us_texture": 4969,
+        "kiosk_closest": 906,
+        "confidence": 0.04150390625
+    },
+    {
+        "us_texture": 4970,
+        "kiosk_closest": 3694,
+        "confidence": 0.0625
+    },
+    {
+        "us_texture": 4971,
+        "kiosk_closest": 3358,
+        "confidence": 0.1337890625
+    },
+    {
+        "us_texture": 4972,
+        "kiosk_closest": 3851,
+        "confidence": 0.19642857142857142
+    },
+    {
+        "us_texture": 4973,
+        "kiosk_closest": 2833,
+        "confidence": 0.24169921875
+    },
+    {
+        "us_texture": 4974,
+        "kiosk_closest": 3627,
+        "confidence": 0.24169921875
+    },
+    {
+        "us_texture": 4975,
+        "kiosk_closest": 3565,
+        "confidence": 0.373779296875
+    },
+    {
+        "us_texture": 4976,
+        "kiosk_closest": 3576,
+        "confidence": 0.447021484375
+    },
+    {
+        "us_texture": 4977,
+        "kiosk_closest": 3565,
+        "confidence": 0.562744140625
+    },
+    {
+        "us_texture": 4978,
+        "kiosk_closest": 3576,
+        "confidence": 0.546630859375
+    },
+    {
+        "us_texture": 4979,
+        "kiosk_closest": 3565,
+        "confidence": 0.72802734375
+    },
+    {
+        "us_texture": 4980,
+        "kiosk_closest": 3576,
+        "confidence": 0.620361328125
+    },
+    {
+        "us_texture": 4981,
+        "kiosk_closest": 3565,
+        "confidence": 0.388427734375
+    },
+    {
+        "us_texture": 4982,
+        "kiosk_closest": 3576,
+        "confidence": 0.568115234375
+    },
+    {
+        "us_texture": 4983,
+        "kiosk_closest": 3687,
+        "confidence": 0.0966796875
+    },
+    {
+        "us_texture": 4984,
+        "kiosk_closest": 2971,
+        "confidence": 0.1044921875
+    },
+    {
+        "us_texture": 4985,
+        "kiosk_closest": 4757,
+        "confidence": 0.16552734375
+    },
+    {
+        "us_texture": 4986,
+        "kiosk_closest": 4180,
+        "confidence": 0.15285714285714286
+    },
+    {
+        "us_texture": 4987,
+        "kiosk_closest": 6032,
+        "confidence": 0.07357142857142857
+    },
+    {
+        "us_texture": 4988,
+        "kiosk_closest": 3818,
+        "confidence": 0.14642857142857144
+    },
+    {
+        "us_texture": 4989,
+        "kiosk_closest": 4393,
+        "confidence": 0.04428571428571428
+    },
+    {
+        "us_texture": 4990,
+        "kiosk_closest": 3911,
+        "confidence": 0.07142857142857142
+    },
+    {
+        "us_texture": 4991,
+        "kiosk_closest": 3818,
+        "confidence": 0.14642857142857144
+    },
+    {
+        "us_texture": 4992,
+        "kiosk_closest": 6032,
+        "confidence": 0.07357142857142857
+    },
+    {
+        "us_texture": 4993,
+        "kiosk_closest": 3809,
+        "confidence": 0.14453125
+    },
+    {
+        "us_texture": 4994,
+        "kiosk_closest": 1594,
+        "confidence": 0.04736328125
+    },
+    {
+        "us_texture": 4995,
+        "kiosk_closest": 972,
+        "confidence": 0.0478515625
+    },
+    {
+        "us_texture": 4997,
+        "kiosk_closest": 4376,
+        "confidence": 0.09156976744186046
+    },
+    {
+        "us_texture": 4998,
+        "kiosk_closest": 2000,
+        "confidence": 0.32275390625
+    },
+    {
+        "us_texture": 4999,
+        "kiosk_closest": 972,
+        "confidence": 0.03955078125
+    },
+    {
+        "us_texture": 5000,
+        "kiosk_closest": 972,
+        "confidence": 0.0517578125
+    },
+    {
+        "us_texture": 5001,
+        "kiosk_closest": 972,
+        "confidence": 0.04833984375
+    },
+    {
+        "us_texture": 5002,
+        "kiosk_closest": 569,
+        "confidence": 0.0390625
+    },
+    {
+        "us_texture": 5003,
+        "kiosk_closest": 5914,
+        "confidence": 0.01220703125
+    },
+    {
+        "us_texture": 5004,
+        "kiosk_closest": 3757,
+        "confidence": 0.05890804597701149
+    },
+    {
+        "us_texture": 5005,
+        "kiosk_closest": 4922,
+        "confidence": 0.22314453125
+    },
+    {
+        "us_texture": 5006,
+        "kiosk_closest": 4923,
+        "confidence": 0.23388671875
+    },
+    {
+        "us_texture": 5007,
+        "kiosk_closest": 4926,
+        "confidence": 0.14990234375
+    },
+    {
+        "us_texture": 5008,
+        "kiosk_closest": 4807,
+        "confidence": 0.089599609375
+    },
+    {
+        "us_texture": 5009,
+        "kiosk_closest": 4816,
+        "confidence": 0.067626953125
+    },
+    {
+        "us_texture": 5010,
+        "kiosk_closest": 4816,
+        "confidence": 0.09814453125
+    },
+    {
+        "us_texture": 5011,
+        "kiosk_closest": 4812,
+        "confidence": 0.101318359375
+    },
+    {
+        "us_texture": 5012,
+        "kiosk_closest": 4828,
+        "confidence": 0.16796875
+    },
+    {
+        "us_texture": 5013,
+        "kiosk_closest": 4922,
+        "confidence": 0.24169921875
+    },
+    {
+        "us_texture": 5014,
+        "kiosk_closest": 4912,
+        "confidence": 0.24609375
+    },
+    {
+        "us_texture": 5015,
+        "kiosk_closest": 4922,
+        "confidence": 0.22314453125
+    },
+    {
+        "us_texture": 5024,
+        "kiosk_closest": 5861,
+        "confidence": 0.8985615079365079
+    },
+    {
+        "us_texture": 5025,
+        "kiosk_closest": 5862,
+        "confidence": 0.876984126984127
+    },
+    {
+        "us_texture": 5026,
+        "kiosk_closest": 5863,
+        "confidence": 0.8415178571428571
+    },
+    {
+        "us_texture": 5027,
+        "kiosk_closest": 5864,
+        "confidence": 0.8082837301587301
+    },
+    {
+        "us_texture": 5028,
+        "kiosk_closest": 5865,
+        "confidence": 0.7338789682539683
+    },
+    {
+        "us_texture": 5029,
+        "kiosk_closest": 5866,
+        "confidence": 0.6376488095238095
+    },
+    {
+        "us_texture": 5030,
+        "kiosk_closest": 5867,
+        "confidence": 0.49950396825396826
+    },
+    {
+        "us_texture": 5031,
+        "kiosk_closest": 5868,
+        "confidence": 0.4263392857142857
+    },
+    {
+        "us_texture": 5032,
+        "kiosk_closest": 5869,
+        "confidence": 0.39558531746031744
+    },
+    {
+        "us_texture": 5033,
+        "kiosk_closest": 5870,
+        "confidence": 0.37648809523809523
+    },
+    {
+        "us_texture": 5034,
+        "kiosk_closest": 5871,
+        "confidence": 0.41096230158730157
+    },
+    {
+        "us_texture": 5035,
+        "kiosk_closest": 5872,
+        "confidence": 0.4935515873015873
+    },
+    {
+        "us_texture": 5036,
+        "kiosk_closest": 5873,
+        "confidence": 0.5280257936507936
+    },
+    {
+        "us_texture": 5037,
+        "kiosk_closest": 5861,
+        "confidence": 0.5059523809523809
+    },
+    {
+        "us_texture": 5061,
+        "kiosk_closest": 3949,
+        "confidence": 0.005533854166666667
+    },
+    {
+        "us_texture": 5062,
+        "kiosk_closest": 3949,
+        "confidence": 0.0035807291666666665
+    },
+    {
+        "us_texture": 5063,
+        "kiosk_closest": 3949,
+        "confidence": 0.00390625
+    },
+    {
+        "us_texture": 5064,
+        "kiosk_closest": 3949,
+        "confidence": 0.0035807291666666665
+    },
+    {
+        "us_texture": 5065,
+        "kiosk_closest": 3949,
+        "confidence": 0.004557291666666667
+    },
+    {
+        "us_texture": 5066,
+        "kiosk_closest": 3949,
+        "confidence": 0.0029296875
+    },
+    {
+        "us_texture": 5067,
+        "kiosk_closest": 3949,
+        "confidence": 0.0013020833333333333
+    },
+    {
+        "us_texture": 5068,
+        "kiosk_closest": 3949,
+        "confidence": 0.0013020833333333333
+    },
+    {
+        "us_texture": 5069,
+        "kiosk_closest": 3949,
+        "confidence": 0.0013020833333333333
+    },
+    {
+        "us_texture": 5070,
+        "kiosk_closest": 3949,
+        "confidence": 0.001953125
+    },
+    {
+        "us_texture": 5071,
+        "kiosk_closest": 3949,
+        "confidence": 0.0035807291666666665
+    },
+    {
+        "us_texture": 5072,
+        "kiosk_closest": 3949,
+        "confidence": 0.0016276041666666667
+    },
+    {
+        "us_texture": 5073,
+        "kiosk_closest": 3949,
+        "confidence": 0.001953125
+    },
+    {
+        "us_texture": 5074,
+        "kiosk_closest": 3949,
+        "confidence": 0.0016276041666666667
+    },
+    {
+        "us_texture": 5075,
+        "kiosk_closest": 3949,
+        "confidence": 0.0016276041666666667
+    },
+    {
+        "us_texture": 5076,
+        "kiosk_closest": 3949,
+        "confidence": 0.0013020833333333333
+    },
+    {
+        "us_texture": 5179,
+        "kiosk_closest": 176,
+        "confidence": 0.541015625
+    },
+    {
+        "us_texture": 5220,
+        "kiosk_closest": 5105,
+        "confidence": 0.603271484375
+    },
+    {
+        "us_texture": 5221,
+        "kiosk_closest": 5105,
+        "confidence": 0.59033203125
+    },
+    {
+        "us_texture": 5222,
+        "kiosk_closest": 5105,
+        "confidence": 0.576416015625
+    },
+    {
+        "us_texture": 5223,
+        "kiosk_closest": 5179,
+        "confidence": 0.562255859375
+    },
+    {
+        "us_texture": 5224,
+        "kiosk_closest": 5105,
+        "confidence": 0.556640625
+    },
+    {
+        "us_texture": 5225,
+        "kiosk_closest": 5105,
+        "confidence": 0.544921875
+    },
+    {
+        "us_texture": 5226,
+        "kiosk_closest": 5105,
+        "confidence": 0.529541015625
+    },
+    {
+        "us_texture": 5227,
+        "kiosk_closest": 5178,
+        "confidence": 0.5205078125
+    },
+    {
+        "us_texture": 5228,
+        "kiosk_closest": 5178,
+        "confidence": 0.515869140625
+    },
+    {
+        "us_texture": 5229,
+        "kiosk_closest": 5101,
+        "confidence": 0.5185546875
+    },
+    {
+        "us_texture": 5230,
+        "kiosk_closest": 5105,
+        "confidence": 0.515380859375
+    },
+    {
+        "us_texture": 5231,
+        "kiosk_closest": 5178,
+        "confidence": 0.52734375
+    },
+    {
+        "us_texture": 5232,
+        "kiosk_closest": 5101,
+        "confidence": 0.52783203125
+    },
+    {
+        "us_texture": 5233,
+        "kiosk_closest": 5105,
+        "confidence": 0.52685546875
+    },
+    {
+        "us_texture": 5234,
+        "kiosk_closest": 5105,
+        "confidence": 0.5322265625
+    },
+    {
+        "us_texture": 5235,
+        "kiosk_closest": 5101,
+        "confidence": 0.56298828125
+    },
+    {
+        "us_texture": 5917,
+        "kiosk_closest": 5834,
+        "confidence": 0.6298828125
+    },
+    {
+        "us_texture": 5918,
+        "kiosk_closest": 5835,
+        "confidence": 0.636962890625
+    },
+    {
+        "us_texture": 5919,
+        "kiosk_closest": 5836,
+        "confidence": 0.658447265625
+    },
+    {
+        "us_texture": 5920,
+        "kiosk_closest": 5837,
+        "confidence": 0.6748046875
+    },
+    {
+        "us_texture": 5921,
+        "kiosk_closest": 5838,
+        "confidence": 0.681884765625
+    },
+    {
+        "us_texture": 5922,
+        "kiosk_closest": 4634,
+        "confidence": 0.388671875
+    },
+    {
+        "us_texture": 5923,
+        "kiosk_closest": 4634,
+        "confidence": 0.3828125
+    },
+    {
+        "us_texture": 5924,
+        "kiosk_closest": 4634,
+        "confidence": 0.375
+    },
+    {
+        "us_texture": 5925,
+        "kiosk_closest": 176,
+        "confidence": 0.396484375
+    },
+    {
+        "us_texture": 5926,
+        "kiosk_closest": 176,
+        "confidence": 0.404296875
+    },
+    {
+        "us_texture": 5927,
+        "kiosk_closest": 176,
+        "confidence": 0.431640625
+    },
+    {
+        "us_texture": 5928,
+        "kiosk_closest": 176,
+        "confidence": 0.443359375
+    },
+    {
+        "us_texture": 5929,
+        "kiosk_closest": 176,
+        "confidence": 0.44921875
+    },
+    {
+        "us_texture": 5930,
+        "kiosk_closest": 919,
+        "confidence": 0.12451171875
+    },
+    {
+        "us_texture": 5931,
+        "kiosk_closest": 5463,
+        "confidence": 0.119140625
+    },
+    {
+        "us_texture": 5932,
+        "kiosk_closest": 5466,
+        "confidence": 0.1796875
+    },
+    {
+        "us_texture": 5933,
+        "kiosk_closest": 5470,
+        "confidence": 0.1748046875
+    },
+    {
+        "us_texture": 5934,
+        "kiosk_closest": 2000,
+        "confidence": 0.453369140625
+    },
+    {
+        "us_texture": 5935,
+        "kiosk_closest": 5896,
+        "confidence": 0.4658203125
+    },
+    {
+        "us_texture": 5936,
+        "kiosk_closest": 5896,
+        "confidence": 0.4775390625
+    },
+    {
+        "us_texture": 5937,
+        "kiosk_closest": 207,
+        "confidence": 0.552734375
+    },
+    {
+        "us_texture": 5938,
+        "kiosk_closest": 5896,
+        "confidence": 0.26611328125
+    },
+    {
+        "us_texture": 5939,
+        "kiosk_closest": 5776,
+        "confidence": 0.624755859375
+    },
+    {
+        "us_texture": 5940,
+        "kiosk_closest": 5775,
+        "confidence": 0.59228515625
+    },
+    {
+        "us_texture": 5941,
+        "kiosk_closest": 207,
+        "confidence": 0.16748046875
+    },
+    {
+        "us_texture": 5942,
+        "kiosk_closest": 5896,
+        "confidence": 0.173828125
+    },
+    {
+        "us_texture": 5943,
+        "kiosk_closest": 207,
+        "confidence": 0.18310546875
+    },
+    {
+        "us_texture": 5944,
+        "kiosk_closest": 207,
+        "confidence": 0.18310546875
+    },
+    {
+        "us_texture": 5945,
+        "kiosk_closest": 5896,
+        "confidence": 0.1845703125
+    },
+    {
+        "us_texture": 5946,
+        "kiosk_closest": 207,
+        "confidence": 0.1748046875
+    },
+    {
+        "us_texture": 5947,
+        "kiosk_closest": 4975,
+        "confidence": 0.4951171875
+    },
+    {
+        "us_texture": 5948,
+        "kiosk_closest": 2592,
+        "confidence": 0.041015625
+    },
+    {
+        "us_texture": 5949,
+        "kiosk_closest": 5896,
+        "confidence": 0.7021484375
+    },
+    {
+        "us_texture": 5950,
+        "kiosk_closest": 5896,
+        "confidence": 0.69287109375
+    },
+    {
+        "us_texture": 5951,
+        "kiosk_closest": 207,
+        "confidence": 0.78857421875
+    },
+    {
+        "us_texture": 5952,
+        "kiosk_closest": 5896,
+        "confidence": 0.7587890625
+    },
+    {
+        "us_texture": 5953,
+        "kiosk_closest": 5896,
+        "confidence": 0.71826171875
+    },
+    {
+        "us_texture": 5954,
+        "kiosk_closest": 5896,
+        "confidence": 0.712890625
+    },
+    {
+        "us_texture": 5955,
+        "kiosk_closest": 5896,
+        "confidence": 0.72802734375
+    },
+    {
+        "us_texture": 5956,
+        "kiosk_closest": 5896,
+        "confidence": 0.72021484375
+    },
+    {
+        "us_texture": 5957,
+        "kiosk_closest": 5896,
+        "confidence": 0.67822265625
+    },
+    {
+        "us_texture": 5958,
+        "kiosk_closest": 207,
+        "confidence": 0.71435546875
+    },
+    {
+        "us_texture": 5959,
+        "kiosk_closest": 5475,
+        "confidence": 0.7963789682539683
+    },
+    {
+        "us_texture": 5960,
+        "kiosk_closest": 5859,
+        "confidence": 0.6408730158730159
+    },
+    {
+        "us_texture": 5961,
+        "kiosk_closest": 5475,
+        "confidence": 0.5158730158730159
+    },
+    {
+        "us_texture": 5962,
+        "kiosk_closest": 5653,
+        "confidence": 0.43427579365079366
+    },
+    {
+        "us_texture": 5963,
+        "kiosk_closest": 3172,
+        "confidence": 0.4677579365079365
+    },
+    {
+        "us_texture": 5964,
+        "kiosk_closest": 5860,
+        "confidence": 0.4439484126984127
+    },
+    {
+        "us_texture": 5965,
+        "kiosk_closest": 5659,
+        "confidence": 0.5161210317460317
+    },
+    {
+        "us_texture": 5966,
+        "kiosk_closest": 5475,
+        "confidence": 0.6416170634920635
+    },
+    {
+        "us_texture": 5967,
+        "kiosk_closest": 4967,
+        "confidence": 0.263671875
+    },
+    {
+        "us_texture": 5968,
+        "kiosk_closest": 4777,
+        "confidence": 0.3408203125
+    },
+    {
+        "us_texture": 5969,
+        "kiosk_closest": 4777,
+        "confidence": 0.3193359375
+    },
+    {
+        "us_texture": 5970,
+        "kiosk_closest": 4777,
+        "confidence": 0.2626953125
+    },
+    {
+        "us_texture": 5971,
+        "kiosk_closest": 4777,
+        "confidence": 0.341796875
+    },
+    {
+        "us_texture": 5972,
+        "kiosk_closest": 4777,
+        "confidence": 0.2978515625
+    },
+    {
+        "us_texture": 5973,
+        "kiosk_closest": 4777,
+        "confidence": 0.3115234375
+    },
+    {
+        "us_texture": 5974,
+        "kiosk_closest": 883,
+        "confidence": 0.3359375
+    },
+    {
+        "us_texture": 5975,
+        "kiosk_closest": 5407,
+        "confidence": 0.22265625
+    },
+    {
+        "us_texture": 5976,
+        "kiosk_closest": 4777,
+        "confidence": 0.3466796875
+    },
+    {
+        "us_texture": 5977,
+        "kiosk_closest": 4959,
+        "confidence": 0.2548828125
+    },
+    {
+        "us_texture": 5978,
+        "kiosk_closest": 4959,
+        "confidence": 0.31640625
+    },
+    {
+        "us_texture": 5979,
+        "kiosk_closest": 4777,
+        "confidence": 0.3720703125
+    },
+    {
+        "us_texture": 5980,
+        "kiosk_closest": 4777,
+        "confidence": 0.4462890625
+    },
+    {
+        "us_texture": 5981,
+        "kiosk_closest": 4777,
+        "confidence": 0.52734375
+    },
+    {
+        "us_texture": 5983,
+        "kiosk_closest": 3836,
+        "confidence": 0.452880859375
+    },
+    {
+        "us_texture": 5984,
+        "kiosk_closest": 3836,
+        "confidence": 0.39794921875
+    },
+    {
+        "us_texture": 5985,
+        "kiosk_closest": 3836,
+        "confidence": 0.433837890625
+    },
+    {
+        "us_texture": 5986,
+        "kiosk_closest": 3836,
+        "confidence": 0.387451171875
+    },
+    {
+        "us_texture": 5987,
+        "kiosk_closest": 3836,
+        "confidence": 0.3984375
+    },
+    {
+        "us_texture": 5988,
+        "kiosk_closest": 3836,
+        "confidence": 0.467041015625
+    },
+    {
+        "us_texture": 5989,
+        "kiosk_closest": 937,
+        "confidence": 0.068359375
+    },
+    {
+        "us_texture": 5990,
+        "kiosk_closest": 5840,
+        "confidence": 0.285400390625
+    },
+    {
+        "us_texture": 5991,
+        "kiosk_closest": 5424,
+        "confidence": 0.4855371900826446
+    },
+    {
+        "us_texture": 5992,
+        "kiosk_closest": 5425,
+        "confidence": 0.5180785123966942
+    },
+    {
+        "us_texture": 5993,
+        "kiosk_closest": 5426,
+        "confidence": 0.5454545454545454
+    },
+    {
+        "us_texture": 5994,
+        "kiosk_closest": 4841,
+        "confidence": 0.5377066115702479
+    },
+    {
+        "us_texture": 5995,
+        "kiosk_closest": 5428,
+        "confidence": 0.5490702479338843
+    },
+    {
+        "us_texture": 5996,
+        "kiosk_closest": 5429,
+        "confidence": 0.5529442148760331
+    },
+    {
+        "us_texture": 5997,
+        "kiosk_closest": 5430,
+        "confidence": 0.5981404958677686
+    },
+    {
+        "us_texture": 5998,
+        "kiosk_closest": 5431,
+        "confidence": 0.5475206611570248
+    },
+    {
+        "us_texture": 5999,
+        "kiosk_closest": 5432,
+        "confidence": 0.5643078512396694
+    },
+    {
+        "us_texture": 6000,
+        "kiosk_closest": 5433,
+        "confidence": 0.5756714876033058
+    },
+    {
+        "us_texture": 6001,
+        "kiosk_closest": 5435,
+        "confidence": 0.5606921487603306
+    },
+    {
+        "us_texture": 6002,
+        "kiosk_closest": 4975,
+        "confidence": 0.823974609375
+    },
+    {
+        "us_texture": 6003,
+        "kiosk_closest": 4978,
+        "confidence": 0.404052734375
+    },
+    {
+        "us_texture": 6004,
+        "kiosk_closest": 4978,
+        "confidence": 0.405517578125
+    },
+    {
+        "us_texture": 6005,
+        "kiosk_closest": 4978,
+        "confidence": 0.412353515625
+    },
+    {
+        "us_texture": 6006,
+        "kiosk_closest": 4978,
+        "confidence": 0.417724609375
+    },
+    {
+        "us_texture": 6007,
+        "kiosk_closest": 4978,
+        "confidence": 0.4189453125
+    },
+    {
+        "us_texture": 6008,
+        "kiosk_closest": 4978,
+        "confidence": 0.418701171875
+    },
+    {
+        "us_texture": 6009,
+        "kiosk_closest": 4978,
+        "confidence": 0.4169921875
+    },
+    {
+        "us_texture": 6010,
+        "kiosk_closest": 4978,
+        "confidence": 0.413330078125
+    },
+    {
+        "us_texture": 6011,
+        "kiosk_closest": 4978,
+        "confidence": 0.409423828125
+    },
+    {
+        "us_texture": 6012,
+        "kiosk_closest": 4978,
+        "confidence": 0.4052734375
+    }
+]

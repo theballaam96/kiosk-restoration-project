@@ -1,54 +1,74 @@
 .n64
-.open "rom/dk64-newhack-dev.z64", 0
+.open "rom/dk64-kioskrestoration-dev.z64", 0
 
 .include "asm/symbols.asm" ; Tell armips' linker where to find the game's function(s)
 
 ; Patch boot routine to DMA our code from ROM to RAM and run it
-.definelabel bootStart, 0x01FED020
+.definelabel bootStart, 0x02080000 ; DO NOT CHANGE LOWER 4 BYTES. HAS TO BE 0000
+.definelabel codeStart, 0x807C0000
 
-.orga 0x3154 ; ROM
-.org 0x80002554 ; RDRAM
-NOP ; CRC Patch ; TODO: Can this be removed if correct gzip footers are written to all compressed files?
+; TODO: This
+;.orga 0x1292C ; ROM
+;.org 0x805A192C ; RDRAM
+;NOP ; CRC Patch ; TODO: Can this be removed if correct gzip footers are written to all compressed files?
 
-.orga 0x1364 ; ROM
-.org 0x80000764 ; RDRAM
+.orga 0x1878 ; ROM
+.org 0x80590878 ; RDRAM
 
 modifiedBootCode:
-	LI a0, bootStart ; Start of ROM copy
-	LI a1, (bootStart + 0x11FE0) ; End of ROM copy
-	LUI a2, 0x805D
-	JAL dmaFileTransfer
-	ORI a2, a2, 0xAE00 ; RAM location to copy to
-	J displacedVanillaBootCode
-	NOP
+	; copyfromrom args
+	; arg0 = rom_start
+	; arg1 = rdram_start
+	; arg2 = &size
+	; arg 3, 4, 5 = 0
+	; 12 instructions max for entrypoint
+	lui $a0, hi(bootStart)
+	lui $a1, hi(codeStart)
+	addiu $a1, $a1, lo(codeStart)
+	lui $a2, 0x4 ; 0x40000 bytes ; todo: stack thing
+	sw $a2, 0x20 ($sp)
+	addiu $a2, $sp, 0x20
+	or $a3, $zero, $zero
+	sw $zero, 0x10 ($sp)
+	jal 0x805a26e0
+	sw $zero, 0x14 ($sp)
+	j displacedVanillaBootCode
+	nop
+
 resumeVanillaBootCode:
 
 .orga bootStart ; ROM
-.org 0x805DAE00 ; RDRAM
+.org codeStart ; RDRAM
 
 displacedVanillaBootCode:
-	LUI v0, 0x8001
-	ADDIU v0, v0, 0xDCC4
-	; Write per frame hook
-	LUI t3, hi(mainASMFunctionJump)
-	LW t3, lo(mainASMFunctionJump) (t3)
-	LUI t4, 0x8060
-	SW t3, 0xC164 (t4) ; Store per frame hook
-	LUI t3, 0 ; These make multiplayer not hard crash
-	LUI t4, 1 ; These make multiplayer not hard crash
-	LUI t5, 1 ; These make multiplayer not hard crash
-	LUI t9, 0xD ; These make multiplayer not hard crash
-	LUI t8, 0xD ; These make multiplayer not hard crash
-	J resumeVanillaBootCode
-	LUI t6, 0x000D
+	; write hook
+	lui $t2, hi(mainASMFunctionJump)
+	lw $t2, lo(mainASMFunctionJump) ($t2)
+	lui $at, 0x8059
+	sw $t2, 0x0C14 ($at) ; Store per frame hook
+	; vanilla code
+	addiu $t2, $zero, 5
+	lui $at, 0x8073
+	jal 0x805A5020
+	sw $t2, 0xCDC4 ($at)
+	jal 0x805A1EC0
+	nop
+	jal 0x80594CD0 ; init audio engine
+	nop
+	jal 0x806E6550 ; osWritebackDCacheAll
+	nop
+	lw $ra, 0x1C ($sp)
+	addiu $sp, $sp, 0x28
+	jr $ra
+	nop
 
 mainASMFunction:
-	JAL	0x805FC2B0
-	NOP
-	JAL cFuncLoop
-	NOP
-	J 0x805FC16C
-	NOP
+	jal	0x80590D00
+	nop
+	jal cFuncLoop
+	nop
+	j 0x80590C1C
+	nop
 
 mainASMFunctionJump:
 	J mainASMFunction ; Instruction copied and used as a hook

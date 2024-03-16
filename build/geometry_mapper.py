@@ -24,8 +24,14 @@ def geo_us_to_kiosk(file_name: str):
         start_pointer = int.from_bytes(fh.read(4), "big")
         end_pointer = int.from_bytes(fh.read(4), "big")
         dl_count = int((end_pointer - start_pointer) / 8)
-        f = open("./build/texture_mapping.json")
+        f = open("./build/tex_mapping_calculated.json")
         mapping_data = json.load(f)
+        f.close()
+        f = open("./build/tex_mapping_manual.json")
+        temp_mapping = json.load(f)
+        f.close()
+        for k in temp_mapping:
+            mapping_data[k] = temp_mapping[k]
         for x in range(dl_count):
             fh.seek(start_pointer + (x * 8))
             command = int.from_bytes(fh.read(1), "big")
@@ -36,3 +42,5 @@ def geo_us_to_kiosk(file_name: str):
             if str(tex_idx) in mapping_data:
                 fh.seek(start_pointer + (x * 8) + 4)
                 fh.write((mapping_data[str(tex_idx)]).to_bytes(4, "big"))
+            else:
+                print(f"- Unmapped texture {tex_idx} in map {file_name}")

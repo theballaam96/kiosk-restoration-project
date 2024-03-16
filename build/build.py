@@ -19,7 +19,7 @@ from restore_music import pullSongsFromROM
 import time
 start_time = time.time()
 
-COMPILE_C = False
+COMPILE_C = True
 CLEANUP = True
 
 if COMPILE_C:
@@ -89,6 +89,28 @@ with open("./rom/dk64_us.z64", "rb") as fq:
 	floors_compressed = [False] * limit
 	walls_compressed = [False] * limit
 	valid_maps = [x for x in list(range(limit)) if x not in excluded_maps]
+	# Initial pass of geofor compression data
+	fq.seek(us_pointer + (1 << 2))
+	table_start = us_pointer + int.from_bytes(fq.read(4), "big")
+	for map_id in valid_maps:
+		fq.seek(table_start + (map_id << 2))
+		file_start = us_pointer + (int.from_bytes(fq.read(4), "big") & 0x7FFFFFFF)
+		file_end = us_pointer + (int.from_bytes(fq.read(4), "big") & 0x7FFFFFFF)
+		file_compressed_size = file_end - file_start
+		fq.seek(file_start)
+		file_data = fq.read(file_compressed_size)
+		fq.seek(file_start)
+		indic = int.from_bytes(fq.read(2), "big")
+		if file_compressed_size > 8:
+			if indic == 0x1F8B:
+				file_data = zlib.decompress(file_data, (15 + 32))
+			compression_byte = file_data[9]
+			if (compression_byte & 1) != 0:
+				walls_compressed[map_id] = True
+			if (compression_byte & 2) != 0:
+				floors_compressed[map_id] = True
+		print(map_id, walls_compressed[map_id], floors_compressed[map_id])
+	# Parse Tables
 	for table in us_tables:
 		fq.seek(us_pointer + (table << 2))
 		table_start = us_pointer + int.from_bytes(fq.read(4), "big")
@@ -102,35 +124,29 @@ with open("./rom/dk64_us.z64", "rb") as fq:
 			fq.seek(file_start)
 			indic = int.from_bytes(fq.read(2), "big")
 			is_gzip = indic == 0x1F8B
-			if file_compressed_size == 8:
-				if not is_gzip:
-					added_name = f"./bin/t{table}_f{indic}.bin"
-					append_data = {
-						"name": f"Table {table - 1} File {indic}",
-						"pointer_table_index": table - 1,
-						"file_index": indic,
-						"source_file": added_name,
-						"do_not_extract": True,
-					}
-					if table == 2 and not walls_compressed[indic]:
-						append_data["do_not_compress"] = True
-					if table == 3 and not floors_compressed[indic]:
-						append_data["do_not_compress"] = True
-					file_dict.append(append_data)
-					continue
+			if (file_compressed_size == 8 and not is_gzip) or map_id == 50:
+				if map_id == 50:
+					indic = 0xAD
+				added_name = f"./bin/t{table}_f{indic}.bin"
+				append_data = {
+					"name": f"Table {table - 1} File {indic}",
+					"pointer_table_index": table - 1,
+					"file_index": indic,
+					"source_file": added_name,
+					"do_not_extract": True,
+				}
+				if table == 2 and not walls_compressed[indic]:
+					append_data["do_not_compress"] = True
+				if table == 3 and not floors_compressed[indic]:
+					append_data["do_not_compress"] = True
+				file_dict.append(append_data)
+				continue
 			if is_gzip:
 				file_data = zlib.decompress(file_data, (15 + 32))
 			file_name = f"./bin/t{table}_f{map_id}.bin"
 			with open(file_name, "wb") as fk:
 				fk.write(file_data)
 			if table == 1:
-				with open(file_name, "rb") as fk:
-					fk.seek(9)
-					compression_byte = int.from_bytes(fk.read(1), "big")
-					if (compression_byte & 1) != 0:
-						walls_compressed[map_id] = True
-					if (compression_byte & 2) != 0:
-						floors_compressed[map_id] = True
 				geo_us_to_kiosk(file_name)
 			append_data = {
 				"name": f"Table {table - 1} File {map_id}",

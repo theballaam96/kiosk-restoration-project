@@ -38,6 +38,8 @@ for item in data:
 
 SIMILARITY_THRESHOLD = 0.9
 
+unmatched = []
+
 for xi, x in enumerate(data[1]["sha"]):
     index = 0
     set_match = False
@@ -57,10 +59,17 @@ for xi, x in enumerate(data[1]["sha"]):
         index += 1
         if index >= len(data[0]["sha"]):
             if not set_match:
+                unmatched.append({
+                    "us_texture": xi,
+                    "kiosk_closest": max_mapping_item,
+                    "confidence": max_mapping_score
+                })
                 print("Unmatched", xi, "Max Score:", max_mapping_score,"(",max_mapping_item,")")
             break
 
-with open("texture_mapping.json", "w") as fh:
+with open("tex_mapping_calculated.json", "w") as fh:
     fh.write(json.dumps(mapping, indent=4))
+with open("unmatched_textures.json", "w") as fh:
+    fh.write(json.dumps(unmatched, indent=4))
 
 

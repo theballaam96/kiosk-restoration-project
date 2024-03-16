@@ -198,7 +198,7 @@ main_pointer_table_offset = 0x1A7C20
 # The address of the next available byte of free space in ROM
 # used when appending files to the end of the ROM
 #next_available_free_space = 0x1FED020
-next_available_free_space = 0x2080000 # Adding 0x80000 because of music realignment
+next_available_free_space = 0x2100000 # Adding 0x80000 because of music realignment, another 0x80000 for custom code
 
 # These will be indexed by pointer table index then by SHA1 hash of the data
 pointer_table_files = []
