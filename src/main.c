@@ -4,7 +4,6 @@ void cFuncLoop(void) {
 	/*
 		This function is run every frame. Place c code which you are wanting to be run every frame
 	*/
-	*(int*)(0x807FFFFC) = *(int*)(0x807FFFFC) + 1;
 	initHack(); // Initialize hack
 	tagAnywhere(); // Tag Anywhere every frame functions
 	// if (grab_lock_timer >= 0) {

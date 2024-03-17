@@ -32,6 +32,8 @@ void initHack(void) {
         writeFunction(0x80590A08, &giveAllMoves);
         writeFunction(0x806B5FD4, &giveAllMoves);
         writeFunction(0x806B6070, &giveAllMoves);
+        writeFunction(0x806B5A0C, &displayMapName);
+        writeFunction(0x806B5A74, &displayMapName);
         // Enable stack trace upon crash
         // *(s8 *)(0x807563B4) = 1;
         // *(s32 *)(0x80731F78) = 0;

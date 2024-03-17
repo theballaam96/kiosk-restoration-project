@@ -113,7 +113,6 @@ with open("./rom/dk64_us.z64", "rb") as fq:
 				walls_compressed[map_id] = True
 			if (compression_byte & 2) != 0:
 				floors_compressed[map_id] = True
-		print(map_id, walls_compressed[map_id], floors_compressed[map_id])
 	# Parse Tables
 	for table in us_tables:
 		fq.seek(us_pointer + (table << 2))
@@ -128,9 +127,13 @@ with open("./rom/dk64_us.z64", "rb") as fq:
 			fq.seek(file_start)
 			indic = int.from_bytes(fq.read(2), "big")
 			is_gzip = indic == 0x1F8B
-			if (file_compressed_size == 8 and not is_gzip) or map_id == 50:
+			if (file_compressed_size == 8 and not is_gzip) or map_id in (0xB, 50):
 				if map_id == 50:
 					indic = 0xAD
+				elif map_id == 0xB:
+					indic = 0x26
+				elif indic >= limit:
+					indic = 0
 				added_name = f"./bin/t{table}_f{indic}.bin"
 				append_data = {
 					"name": f"Table {table - 1} File {indic}",
@@ -143,7 +146,8 @@ with open("./rom/dk64_us.z64", "rb") as fq:
 					append_data["do_not_compress"] = True
 				if table == 3 and not floors_compressed[indic]:
 					append_data["do_not_compress"] = True
-				file_dict.append(append_data)
+				if map_id < 0xA5:
+					file_dict.append(append_data)
 				continue
 			if is_gzip:
 				file_data = zlib.decompress(file_data, (15 + 32))
@@ -163,7 +167,8 @@ with open("./rom/dk64_us.z64", "rb") as fq:
 				append_data["do_not_compress"] = True
 			if table == 3 and not floors_compressed[map_id]:
 				append_data["do_not_compress"] = True
-			file_dict.append(append_data)
+			if map_id < 0xA5:
+				file_dict.append(append_data)
 
 
 with open(ROMName, "rb") as fh:

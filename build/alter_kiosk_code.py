@@ -12,7 +12,11 @@ def code_modifications():
         fh.write((0x03E00008).to_bytes(4, "big"))
         fh.write((0x24020001).to_bytes(4, "big"))
         # Cancel Kickout Timer
-        fh.seek(kiosk_ram_to_rom(0x806B5E90))
+        fh.seek(kiosk_ram_to_rom(0x806B5E90)) # Gameplay
+        fh.write((0).to_bytes(4, "big"))
+        fh.seek(kiosk_ram_to_rom(0x806B4F5C)) # Title Screen
+        fh.write((0).to_bytes(4, "big"))
+        fh.seek(kiosk_ram_to_rom(0x806B4F1C)) # Title Screen
         fh.write((0).to_bytes(4, "big"))
         # Speed boot
         if TESTING:
@@ -27,3 +31,7 @@ def code_modifications():
         # Cancel move wipe
         fh.seek(kiosk_ram_to_rom(0x806b5fdc))
         fh.write((0).to_bytes(4, "big"))
+        # Copyright Message
+        fh.seek(kiosk_ram_to_rom(0x80709DA8))
+        bottom_text = "HACK BY BALLAAM\0"
+        fh.write(bottom_text.encode("ascii"))

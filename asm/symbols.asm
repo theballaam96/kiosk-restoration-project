@@ -19,3 +19,8 @@
 .definelabel playAnimation, 0x805AB368
 .definelabel handleAnimation, 0x805AB280
 .definelabel getWorld, 0x80593564
+.definelabel displayText, 0x8069A17C
+.definelabel ObjectTimer, 0x8072CDAC
+.definelabel getStringWidth, 0x80699580
+.definelabel DKTVTimer, 0x806FFE84
+.definelabel DemoMaps, 0x806FFE94

@@ -466,3 +466,8 @@ typedef struct Controller {
 	/* 0x002 */ s8 stickX;
 	/* 0x003 */ s8 stickY;
 } Controller;
+
+typedef struct DemoStruct {
+	/* 0x000 */ s32 map;
+	/* 0x004 */ s32 kong;
+} DemoStruct;

@@ -5,6 +5,8 @@ extern void clearTagSlide(void* actor);
 extern void playAnimation(void* actor, int local_animation);
 extern void handleAnimation(void* actor);
 extern int getWorld(int map);
+extern int* displayText(int* dl, int style, int x, int y, char* str, int params);
+extern int getStringWidth(int style, char* str);
 
 extern PlayerInventory PlayerItems[4];
 extern PlayerData* Player;
@@ -20,3 +22,6 @@ extern unsigned char TBVoidByte;
 extern unsigned char Character;
 extern hudData* HUD;
 extern Controller ControllerInput;
+extern int ObjectTimer;
+extern short DKTVTimer;
+extern DemoStruct DemoMaps[3];

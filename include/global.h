@@ -15,6 +15,9 @@ extern void initStackTrace(void);
 extern void handleGrabbingLock(void* player, int player_index, int allow_vines);
 extern void handleActionSet(int action, void* actor, int player_index);
 
+// Misc
+extern int* displayMapName(int* dl);
+
 extern const s16 kong_flags[5];
 extern char tag_locked;
 extern char grab_lock_timer;
