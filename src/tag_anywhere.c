@@ -407,6 +407,14 @@ int inTransform(void) {
     return 0;
 }
 
+int hasTurnedInEnoughCBs(void) {
+    return 1;
+}
+
+int checkFlag(int flag_index, int flag_type) {
+    return 1;
+}
+
 int canTagAnywhere(void) {
     /**
      * @brief Checks for if the player can perform Tag Anywhere
@@ -433,9 +441,9 @@ int canTagAnywhere(void) {
     if (ModelTwoTouchCount > 0) {
         return 0;
     }
-    if (tag_locked) {
-        return 0;
-    }
+    // if (tag_locked) {
+    //     return 0;
+    // }
     if (CurrentMap == MAP_TROFFNSCOFF) {
         if (MapState & 0x10) {
             return 0;
@@ -450,17 +458,17 @@ int canTagAnywhere(void) {
     for (int i = 0; i < LoadedActorCount; i++) {
         if (LoadedActorArray[i].actor) {
             int tested_type = LoadedActorArray[i].actor->actorType;
-            if (tested_type == 48) { // Coconut
+            if (tested_type == 47) { // Coconut
                 return 0;
-            } else if (tested_type == 36) { // Peanut
+            } else if (tested_type == 35) { // Peanut
                 return 0;
             } else if (tested_type == 42) { // Grape
                 return 0;
-            } else if (tested_type == 43) { // Feather
+            } else if (tested_type == 42) { // Feather
                 if (LoadedActorArray[i].actor->control_state == 0) {
                     return 0;
                 }
-            } else if (tested_type == 38) { // Pineapple
+            } else if (tested_type == 37) { // Pineapple
                 return 0;
             }
         }
@@ -468,9 +476,9 @@ int canTagAnywhere(void) {
     if (TBVoidByte & 3) {
         return 0;
     }
-    if (tag_countdown != 0) {
-        return 0;
-    }
+    // if (tag_countdown != 0) {
+    //     return 0;
+    // }
     int offset = CurrentMap >> 3;
     int check = CurrentMap % 8;
     int is_banned = *(unsigned char*)((unsigned char*)(&banned_map_btf) + offset) & (0x80 >> check);
@@ -551,15 +559,15 @@ void tagAnywhere(void) {
             if (tag_countdown == 2) {
                 HUD->item[0].hud_state = 1;
                 if (Player->control_state == 108) {
-                    int world = getWorld(CurrentMap,0);
-                    if (MovesBase[(int)Character].cb_count[world] > 0) {
+                    int world = getWorld(CurrentMap);
+                    if (PlayerItems->kongs[(int)Character].cb_count[world] > 0) {
                         HUD->item[0].hud_state = 0;
                     }
                 }
             } else if (tag_countdown == 1) {
                 if (Player->control_state == 108) {
-                    int world = getWorld(CurrentMap,0);
-                    if (MovesBase[(int)Character].cb_count[world] > 0) {
+                    int world = getWorld(CurrentMap);
+                    if (PlayerItems->kongs[(int)Character].cb_count[world] > 0) {
                         HUD->item[0].hud_state = 1;
                     }
                 }
@@ -618,16 +626,17 @@ void tagAnywhere(void) {
                 int next_character = getTagAnywhereKong(change);
                 if (next_character != Character) {
                     // Fix hand state
-                    if (((MovesBase[next_character].weapon_bitfield & 1) == 0) || (Player->was_gun_out == 0)) {
+                    int gun_out = 0; // Player->was_gun_out (Can't find in Kiosk code??)
+                    if (((PlayerItems->kongs[next_character].weapon_bitfield & 1) == 0) || (!gun_out)) {
                         Player->hand_state = 1;
-                        Player->was_gun_out = 0;
+                        //Player->was_gun_out = 0;
                         // Without this, tags to and from Diddy mess up
                         if (next_character == 1) {
                             Player->hand_state = 0;
                         }
                     } else {
                         Player->hand_state = 2;
-                        Player->was_gun_out = 1;
+                        //Player->was_gun_out = 1;
                         // Without this, tags to and from Diddy mess up
                         if (next_character == 1) {
                             Player->hand_state = 3;
@@ -661,7 +670,7 @@ void tagAnywhere(void) {
                         // Gorilla Gone
                         cancelMusic(0x6C, 0);
                         Player->obj_props_bitfield |= 0x8000;
-                        removeGorillaGone(Player);
+                        //removeGorillaGone(Player);
                     }
                     // Perform the tag
                     int old_control_state = Player->control_state;
@@ -682,15 +691,6 @@ void tagAnywhere(void) {
         }
     }
 }
-
-void tagAnywhereInit(int is_homing, int model2_id, int obj) {
-    /**
-     * @brief Initialize certain aspects of Tag Anywhere
-     */
-    assessFlagMapping(CurrentMap, model2_id);
-    coinCBCollectHandle(0, obj, is_homing);
-}
-
 typedef struct sfx_cache_item {
     /* 0x000 */ unsigned short sfx;
     /* 0x002 */ unsigned char noise_buffer;
@@ -701,22 +701,19 @@ typedef struct sfx_cache_item {
     /* 0x00A */ unsigned short id;
     /* 0x00C */ unsigned char map_initiated;
 } sfx_cache_item;
+/*
+
+void tagAnywhereInit(int is_homing, int model2_id, int obj) {
+    assessFlagMapping(CurrentMap, model2_id);
+    coinCBCollectHandle(0, obj, is_homing);
+}
+
+
 
 #define SFX_CACHE_SIZE 16
 static sfx_cache_item sfx_cache_array[SFX_CACHE_SIZE];
 
 void populateSFXCache(int sfx, int noise_buffer, int sfx_count, int sfx_delay, int id, int init_delay) {
-    /**
-     * @brief Populate SFX Cache with a sound effect
-     * 
-     * @param sfx Sound Effect Index
-     * @param noise_buffer Noise Buffer Value
-     * @param sfx_count Amount of times the SFX is played
-     * @param sfx_delay Amount of frames inbetween each SFX play
-     * @param id ID of the object in which the SFX plays at
-     * @param init_delay Initial delay of the SFX Play
-     * 
-     */
     int has_pushed = 0;
     for (int i = 0; i < SFX_CACHE_SIZE; i++) {
         if (!has_pushed) {
@@ -738,9 +735,6 @@ void populateSFXCache(int sfx, int noise_buffer, int sfx_count, int sfx_delay, i
 }
 
 void handleSFXCache(void) {
-    /**
-     * @brief Handle SFX Cache to play the sound effects as dictated by the SFX Cache array
-     */
     for (int i = 0; i < SFX_CACHE_SIZE; i++) {
         if (sfx_cache_array[i].sfx_count == 0) {
             sfx_cache_array[i].used = 0;
@@ -757,13 +751,6 @@ void handleSFXCache(void) {
 }
 
 void tagAnywhereAmmo(int player, int obj, int is_homing) {
-    /**
-     * @brief Change collection behaviour of ammo in Tag Anywhere
-     * In order to enable a 1f TA cooldown, we need to change the behaviour of the collection of ammo
-     * Since Ammo Crates spawn 5 ammo, the game normally spreads out this delay
-     * This function handles these changes
-     * 
-     */
     coinCBCollectHandle(player, obj, is_homing);
     int id = 0;
     if (LatestCollectedObject) {
@@ -776,13 +763,6 @@ void tagAnywhereAmmo(int player, int obj, int is_homing) {
 }
 
 void tagAnywhereBunch(int player, int obj, int player_index) {
-    /**
-     * @brief Change collection behaviour of bunches in Tag Anywhere
-     * In order to enable a 1f TA cooldown, we need to change the behaviour of the collection of bunches
-     * Since Bunches spawn 5 singles, the game normally spreads out this delay
-     * This function handles these changes
-     * 
-     */
     coinCBCollectHandle(player, obj, player_index);
     int id = 0;
     if (LatestCollectedObject) {
@@ -792,10 +772,6 @@ void tagAnywhereBunch(int player, int obj, int player_index) {
 }
 
 void handleGrabbingLock(void* player, int player_index, int allow_vines) {
-    /**
-     * @brief Block grabbing trees for 2 frames after a tag
-     * 
-     */
     if ((grab_lock_timer >= 0) && (grab_lock_timer < 2)) {
         return;
     }
@@ -806,3 +782,4 @@ void handleActionSet(int action, void* actor, int player_index) {
     tag_locked = 1;
     setAction(action, actor, player_index);
 }
+*/

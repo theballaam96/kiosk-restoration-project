@@ -1,0 +1,6 @@
+{
+    "files.associations": {
+        "cstddef": "cpp",
+        "vanilla_defs.h": "c"
+    }
+}

@@ -24,3 +24,6 @@ def code_modifications():
             fh.write((0x3).to_bytes(2, "big"))
             fh.seek(kiosk_ram_to_rom(0x806B519E))
             fh.write((0x50).to_bytes(2, "big"))
+        # Cancel move wipe
+        fh.seek(kiosk_ram_to_rom(0x806b5fdc))
+        fh.write((0).to_bytes(4, "big"))

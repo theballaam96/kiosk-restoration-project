@@ -39,10 +39,14 @@ if COMPILE_C:
 	if os.path.exists("obj"):
 		shutil.rmtree('obj')
 	os.mkdir("obj")
+	exclusions = ["stack_trace.c"]
 	with open('./asm/objects.asm', 'w') as obj_asm:
 		for root, dirs, files in os.walk(r'src'):
 			for file in files:
 				if file.endswith('.c'):
+					excluded = len([x for x in exclusions if x in file]) > 0
+					if excluded:
+						continue
 					_o = os.path.join(root, file).replace("/", "_").replace("\\", "_").replace(".c", ".o")
 					print(os.path.join(root, file))
 					obj_asm.write(".importobj \"obj/" + _o + "\"\n")

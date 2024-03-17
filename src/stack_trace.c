@@ -91,26 +91,36 @@ static char* float_causes[] = {
     "INEXACT OPERATION"
 };
 
+static s8 stack_trace_size = 2;
+static s16 stack_unk_0 = -1;
+static s16 stack_unk_1 = 1;
+static s32 stack_x = 0;
+static s32 stack_y = 0;
+static s32 stack_start_x = 0;
+static u8 reason_code;
+static s32 stack_unk_2 = 0;
+static s32 stack_unk_3 = 0;
+
 void CrashHandler(crash_handler_info* info) {
-    StackTraceSize = 2; // Pixel Size
-    *(short*)(0x807FEF84) = -1;
-    *(short*)(0x807FEF86) = 1;
+    stack_trace_size = 2; // Pixel Size
+    stack_unk_0 = -1;
+    stack_unk_1 = 1;
     s32 x = 0;
     s32 y = 0;
-    StackTraceX = x;
-    StackTraceY = y;
-    StackTraceStartX = x;
+    stack_x = x;
+    stack_y = y;
+    stack_start_x = x;
     printDebugText("OOPS! YOUR GAME HAS CRASHED.\n", 0, 0, 0, 0);
     printDebugText("SEND A PICTURE OF THIS SCREEN TO\n", 0, 0, 0, 0);
-    printDebugText("THE DEVELOPER OF THIS HACK\n", 0, 0, 0, 0);
-    StackTraceSize = 1; // Pixel Size
+    printDebugText("IATEYOURPIE\n", 0, 0, 0, 0);
+    stack_trace_size = 1; // Pixel Size
     printDebugText("\n", 0, 0, 0, 0);
-    y = StackTraceY; // Store Y for stack trace dump
-    if (ReasonCode != 0) { // Reason
-        printDebugText("REASON: %s\n", (int)ReasonExceptions[(int)ReasonCode], 0, 0, 0);
-    } else {
-        printDebugText("REASON: NONE ASCERTAINABLE\n", 0, 0, 0, 0);
-    }
+    y = stack_y; // Store Y for stack trace dump
+    // if (reason_code != 0) { // Reason
+    //     printDebugText("REASON: %s\n", (int)ReasonExceptions[(int)ReasonCode], 0, 0, 0);
+    // } else {
+    //     printDebugText("REASON: NONE ASCERTAINABLE\n", 0, 0, 0, 0);
+    // }
     // General Exception
     int cause_index = _SHIFTR(info->cause, 2, 5);
     if (cause_index == 23) { // Watch Point
@@ -119,16 +129,16 @@ void CrashHandler(crash_handler_info* info) {
     if (cause_index == 31) { // Virtual coherency on data
         cause_index = 17;
     }
-    printDebugText("GENERAL EXCEPTION: %s\n", (int)general_causes[cause_index], 0, 0, 0);
+    // printDebugText("GENERAL EXCEPTION: %s\n", (int)general_causes[cause_index], 0, 0, 0);
     // Float Exception
-    int flag = FPCSR_CE;
-    for (int i = 0; i < sizeof(float_causes)/4; i++) {
-        if (info->fcsr & flag) {
-            printDebugText("FLOAT EXCEPTION: %s\n", (int)float_causes[i], 0, 0, 0);
-        }
-        flag >>= 1;
-    }
-    printDebugText("PC:%08X\tFCSR:%08X\tTHREAD:%d\n", (int)info->pc, (int)info->fcsr, __osGetThreadId((void*)0), 0);
+    // int flag = FPCSR_CE;
+    // for (int i = 0; i < sizeof(float_causes)/4; i++) {
+    //     if (info->fcsr & flag) {
+    //         printDebugText("FLOAT EXCEPTION: %s\n", (int)float_causes[i], 0, 0, 0);
+    //     }
+    //     flag >>= 1;
+    // }
+    printDebugText("PC:%08X\n", (int)info->pc, 0, 0, 0);
     for (int i = 0; i < 10; i++) {
         int reg_start = 3 * i;
         int v1 = info->general_registers[reg_start][1];
@@ -155,16 +165,16 @@ void CrashHandler(crash_handler_info* info) {
     printDebugText("STACK TRACE:\n",0,0,0,0);
     printDebugText("%X\n", (int)info->pc, 0, 0, 0);
     printDebugText("%X\n", (int)info->general_registers[27][1], 0, 0, 0);
-    if (*(int*)(0x807563B8) > 3) {
-        for (int i = 0; i < *(int*)(0x807FF018); i++) { // Stack Depth
+    if (stack_unk_2 > 3) {
+        for (int i = 0; i < stack_unk_3; i++) { // Stack Depth
             printDebugText("%X\n", (int)StackTraceAddresses[i].address, 0, 0, 0);
         }
     }
     
-    if (*(int*)(0x807563B8) < 4) {
-        *(int*)(0x807563B8) += 1;
+    if (stack_unk_2 < 4) {
+        stack_unk_2 += 1;
     }
-    if (*(int*)(0x807563B8) == 4) {
+    if (stack_unk_2 == 4) {
         dumpReturns(info);
     }
 }

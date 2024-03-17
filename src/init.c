@@ -2,15 +2,40 @@
 
 static s8 initialized = 0;
 
+void giveAllMoves(void) {
+    wipeMemory(&PlayerItems->kongs[0].moves, sizeof(PlayerInventory));
+    for (int i = 0; i < 5; i++) {
+        PlayerItems->kongs[i].moves = 3;
+        PlayerItems->kongs[i].slam = 3;
+        PlayerItems->kongs[i].weapon_bitfield = 7;
+        PlayerItems->kongs[i].ammo_belt = 2;
+        PlayerItems->kongs[i].instrument_bitfield = 15;
+        PlayerItems->kongs[i].coins = 50;
+    }
+    PlayerItems->silver_balloons = 9;
+    PlayerItems->normal_ammo = 100;
+    PlayerItems->oranges = 20;
+    PlayerItems->film = 10;
+    PlayerItems->crystal_frames = 30000;
+    PlayerItems->melons = 3;
+    PlayerItems->health_0 = 12;
+    PlayerItems->unk_1D0 = 0;
+}
+
 void initHack(void) {
     /**
      * @brief Everything you expect to run upon booting your hack up, and nowhere else.
      */
     if (!initialized) {
+        // Give all moves
+        giveAllMoves();
+        writeFunction(0x80590A08, &giveAllMoves);
+        writeFunction(0x806B5FD4, &giveAllMoves);
+        writeFunction(0x806B6070, &giveAllMoves);
         // Enable stack trace upon crash
         // *(s8 *)(0x807563B4) = 1;
         // *(s32 *)(0x80731F78) = 0;
-        // initStackTrace();
+        //initStackTrace();
         // // TAG ANYWHERE STUFF
         // // START
         // *(int*)(0x806F6D94) = 0; // Prevent delayed collection
