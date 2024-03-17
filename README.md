@@ -18,3 +18,14 @@ US 1.0 ROM
 File name: dk64_us.z64
 SHA: cf806ff2603640a748fca5026ded28802f1f4a50
 ```
+
+Then run `./build.bat` and it'll place a ROM named `dk64-kioskrestoration-dev.z64` in the ROM folder.
+
+Kiosk is very unstable, and I'm working on fixing some of the stability issues. In the meanwhile, I've found best results with PJ64 3.0.1, and using the interpreter core.
+
+## TODO
+
+- Fix stability issues
+- Fix broken texture mapping for the remaining 600-700 textures
+- Add a map warp GUI on the press start screen
+- Add a stack trace for better crash debugging
