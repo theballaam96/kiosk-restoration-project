@@ -38,3 +38,4 @@ extern DemoStruct DemoMaps[3];
 extern short* FramebufferPointer[2];
 extern char_spawner_flag_mapping CharSpawnerFlagMapping[11];
 extern spawner_master_data* CharSpawnerMasterData;
+extern char Gamemode;

@@ -41,3 +41,26 @@ void fixEnemyCarProperties(void) {
         }
     }
 }
+
+// Pause
+/*
+- The game has junked the init pause function
+- Adding this back in for ease of use
+*/
+
+void initPause(void) {
+    int input_bitfield = *(short*)(0x807B6DCA);
+    if ((input_bitfield & 0x1000) == 0) {
+        return;
+    }
+    if (CutsceneActive == 1) {
+        return;
+    }
+    if (LZFadeoutProgress != 0.0f) {
+        return;
+    }
+    if (Gamemode != 6) {
+        return;
+    }
+    TBVoidByte |= 1;
+}

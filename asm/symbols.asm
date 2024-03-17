@@ -38,3 +38,4 @@
 .definelabel FramebufferPointer, 0x8072CDA0
 .definelabel CharSpawnerFlagMapping, 0x80700640
 .definelabel CharSpawnerMasterData, 0x80700184
+.definelabel Gamemode, 0x806FFE68

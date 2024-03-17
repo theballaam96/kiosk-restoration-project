@@ -222,3 +222,10 @@ def code_modifications():
         fh.seek(kiosk_ram_to_rom(0x806F1D10))
         for lvl in level_indexes:
             fh.write(int(lvl).to_bytes(1, "big"))
+        # Thread priorities
+        # fh.seek(kiosk_ram_to_rom(0x805903AE))
+        # fh.write((0).to_bytes(2, "big"))
+        # fh.seek(kiosk_ram_to_rom(0x80594D5E))
+        # fh.write((0x14).to_bytes(2, "big"))
+        # fh.seek(kiosk_ram_to_rom(0x80590816))
+        # fh.write((0x19).to_bytes(2, "big"))
