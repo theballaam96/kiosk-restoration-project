@@ -485,3 +485,16 @@ typedef struct char_spawner_flag_mapping {
 	/* 0x006 */ char required_flag_state;
 	/* 0x007 */ char pad7;
 } char_spawner_flag_mapping;
+
+typedef struct character_spawner {
+	/* 0x000 */ char unk_00[0x13];
+	/* 0x013 */ unsigned char trigger;
+	/* 0x014 */ char unk_14[0x42 - 0x14];
+	/* 0x042 */ short properties;
+} character_spawner;
+
+typedef struct spawner_master_data {
+	/* 0x000 */ short count;
+	/* 0x002 */ short unk2;
+	/* 0x004 */ character_spawner* spawners;
+} spawner_master_data;

@@ -6,6 +6,14 @@ void cFuncLoop(void) {
 	*/
 	initHack(); // Initialize hack
 	tagAnywhere(); // Tag Anywhere every frame functions
+	if (ObjectTimer < 5) {
+		if (CurrentMap == 0x1B) {
+			fixEnemyCarProperties();
+		}
+	}
+
+
+
 	// if (grab_lock_timer >= 0) {
 	// 	grab_lock_timer += 1;
 	// 	if (grab_lock_timer > 10) {

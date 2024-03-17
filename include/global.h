@@ -18,6 +18,7 @@ extern void handleActionSet(int action, void* actor, int player_index);
 // Misc
 extern int* displayMapName(int* dl);
 extern void createCrashThread(void);
+extern void fixEnemyCarProperties(void);
 
 extern const s16 kong_flags[5];
 extern char tag_locked;
