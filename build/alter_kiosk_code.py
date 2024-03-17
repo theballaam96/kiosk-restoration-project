@@ -18,6 +18,8 @@ def code_modifications():
         fh.write((0).to_bytes(4, "big"))
         fh.seek(kiosk_ram_to_rom(0x806B4F1C)) # Title Screen
         fh.write((0).to_bytes(4, "big"))
+        fh.seek(kiosk_ram_to_rom(0x806B5A6C)) # Title Screen
+        fh.write((0).to_bytes(4, "big"))
         # Speed boot
         if TESTING:
             # Immediate pull out of Nin Logo
