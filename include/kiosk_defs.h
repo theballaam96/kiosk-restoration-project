@@ -8,6 +8,16 @@ extern int getWorld(int map);
 extern int* displayText(int* dl, int style, int x, int y, char* str, int params);
 extern int getStringWidth(int style, char* str);
 
+extern void __osSetEventMesg(int id, void* tail, int unk0);
+extern int __osRecvMesg(void* tail, void* unk0, int unk1);
+extern void __osViBlack(int unk0);
+extern int __osGetFpcCsr(void);
+extern int __osSetFpcCsr(int val);
+extern void __osCreateMesgQueue(void* unk0, void* unk1, int unk2);
+extern void __osCreateThread(void* unk0, int id, void* function, int unk1, void* unk2, int priority);
+extern void __osStartThread(void* unk0);
+extern void* getRegData(void);
+
 extern PlayerInventory PlayerItems[4];
 extern PlayerData* Player;
 extern SwapStruct* SwapObject;
@@ -25,3 +35,5 @@ extern Controller ControllerInput;
 extern int ObjectTimer;
 extern short DKTVTimer;
 extern DemoStruct DemoMaps[3];
+extern short* FramebufferPointer[2];
+extern char_spawner_flag_mapping CharSpawnerFlagMapping[11];

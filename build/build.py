@@ -39,7 +39,7 @@ if COMPILE_C:
 	if os.path.exists("obj"):
 		shutil.rmtree('obj')
 	os.mkdir("obj")
-	exclusions = ["stack_trace.c"]
+	exclusions = []
 	with open('./asm/objects.asm', 'w') as obj_asm:
 		for root, dirs, files in os.walk(r'src'):
 			for file in files:
@@ -70,16 +70,7 @@ shutil.copyfile(ROMName, newROMName)
 if not os.path.exists("./bin/"):
 	os.mkdir("./bin/")
 
-file_dict = [
-	# {
-	# 	"name": "Static ASM Code",
-	# 	"start": 0x113F0,
-	# 	"compressed_size": 0xB15E4,
-	# 	"source_file": "bin/StaticCode.bin",
-	# 	"use_external_gzip": True,
-	# 	"patcher": patchStaticCode,
-	# }
-]
+file_dict = []
 
 print("[1 / 9] - Extracting map files")
 
@@ -313,7 +304,6 @@ with open(newROMName, "r+b") as fh:
             fh.write(bytes([0]))
 
 print("[9 / 9] - Generating BizHawk RAM watch")
-import generate_watch_file
 
 # Write custom ASM code to ROM
 if COMPILE_C:

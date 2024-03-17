@@ -1,0 +1,1 @@
+extern void fix_diddy_japes_crash(void);

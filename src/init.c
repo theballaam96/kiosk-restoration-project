@@ -34,6 +34,9 @@ void initHack(void) {
         writeFunction(0x806B6070, &giveAllMoves);
         writeFunction(0x806B5A0C, &displayMapName);
         writeFunction(0x806B5A74, &displayMapName);
+        // Bug fixes
+        loadSingularHook(0x806D4DD8, &fix_diddy_japes_crash);
+        
         // Enable stack trace upon crash
         // *(s8 *)(0x807563B4) = 1;
         // *(s32 *)(0x80731F78) = 0;

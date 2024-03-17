@@ -24,3 +24,16 @@
 .definelabel getStringWidth, 0x80699580
 .definelabel DKTVTimer, 0x806FFE84
 .definelabel DemoMaps, 0x806FFE94
+
+.definelabel __osSetEventMesg, 0x806E7D70
+.definelabel __osRecvMesg, 0x806E7970
+.definelabel __osViBlack, 0x806E62F0
+.definelabel __osGetFpcCsr, 0x806EA2F0
+.definelabel __osSetFpcCsr, 0x806EA680
+.definelabel __osCreateMesgQueue, 0x806E6520
+.definelabel __osCreateThread, 0x806E5D80
+.definelabel __osStartThread, 0x806E5ED0
+.definelabel getRegData, 0x806EA2E0
+
+.definelabel FramebufferPointer, 0x8072CDA0
+.definelabel CharSpawnerFlagMapping, 0x80700640

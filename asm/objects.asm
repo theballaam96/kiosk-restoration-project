@@ -1,4 +1,6 @@
+.importobj "obj/src_bug_fixes.o"
 .importobj "obj/src_init.o"
 .importobj "obj/src_main.o"
+.importobj "obj/src_stack_trace.o"
 .importobj "obj/src_tag_anywhere.o"
 .importobj "obj/src_warp.o"

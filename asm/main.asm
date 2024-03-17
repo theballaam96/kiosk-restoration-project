@@ -57,6 +57,8 @@ displacedVanillaBootCode:
 	nop
 	jal 0x806E6550 ; osWritebackDCacheAll
 	nop
+	jal createCrashThread
+	nop
 	lw $ra, 0x1C ($sp)
 	addiu $sp, $sp, 0x28
 	jr $ra
@@ -76,5 +78,6 @@ mainASMFunctionJump:
 
 .align 0x10
 
+.include "asm/hookcode.asm"
 .include "asm/objects.asm"
 .close

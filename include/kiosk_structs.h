@@ -471,3 +471,17 @@ typedef struct DemoStruct {
 	/* 0x000 */ s32 map;
 	/* 0x004 */ s32 kong;
 } DemoStruct;
+
+typedef struct stack_trace_log {
+    /* 0x000 */ void* addr;
+    /* 0x004 */ int used;
+} stack_trace_log;
+
+typedef struct char_spawner_flag_mapping {
+	/* 0x000 */ unsigned char map;
+	/* 0x001 */ char unk1;
+	/* 0x002 */ short spawner_id;
+	/* 0x004 */ short flag;
+	/* 0x006 */ char required_flag_state;
+	/* 0x007 */ char pad7;
+} char_spawner_flag_mapping;
