@@ -70,7 +70,15 @@ shutil.copyfile(ROMName, newROMName)
 if not os.path.exists("./bin/"):
 	os.mkdir("./bin/")
 
-file_dict = []
+file_dict = [
+	{
+		"name": "Title Logo",
+		"pointer_table_index": 13,
+		"file_index": 0x33,
+		"source_file": "assets/logo.png",
+		"texture_format": "rgba5551"
+	}
+]
 
 print("[1 / 9] - Extracting map files")
 

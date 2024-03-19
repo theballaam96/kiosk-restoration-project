@@ -12,15 +12,20 @@ class Level(IntEnum):
     Fungi = auto()
     Caves = auto()
     Castle = auto()
-    Other = auto()
+    Other = auto() # 7
+    unk8 = auto()
+    unk9 = auto()
+    unkA = auto()
+    unkB = auto()
+    Shared = auto()
 
 level_indexes = [
     Level.Other, # "TEST MAP", // 00
-    Level.Other, # "FUNKY'S STORE", // 01
+    Level.Shared, # "FUNKY'S STORE", // 01
     Level.Other, # "DK ARCADE", // 02 - Overlay Crash
     Level.Other, # "TINY TEST MAP", // 03
     Level.Japes, # "JUNGLE JAPES - MINING HILL", // 04
-    Level.Other, # "CRANKY'S LAB", // 05
+    Level.Shared, # "CRANKY'S LAB", // 05
     Level.Japes, # "JUNGLE JAPES MINECART RIDE", // 06 - Overlay crash
     Level.Japes, # "JUNGLE JAPES", // 07
     Level.Japes, # "ARMY DILLO", // 08
@@ -30,7 +35,7 @@ level_indexes = [
     Level.Japes, # "JUNGLE JAPES - SHELLHIVE", // 0C
     Level.Japes, # "JUNGLE JAPES - PORTRAIT ROOM", // 0D
     Level.Aztec, # "ANGRY AZTEC SLIDE RACE", // 0E
-    Level.Other, # "SNIDE'S HQ", // 0F
+    Level.Shared, # "SNIDE'S HQ", // 0F
     Level.Aztec, # "ANGRY AZTEC - DOME TEMPLE", // 10
     Level.Other, # "TORCH ROOM", // 11
     Level.Other, # "TEETERING TURTLE TROUBLE AZTEC", // 12
@@ -40,7 +45,7 @@ level_indexes = [
     Level.Aztec, # "ANGRY AZTEC 5-DOOR TEMPLE - TINY", // 16
     Level.Aztec, # "ANGRY AZTEC 5-DOOR TEMPLE - LANKY", // 17
     Level.Aztec, # "ANGRY AZTEC 5-DOOR TEMPLE - CHUNKY", // 18
-    Level.Other, # "CANDY'S SHOP", // 19
+    Level.Shared, # "CANDY'S SHOP", // 19
     Level.Factory, # "FRANTIC FACTORY", // 1A // (CRASHES UNLESS CUTSCENE TIMER CODE IS ON)
     Level.Factory, # "FRANTIC FACTORY CAR RACE", // 1B
     Level.Factory, # "OLD FRANTIC FACTORY BOSS ARENA", // 1C
@@ -57,7 +62,7 @@ level_indexes = [
     Level.Galleon, # "GLOOMY GALLEON SEAL RACE", // 27
     Level.Other, # "OPENING LOGOS", // 28
     Level.Aztec, # "ANGRY AZTEC BLAST COURSE", // 29
-    Level.Other, # "TROFF 'N' SCOFF", // 2A
+    Level.Other, # "TROFF 'N' SCOFF", // 2A // Should be "Shared"
     Level.Galleon, # "GALLEON BIG SHIPWRECK DIDDY/CHUNKY", // 2B
     Level.Galleon, # "GALLEON TREASURE CHEST", // 2C
     Level.Galleon, # "GALLEON MERMAID PALACE", // 2D
@@ -197,8 +202,8 @@ def code_modifications():
         fh.write((0).to_bytes(4, "big"))
         fh.seek(kiosk_ram_to_rom(0x806B4F5C)) # Title Screen
         fh.write((0).to_bytes(4, "big"))
-        fh.seek(kiosk_ram_to_rom(0x806B4F1C)) # Title Screen
-        fh.write((0).to_bytes(4, "big"))
+        fh.seek(kiosk_ram_to_rom(0x806B4F1A)) # Title Screen
+        fh.write((0x10).to_bytes(2, "big"))
         fh.seek(kiosk_ram_to_rom(0x806B5A6C)) # Title Screen
         fh.write((0).to_bytes(4, "big"))
         # Speed boot
@@ -221,10 +226,17 @@ def code_modifications():
         fh.seek(kiosk_ram_to_rom(0x80709DA8))
         bottom_text = "HACK BY BALLAAM\0"
         fh.write(bottom_text.encode("ascii"))
+        # Avaliable Christmas 99
+        fh.seek(kiosk_ram_to_rom(0x80709DF8))
+        bottom_text = "AVALIABLE ON GITHUB\0"
+        fh.write(bottom_text.encode("ascii"))
         # Level Indexes
         fh.seek(kiosk_ram_to_rom(0x806F1D10))
         for lvl in level_indexes:
             fh.write(int(lvl).to_bytes(1, "big"))
+        # Somewhat patch out the div-by-0 with T&S Entry
+        fh.seek(kiosk_ram_to_rom(0x806F1DE6))
+        fh.write((0x1E).to_bytes(2, "big"))
         # Thread priorities
         # fh.seek(kiosk_ram_to_rom(0x805903AE))
         # fh.write((0).to_bytes(2, "big"))

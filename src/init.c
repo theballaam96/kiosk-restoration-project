@@ -36,6 +36,7 @@ void initHack(void) {
         writeFunction(0x806B5A74, &displayMapName);
         // Bug fixes
         loadSingularHook(0x806D4DD8, &fix_diddy_japes_crash);
+        loadSingularHook(0x805942EC, &fix_crossmap_crash);
         for (int i = 0; i < 139; i++) {
             int address = 0x806FC41C + (i * 0x44);
             int func = *(int*)(address);
