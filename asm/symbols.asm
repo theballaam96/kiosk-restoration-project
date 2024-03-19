@@ -3,6 +3,7 @@
 .definelabel Player, 0x807B5AFC
 .definelabel SwapObject, 0x807B6564
 .definelabel LZFadeoutProgress, 0x807B7088
+.definelabel NextMap, 0x806F1CC4
 .definelabel CutsceneActive, 0x806F1CCC
 .definelabel ModelTwoTouchCount, 0x807B6F20
 .definelabel CurrentMap, 0x8072CDE4
@@ -41,3 +42,6 @@
 .definelabel Gamemode, 0x806FFE68
 .definelabel BannerTextEnabled, 0x807B6548
 .definelabel BannerStrings, 0x806F1E04
+
+.definelabel prepareHeap, 0x805904B0
+.definelabel heap_init, 0x805A53D0

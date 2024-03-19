@@ -17,6 +17,8 @@ extern void __osCreateMesgQueue(void* unk0, void* unk1, int unk2);
 extern void __osCreateThread(void* unk0, int id, void* function, int unk1, void* unk2, int priority);
 extern void __osStartThread(void* unk0);
 extern void* getRegData(void);
+extern void prepareHeap(int unk0);
+extern void heap_init(int unk0, int unk1, int unk2);
 
 extern PlayerInventory PlayerItems[4];
 extern PlayerData* Player;
@@ -41,3 +43,4 @@ extern spawner_master_data* CharSpawnerMasterData;
 extern char Gamemode;
 extern unsigned char BannerTextEnabled[28];
 extern char* BannerStrings[200];
+extern int NextMap;
