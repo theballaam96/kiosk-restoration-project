@@ -64,3 +64,15 @@ void initPause(void) {
     }
     TBVoidByte |= 1;
 }
+
+// Map Banner Text
+/*
+- Various bits of banner text is present in the E3 demo, and some remain in Kiosk
+- They've mostly been stripped out
+*/
+void addBannerText(int map_id, char* str) {
+    int offset = map_id >> 3;
+    int shift = map_id & 7;
+    BannerTextEnabled[offset] |= (1 << shift);
+    BannerStrings[map_id] = str;
+}

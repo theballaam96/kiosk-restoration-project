@@ -20,6 +20,7 @@ extern int* displayMapName(int* dl);
 extern void createCrashThread(void);
 extern void fixEnemyCarProperties(void);
 extern void initPause(void);
+extern void addBannerText(int map_id, char* str);
 
 extern const s16 kong_flags[5];
 extern char tag_locked;

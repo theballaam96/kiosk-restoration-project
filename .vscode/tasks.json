@@ -1,0 +1,20 @@
+{
+    // See https://go.microsoft.com/fwlink/?LinkId=733558
+    // for the documentation about the tasks.json format
+    "version": "2.0.0",
+    "tasks": [
+      {
+        "label": "Install requirements",
+        "type": "shell",
+        "command": "${command:python.interpreterPath} -m pip install -r ${workspaceFolder}/requirements.txt",
+        "problemMatcher": []
+      },
+      {
+        "label": "Build Hack",
+        "type": "shell",
+        "command": "cd ${workspaceFolder}/ ; ./build.bat",
+        "problemMatcher": []
+      },
+    ]
+  }
+  

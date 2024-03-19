@@ -20,7 +20,7 @@ import time
 start_time = time.time()
 
 COMPILE_C = True
-CLEANUP = True
+CLEANUP = False
 
 if COMPILE_C:
 	print("Cranky's Lab Build System")
@@ -105,6 +105,7 @@ with open("./rom/dk64_us.z64", "rb") as fq:
 			if (compression_byte & 2) != 0:
 				floors_compressed[map_id] = True
 	# Parse Tables
+	copyfiles = []
 	for table in us_tables:
 		fq.seek(us_pointer + (table << 2))
 		table_start = us_pointer + int.from_bytes(fq.read(4), "big")
@@ -118,19 +119,22 @@ with open("./rom/dk64_us.z64", "rb") as fq:
 			fq.seek(file_start)
 			indic = int.from_bytes(fq.read(2), "big")
 			is_gzip = indic == 0x1F8B
+			file_name = f"./bin/t{table}_f{map_id}.bin"
 			if (file_compressed_size == 8 and not is_gzip) or map_id in (0xB, 50):
 				if map_id == 50:
 					indic = 0xAD
 				elif map_id == 0xB:
 					indic = 0x26
+				elif map_id == 0x1C:
+					indic = 0x0
 				elif indic >= limit:
 					indic = 0
-				added_name = f"./bin/t{table}_f{indic}.bin"
+				copyfiles.append([f"./bin/t{table}_f{indic}.bin", file_name])
 				append_data = {
-					"name": f"Table {table - 1} File {indic}",
+					"name": f"Table {table - 1} File {map_id}",
 					"pointer_table_index": table - 1,
-					"file_index": indic,
-					"source_file": added_name,
+					"file_index": map_id,
+					"source_file": file_name,
 					"do_not_extract": True,
 				}
 				if table == 2 and not walls_compressed[indic]:
@@ -142,7 +146,6 @@ with open("./rom/dk64_us.z64", "rb") as fq:
 				continue
 			if is_gzip:
 				file_data = zlib.decompress(file_data, (15 + 32))
-			file_name = f"./bin/t{table}_f{map_id}.bin"
 			with open(file_name, "wb") as fk:
 				fk.write(file_data)
 			if table == 1:
@@ -160,6 +163,8 @@ with open("./rom/dk64_us.z64", "rb") as fq:
 				append_data["do_not_compress"] = True
 			if map_id < 0xA5:
 				file_dict.append(append_data)
+	for x in copyfiles:
+		shutil.copyfile(x[0], x[1])
 
 
 with open(ROMName, "rb") as fh:

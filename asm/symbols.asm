@@ -39,3 +39,5 @@
 .definelabel CharSpawnerFlagMapping, 0x80700640
 .definelabel CharSpawnerMasterData, 0x80700184
 .definelabel Gamemode, 0x806FFE68
+.definelabel BannerTextEnabled, 0x807B6548
+.definelabel BannerStrings, 0x806F1E04

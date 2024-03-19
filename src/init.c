@@ -43,6 +43,8 @@ void initHack(void) {
                 *(int*)(address) = (int)&initPause;
             }
         }
+        // Banner Text
+        // addBannerText(0x2A, "LEVEL GUARDIAN");
         
         // Enable stack trace upon crash
         // *(s8 *)(0x807563B4) = 1;
