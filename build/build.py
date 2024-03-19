@@ -126,7 +126,7 @@ with open("./rom/dk64_us.z64", "rb") as fq:
 				elif map_id == 0xB:
 					indic = 0x26
 				elif map_id == 0x1C:
-					indic = 0x0
+					indic = 0x9A
 				elif indic >= limit:
 					indic = 0
 				copyfiles.append([f"./bin/t{table}_f{indic}.bin", file_name])
