@@ -350,7 +350,17 @@ static unsigned char map_load_states[] = {
     STATE_UNTESTED, // "CREEPY CASTLE - TREE", // A4
 };
 
+static char* kong_names[] = {
+    "DK",
+    "DIDDY",
+    "LANKY",
+    "TINY",
+    "CHUNKY",
+};
+
 static unsigned char selected_map = 0;
+static unsigned char selected_kong = 0;
+static unsigned char selected_option = 0;
 
 /*
     FONT DOCUMENTATION
@@ -366,21 +376,35 @@ static unsigned char selected_map = 0;
     9/A - ?
 */
 
+void handleShift(int stickX, unsigned char* option, unsigned char cap) {
+    if (stickX < -0x28) {
+        if (*option == 0) {
+            *option = cap;
+        } else {
+            *option -= 1;
+        }
+    } else if (stickX > 0x28) {
+        if (*option == cap) {
+            *option = 0;
+        } else {
+            *option += 1;
+        }
+    }
+}
+
 int* displayMapName(int* dl) {
     if ((ObjectTimer & 3) == 0) {
-        if (ControllerInput.stickX < -0x28) {
-            // Left
-            if (selected_map == 0) {
-                selected_map = 0xA4;
+        if (selected_option == 0) {
+            if (ControllerInput.stickY < -0x28) {
+                selected_option = 1;
             } else {
-                selected_map -= 1;
+                handleShift(ControllerInput.stickX, &selected_map, 0xA4);
             }
-        } else if (ControllerInput.stickX > 0x28) {
-            // Right
-            if (selected_map == 0xA4) {
-                selected_map = 0;
+        } else if (selected_option == 1) {
+            if (ControllerInput.stickY > 0x28) {
+                selected_option = 0;
             } else {
-                selected_map += 1;
+                handleShift(ControllerInput.stickX, &selected_kong, 4);
             }
         }
     }
@@ -388,26 +412,35 @@ int* displayMapName(int* dl) {
     if (selected_map > 0xA4) {
         selected_map = 0;
     }
+    if (selected_kong > 4) {
+        selected_kong = 0;
+    }
     for (int i = 0; i < 3; i++) {
         DemoMaps[i].map = selected_map;
+        DemoMaps[i].kong = selected_kong;
     }
     int center = 0x280;
     int width = getStringWidth(7, map_names[selected_map]);
+    int kong_width = getStringWidth(7, kong_names[selected_kong]);
     int x_pos = center - (width << 1);
+    int kong_x_pos = center - (kong_width << 1);
     int y_pos = *(char*)(0x806F1CE8) * 0x2A8;
-    // *(int*)(dl++) = 0xE7000000;
-    // *(int*)(dl++) = 0x00000000;
-    // *(int*)(dl++) = 0xDE000000;
-    // *(int*)(dl++) = 0x01000118;
-    // *(int*)(dl++) = 0xE3000A01;
-    // *(int*)(dl++) = 0x00000000;
-    // *(int*)(dl++) = 0xE200001C;
-    // *(int*)(dl++) = 0x00504240;
+    int light_color = 0xFFFFFFFF;
+    int fade_color = 0xC0C0C0FF;
+    int top_color = light_color;
+    int bottom_color = fade_color;
+    if (selected_option == 1) {
+        top_color = fade_color;
+        bottom_color = light_color;
+    }
     *(int*)(dl++) = 0xFA000000;
-    *(int*)(dl++) = state_colors[map_load_states[selected_map]];
+    *(int*)(dl++) = top_color;
     *(int*)(dl++) = 0xDA380007;
     *(int*)(dl++) = 0x020000C0;
     *(int*)(dl++) = 0xFC119623;
     *(int*)(dl++) = 0xFF2FFFFF;
-    return displayText(dl, 7, x_pos, y_pos, map_names[selected_map], 4);
+    dl = displayText(dl, 7, x_pos, y_pos, map_names[selected_map], 4);
+    *(int*)(dl++) = 0xFA000000;
+    *(int*)(dl++) = bottom_color;
+    return displayText(dl, 7, kong_x_pos, y_pos + 70.0f, kong_names[selected_kong], 4);
 }

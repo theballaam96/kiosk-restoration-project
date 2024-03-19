@@ -214,6 +214,9 @@ def code_modifications():
         # Cancel move wipe
         fh.seek(kiosk_ram_to_rom(0x806b5fdc))
         fh.write((0).to_bytes(4, "big"))
+        # Cancel map entry cancel
+        fh.seek(kiosk_ram_to_rom(0x806b5ddc))
+        fh.write((0).to_bytes(4, "big"))
         # Copyright Message
         fh.seek(kiosk_ram_to_rom(0x80709DA8))
         bottom_text = "HACK BY BALLAAM\0"
