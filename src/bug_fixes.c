@@ -80,7 +80,7 @@ void addBannerText(int map_id, char* str) {
 // Load in DKTV
 /*
 - DKTV Content is still present in Kiosk, but remains uncalled.
-- All the following functions allows it to be loaded back up again, but will only be called when the user defines they want DKTV in
+- All the following functions allows it to be loaded back up again, with gamemode 4, which is very similar to the original gamemode (3)
 */
 
 int warped_dktv = 0;

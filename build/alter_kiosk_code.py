@@ -240,10 +240,10 @@ def code_modifications():
         # Somewhat patch out the div-by-0 with T&S Entry
         fh.seek(kiosk_ram_to_rom(0x806F1DE6))
         fh.write((0x1E).to_bytes(2, "big"))
-        # Thread priorities
-        # fh.seek(kiosk_ram_to_rom(0x805903AE))
-        # fh.write((0).to_bytes(2, "big"))
-        # fh.seek(kiosk_ram_to_rom(0x80594D5E))
-        # fh.write((0x14).to_bytes(2, "big"))
-        # fh.seek(kiosk_ram_to_rom(0x80590816))
-        # fh.write((0x19).to_bytes(2, "big"))
+        # "Fix" factory crashes when entering submaps
+        # This is from the game trying to malloc too much memory
+        # So I'm ditching setup storing and writing
+        fh.seek(kiosk_ram_to_rom(0x805D4544))
+        fh.write((0).to_bytes(4, "big"))
+        fh.seek(kiosk_ram_to_rom(0x805942B0))
+        fh.write((0x1000).to_bytes(2, "big"))
