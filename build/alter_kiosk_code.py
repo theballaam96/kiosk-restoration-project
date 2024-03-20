@@ -229,6 +229,9 @@ def code_modifications():
         fh.seek(kiosk_ram_to_rom(0x80709DA8))
         bottom_text = "HACK BY BALLAAM\0"
         fh.write(bottom_text.encode("ascii"))
+        # Fix "Thanks for playing"
+        fh.seek(kiosk_ram_to_rom(0x806B5BD6))
+        fh.write((0x4330).to_bytes(2, "big"))
         # Avaliable Christmas 99
         fh.seek(kiosk_ram_to_rom(0x80709DF8))
         bottom_text = "AVALIABLE ON GITHUB\0"
