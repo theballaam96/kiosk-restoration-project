@@ -177,6 +177,15 @@ static char* kong_names[] = {
     "CHUNKY",
 };
 
+static char* dktv_demo_names[] = {
+    "JAPES MOUNTAIN",
+    "ANGRY AZTEC",
+    "SEASICK SHIP",
+    "GLOOMY GALLEON",
+    "FUNGI FOREST",
+    "SEAL RACE",
+};
+
 static char* level_subsets[] = {
     "JAPES",
     "AZTEC",
@@ -187,6 +196,7 @@ static char* level_subsets[] = {
     "CASTLE",
     "BONUS",
     "ARENAS",
+    "DKTV DEMOS",
     "OTHER",
 };
 
@@ -206,7 +216,8 @@ typedef enum level_set {
     /* 0x006 */ LEVELSET_CASTLE,
     /* 0x007 */ LEVELSET_BONUS,
     /* 0x008 */ LEVELSET_ARENAS,
-    /* 0x009 */ LEVELSET_OTHER,
+    /* 0x009 */ LEVELSET_DKTV,
+    /* 0x00A */ LEVELSET_OTHER,
 } level_set;
 
 static unsigned char japes_maps[] = {
@@ -427,6 +438,7 @@ static level_data levels[] = {
     {.map_list=&castle_maps, .cap=sizeof(castle_maps), .selected=0},
     {.map_list=&bonus_maps, .cap=sizeof(bonus_maps), .selected=0},
     {.map_list=&arenas_maps, .cap=sizeof(arenas_maps), .selected=0},
+    {.map_list=0, .cap=6, .selected=0},
     {.map_list=&other_maps, .cap=sizeof(other_maps), .selected=0},
 };
 
@@ -474,7 +486,7 @@ int* displayMapName(int* dl) {
                 selected_option += 1;
                 shifting_y = 1;
             } else {
-                handleShift(ControllerInput.stickX, &selected_level, 0x9);
+                handleShift(ControllerInput.stickX, &selected_level, 0xA);
             }
         } else if (selected_option == OPTIONSET_MAP) {
             if ((stick_y > 0x28) && (!shifting_y)) {
@@ -496,7 +508,13 @@ int* displayMapName(int* dl) {
             }
         }
     }
-    selected_map = levels[selected_level].map_list[selected_map_local];
+    char* mapname = 0;
+    if (selected_level != LEVELSET_DKTV) {
+        selected_map = levels[selected_level].map_list[selected_map_local];
+        mapname = map_names[selected_map];
+    } else {
+        mapname = dktv_demo_names[selected_map_local];
+    }
     // Clamp
     if (selected_map > 0xA5) {
         selected_map = 0;
@@ -504,14 +522,16 @@ int* displayMapName(int* dl) {
     if (selected_kong > 4) {
         selected_kong = 0;
     }
-    for (int i = 0; i < 3; i++) {
-        DemoMaps[i].map = selected_map;
-        DemoMaps[i].kong = selected_kong;
+    if (selected_level != LEVELSET_DKTV) {
+        for (int i = 0; i < 3; i++) {
+            DemoMaps[i].map = selected_map;
+            DemoMaps[i].kong = selected_kong;
+        }
     }
     int center = 0x280;
     char* names[3] = {
         level_subsets[selected_level],
-        map_names[selected_map],
+        mapname,
         kong_names[selected_kong],
     };
     int y_pos = *(char*)(0x806F1CE8) * 0x278;
@@ -531,6 +551,14 @@ int* displayMapName(int* dl) {
         dl = displayText(dl, 7, center - (getStringWidth(7, names[i]) << 1), y_pos + (60.0f * i), names[i], 4);
     }
     return dl;
+}
+
+void warpHandler(void) {
+    if (selected_level == LEVELSET_DKTV) {
+        warpToDKTV(levels[selected_level].selected);
+    } else {
+        setNextDemoMap(0);
+    }
 }
 
 void warpToDK64K(void) {

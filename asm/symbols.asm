@@ -40,8 +40,17 @@
 .definelabel CharSpawnerFlagMapping, 0x80700640
 .definelabel CharSpawnerMasterData, 0x80700184
 .definelabel Gamemode, 0x806FFE68
+.definelabel NextGamemode, 0x806FFE6C
 .definelabel BannerTextEnabled, 0x807B6548
 .definelabel BannerStrings, 0x806F1E04
 
 .definelabel prepareHeap, 0x805904B0
 .definelabel heap_init, 0x805A53D0
+.definelabel showerWithCoins, 0x80593950
+.definelabel loadDKTVContainer, 0x805A2A3C
+.definelabel buttonsRequired, 0x806FFE5C
+.definelabel loadDKTVFromROM, 0x805A2D60
+.definelabel DKTVData, 0x807A06B0
+.definelabel InitMapChange, 0x805936FC
+.definelabel NewlyPressedInput, 0x807A05E0
+.definelabel setNextDemoMap, 0x806B5FC0

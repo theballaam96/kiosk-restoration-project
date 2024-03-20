@@ -76,3 +76,41 @@ void addBannerText(int map_id, char* str) {
     BannerTextEnabled[offset] |= (1 << shift);
     BannerStrings[map_id] = str;
 }
+
+// Load in DKTV
+/*
+- DKTV Content is still present in Kiosk, but remains uncalled.
+- All the following functions allows it to be loaded back up again, but will only be called when the user defines they want DKTV in
+*/
+
+int warped_dktv = 0;
+
+void initDKTV(void) {
+    if (Gamemode == 4) {
+        int timer = loadDKTVContainer(Player);
+        int fadeout_timer = 0xFFF;
+        if (timer < fadeout_timer) {
+            fadeout_timer = timer;
+        }
+        buttonsRequired = 0x1000;
+    }
+    showerWithCoins();
+}
+
+void GetNextDKTVMap(void) {
+    InitMapChange(DKTVData.map, DKTVData.exit);
+}
+
+void loadDKTVData(void) {
+    if (NextGamemode == 4) {
+        loadDKTVFromROM(warped_dktv);
+        Character = DKTVData.kong;
+    }
+}
+
+void warpToDKTV(int index) {
+    NextGamemode = 4;
+    warped_dktv = index;
+    loadDKTVData();
+    GetNextDKTVMap();
+}

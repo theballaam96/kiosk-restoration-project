@@ -166,7 +166,7 @@ void dumpReturns(crash_handler_info* info) {
         }
     }
     stack_unk_2 += 1;
-    *(int*)(0x807FFFFC) = (int)&stack_trace_addresses[0].addr;
+    //*(int*)(0x807FFFFC) = (int)&stack_trace_addresses[0].addr;
 }
 
 void printDebugText(char* base, int arg0, int arg1, int arg2, int arg3) {

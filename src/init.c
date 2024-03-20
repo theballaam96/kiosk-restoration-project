@@ -36,6 +36,9 @@ void initHack(void) {
         writeFunction(0x806B5A74, &displayMapName);
         writeFunction(0x805930B8, &warpToDK64K);
         writeFunction(0x80590650, &handleDK64KOverlay);
+        writeFunction(0x805933BC, &initDKTV);
+        writeFunction(0x80593248, &loadDKTVData);
+        writeFunction(0x806B4F3C, &warpHandler);
         // Bug fixes
         loadSingularHook(0x806D4DD8, &fix_diddy_japes_crash);
         loadSingularHook(0x805942EC, &fix_crossmap_crash);

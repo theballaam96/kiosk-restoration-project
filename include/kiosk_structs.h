@@ -498,3 +498,15 @@ typedef struct spawner_master_data {
 	/* 0x002 */ short unk2;
 	/* 0x004 */ character_spawner* spawners;
 } spawner_master_data;
+
+typedef struct dktv_rom_data {
+	/* 0x000 */ float x;
+	/* 0x004 */ float y;
+	/* 0x008 */ float z;
+	/* 0x00C */ short facing;
+	/* 0x00E */ unsigned char map;
+	/* 0x00F */ unsigned char exit;
+	/* 0x010 */ unsigned char kong;
+	/* 0x011 */ unsigned char pad;
+	/* 0x012 */ KongInventory starting_moves;
+} dktv_rom_data;
