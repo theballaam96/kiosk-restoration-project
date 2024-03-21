@@ -234,7 +234,7 @@ def code_modifications():
         fh.write((0x4330).to_bytes(2, "big"))
         # Avaliable Christmas 99
         fh.seek(kiosk_ram_to_rom(0x80709DF8))
-        bottom_text = "AVALIABLE ON GITHUB\0"
+        bottom_text = "AVAILABLE ON GITHUB\0"
         fh.write(bottom_text.encode("ascii"))
         # Level Indexes
         fh.seek(kiosk_ram_to_rom(0x806F1D10))
