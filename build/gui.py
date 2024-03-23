@@ -23,10 +23,12 @@ class App(tk.Frame):
 
 ROM_US = "dk64_us.z64"
 ROM_KS = "dk64_kiosk.z64"
+ROM_TEXT_US = "Upload US ROM"
+ROM_TEXT_KS = "Upload Kiosk ROM"
 
 uploaded = {
-    ROM_US: [False, "cf806ff2603640a748fca5026ded28802f1f4a50", None],
-    ROM_KS: [False, "b4717e602f07ca9be0d4822813c658cd8b99f993", None],
+    ROM_US: [False, "cf806ff2603640a748fca5026ded28802f1f4a50", ROM_TEXT_US],
+    ROM_KS: [False, "b4717e602f07ca9be0d4822813c658cd8b99f993", ROM_TEXT_KS],
 }
 
 def build():
@@ -36,12 +38,14 @@ def build():
     subprocess.run(["build.bat"])
     FINISH_MESSAGE.configure(text="ROM has been built to ./rom/dk64-kioskrestoration-dev.z64")
 
-def show(label_row, label_column, copyname):
+BUTTON_BUILD = None
+
+def show(button_item, copyname):
+    global BUTTON_BUILD
+
     filename = askopenfilename()
     if not os.path.exists("rom/"):
         os.mkdir("rom/")
-    if uploaded[copyname][2] is not None:
-        uploaded[copyname][2].destroy()
     print("CWD:", os.getcwd())
     print("File:", filename)
     output = f"rom/{copyname}"
@@ -54,15 +58,14 @@ def show(label_row, label_column, copyname):
     sha1_hex = sha1.hexdigest()
     if sha1_hex == uploaded[copyname][1]:
         valid_rom = True
-    output_text = "Valid" if valid_rom else "Invalid"
-    output_color = "white" if valid_rom else "red"
-    local_label = tk.Label(app, text=output_text, fg=output_color)
-    local_label.grid(row=label_row, column=label_column)
-    local_label.config(background=BACKGROUND_COLOR)
-    uploaded[copyname][2] = local_label
+    output_text = "✓" if valid_rom else "❌"
+    output_color = "#07f01e" if valid_rom else "#ff0000"
+    button_item.configure(text=f"{uploaded[copyname][2]} {output_text}", fg=output_color)
     uploaded[copyname][0] = valid_rom
     for f in uploaded:
         if not uploaded[f][0]:
+            if BUTTON_BUILD is not None:
+                BUTTON_BUILD.destroy()
             return
     BUTTON_BUILD = tk.Button(app, text="Build Hack", command=lambda: build(), fg="white")
     BUTTON_BUILD.grid(row=3, column=0, columnspan=2)
@@ -75,6 +78,7 @@ app.grid_columnconfigure(0, weight=1)
 # Logo
 img_scale = 2
 img_padding = 20
+frame_padding = 0
 img_h = (128 * img_scale) + (2 * img_padding)
 img_w = (224 * img_scale) + (2 * img_padding)
 img_raw = Image.open("./assets/logo.png")
@@ -85,14 +89,21 @@ canvas.create_image(img_padding, img_padding, anchor=tk.NW, image=img)
 canvas.configure(background=BACKGROUND_COLOR)
 canvas.grid(column=0, row=0, columnspan=2)
 
+# General Upload Frame
+UPLOAD_FRAME = tk.Frame(app)
+UPLOAD_FRAME.grid(row=1, column=0, columnspan=2)
+UPLOAD_FRAME.configure(background=BACKGROUND_COLOR)
+
 # US
-BUTTON_US = tk.Button(app, text="Upload US ROM", command=lambda: show(1, 1, ROM_US), fg="white")
-BUTTON_US.grid(row=1, column=0)
+BUTTON_US = None
+BUTTON_US = tk.Button(UPLOAD_FRAME, text=ROM_TEXT_US, command=lambda: show(BUTTON_US, ROM_US), fg="white", padx=5)
+BUTTON_US.grid(row=0, column=0)
 BUTTON_US.configure(background=BUTTON_COLOR)
 
 # Kiosk
-BUTTON_KS = tk.Button(app, text="Upload Kiosk ROM", command=lambda: show(2, 1, ROM_KS), fg="white")
-BUTTON_KS.grid(row=2, column=0)
+BUTTON_KS = None
+BUTTON_KS = tk.Button(UPLOAD_FRAME, text=ROM_TEXT_KS, command=lambda: show(BUTTON_KS, ROM_KS), fg="white", padx=5)
+BUTTON_KS.grid(row=0, column=1)
 BUTTON_KS.configure(background=BUTTON_COLOR)
 
 subprocess.run(["python", "-m", "pip", "install", "-r", "requirements.txt"])

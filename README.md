@@ -5,7 +5,17 @@ Restoration project for the Kiosk Version of Donkey Kong 64.
 
 The Kiosk version of Donkey Kong 64, demonstrated in retailers in September 1999, has a lot of data missing as Rareware stripped the game of most non-vital assets. This results in most deep-dive videos of the Kiosk version of DK64 having a lack of terrain. This hack aims to restore that and return the game into a semi-playable state.
 
-## Building
+## Building (The easy way)
+
+If you are less well-versed with python and computer science in general, there are three pre-requisites to building this hack:
+
+1. You must have the [latest version of python](https://www.python.org/downloads/) installed
+2. You will also need both the US and Kiosk ROMs of Donkey Kong 64, neither of which can be provided by the Kiosk Restoration Project.
+3. Run `./gui.bat` by double clicking on it. This will install some necessary packages and pull up a GUI for you to load up your ROMs and build the hack without having to interface with more complex systems.
+
+That being said, this is a slower process, and some may want quicker building times for the purposes of development or just in general.
+
+## Building (The faster way)
 
 To build the hack, you must have two ROMs in the `./rom/` directory, as this hack pulls assets from the US version of DK64 and puts it into the Kiosk version of DK64.
 
