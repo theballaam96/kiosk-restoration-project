@@ -15,6 +15,12 @@
         "command": "cd ${workspaceFolder}/ ; ./build.bat",
         "problemMatcher": []
       },
+      {
+        "label": "Run Build GUI",
+        "type": "shell",
+        "command": "cd ${workspaceFolder}/ ; ./gui.bat",
+        "problemMatcher": []
+      },
     ]
   }
   
