@@ -508,6 +508,7 @@ int* displayMapName(int* dl) {
             }
         }
     }
+    toggleDebugEnabled();
     char* mapname = 0;
     if (selected_level != LEVELSET_DKTV) {
         selected_map = levels[selected_level].map_list[selected_map_local];
@@ -549,6 +550,13 @@ int* displayMapName(int* dl) {
         *(int*)(dl++) = 0xFA000000;
         *(int*)(dl++) = local_color;
         dl = displayText(dl, 7, center - (getStringWidth(7, names[i]) << 1), y_pos + (60.0f * i), names[i], 4);
+    }
+    *(int*)(dl++) = 0xFA000000;
+    *(int*)(dl++) = fade_color;
+    if (debugEnabled()) {
+        dl = displayText(dl, 7, 100, 830, "DBG: ON", 4);
+    } else {
+        dl = displayText(dl, 7, 100, 830, "DBG: OFF", 4);
     }
     return dl;
 }

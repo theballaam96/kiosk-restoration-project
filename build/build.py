@@ -149,8 +149,7 @@ with open("./rom/dk64_us.z64", "rb") as fq:
 					append_data["do_not_compress"] = True
 				if table == 3 and not floors_compressed[indic]:
 					append_data["do_not_compress"] = True
-				if map_id < 0xA5:
-					file_dict.append(append_data)
+				file_dict.append(append_data)
 				continue
 			if is_gzip:
 				file_data = zlib.decompress(file_data, (15 + 32))
@@ -169,8 +168,7 @@ with open("./rom/dk64_us.z64", "rb") as fq:
 				append_data["do_not_compress"] = True
 			if table == 3 and not floors_compressed[map_id]:
 				append_data["do_not_compress"] = True
-			if map_id < 0xA5:
-				file_dict.append(append_data)
+			file_dict.append(append_data)
 	for x in copyfiles:
 		shutil.copyfile(x[0], x[1])
 

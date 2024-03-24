@@ -17,6 +17,8 @@ extern void __osCreateMesgQueue(void* unk0, void* unk1, int unk2);
 extern void __osCreateThread(void* unk0, int id, void* function, int unk1, void* unk2, int priority);
 extern void __osStartThread(void* unk0);
 extern void* getRegData(void);
+extern void dk_strFormat(char* dest, char* source, ...);
+
 extern void prepareHeap(int unk0);
 extern void heap_init(int unk0, int unk1, int unk2);
 extern void showerWithCoins(void);
@@ -24,6 +26,9 @@ extern int loadDKTVContainer(void* player);
 extern void loadDKTVFromROM(int index);
 extern void InitMapChange(int map, int exit);
 extern void setNextDemoMap(int player);
+extern int* SecuritySomething(int* dl);
+extern int* drawText(int* dl, int style, int x, int y, char* str);
+extern void playCutscene(void* actor, int cutscene, int bitfield);
 
 extern PlayerInventory PlayerItems[4];
 extern PlayerData* Player;
@@ -53,3 +58,4 @@ extern int NextMap;
 extern short buttonsRequired;
 extern dktv_rom_data DKTVData;
 extern buttons NewlyPressedInput;
+extern cutscene_bank_struct CutsceneBanks[2];

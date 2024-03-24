@@ -49,6 +49,8 @@ void initHack(void) {
                 *(int*)(address) = (int)&initPause;
             }
         }
+        // Debug
+        writeFunction(0x80592A3C, &displayListWrapper);
         // Banner Text
         // addBannerText(0x2A, "LEVEL GUARDIAN");
         

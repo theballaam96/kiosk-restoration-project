@@ -510,3 +510,9 @@ typedef struct dktv_rom_data {
 	/* 0x011 */ unsigned char pad;
 	/* 0x012 */ KongInventory starting_moves;
 } dktv_rom_data;
+
+typedef struct cutscene_bank_struct {
+	/* 0x000 */ char unk_00[0xCC];
+	/* 0x0CC */ short count;
+	/* 0x0CE */ char unk_CE[0xE0 - 0xCE];
+} cutscene_bank_struct;

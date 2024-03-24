@@ -441,6 +441,9 @@ int canTagAnywhere(void) {
     if (ModelTwoTouchCount > 0) {
         return 0;
     }
+    if (debugOpen()) {
+        return 0;
+    }
     // if (tag_locked) {
     //     return 0;
     // }

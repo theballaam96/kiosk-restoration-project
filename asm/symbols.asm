@@ -35,6 +35,7 @@
 .definelabel __osCreateThread, 0x806E5D80
 .definelabel __osStartThread, 0x806E5ED0
 .definelabel getRegData, 0x806EA2E0
+.definelabel dk_strFormat, 0x8069D810
 
 .definelabel FramebufferPointer, 0x8072CDA0
 .definelabel CharSpawnerFlagMapping, 0x80700640
@@ -54,3 +55,7 @@
 .definelabel InitMapChange, 0x805936FC
 .definelabel NewlyPressedInput, 0x807A05E0
 .definelabel setNextDemoMap, 0x806B5FC0
+.definelabel SecuritySomething, 0x806B5D70
+.definelabel drawText, 0x8069B7A0
+.definelabel playCutscene, 0x805B2DF8
+.definelabel CutsceneBanks, 0x807A1C00

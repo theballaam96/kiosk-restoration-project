@@ -28,6 +28,11 @@ extern void warpToDKTV(int index);
 extern void loadDKTVData(void);
 extern void warpHandler(void);
 
+extern int* displayListWrapper(int* dl);
+extern void toggleDebugEnabled(void);
+extern int debugEnabled(void);
+extern int debugOpen(void);
+
 extern const s16 kong_flags[5];
 extern char tag_locked;
 extern char grab_lock_timer;
