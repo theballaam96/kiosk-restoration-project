@@ -1,2 +1,2 @@
 requests
-PIL
+pillow
